@@ -10,7 +10,7 @@ export default function Grid({ children }: Props) {
     <section className="relative  w-full h-screen  ">
       
      <Image
-  src="/images/Iptv2026.webp"
+  src="/images/IPTV2026.webp"
   // 1. تحسين النص البديل ليكون وصفياً (مهم جداً لجوجل)
   alt="واجهة تشغيل أفضل اشتراك IPTV في المغرب 2026 بجودة عالية وسيرفرات ثابتة"
   
