@@ -6,6 +6,7 @@ import { Metadata } from "next";
 import { HomeMeta } from "./Data_Home/Home_seo";
 import { HomeSchema } from "./Data_Home/Home_seo";
 import IptvForja_P from "./components/HtmlTools/IptvForja_P";
+import SpanBold from "./components/HtmlTools/SpanBold";
 
 import Accordion from "./components/Accordion";
 
@@ -71,39 +72,13 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(HomeSchema) }}
       />
       <DivScreen title={HomeMeta.title} description={HomeMeta.description} />
-      {/**
-       * 
-      <DivScreen>
-       
-        <H1>{HomeMeta.title}</H1>
 
-        <P>{HomeMeta.description}</P>
-
-        <H2>
-          مع
-          <IptvForja />
-          ستحصل على قنوات رياضية مشفرة، مكتبة VOD عالمية، وتجربة مشاهدة مستقرة
-          عبر سيرفر IPTV بجودة عالية وبدون مشاكل. كل ذلك عبر
-          <IptvForja />
-        </H2>
-
-        <FlexBox className="">
-          <ButtonRed href="/freetrial" LinkText="جرّب قبل أن تشتركa" />
-          <ButtonRed href="/Subscriptions" LinkText=" ابدا المشاهده الان" />
-        </FlexBox> 
-        c
-      </DivScreen>*/}
       <My_List />
       {/**<My_List /> */}
       {/* --- القسم الأول: Menu_right --- */}
       <Grid>
-    <H2red>{Sports.title}</H2red>
-    <Ul>
-      {Sports.ul.map((item,index) =>(
-        <li key={index}>{item}</li>
-      ))}
-    </Ul>
-    <P>{Sports.footer_description}</P>
+        <H2>استمتع باقوى البث المباشر للمباريات </H2>
+        <PGray>جميع القنوات الرياضيه العالميه بجوده عاليه وثبات قوي بدون تقطيع</PGray>
       </Grid>
       <Menu_right title={faqData[0]?.name}>
         <P>{faqData[0]?.acceptedAnswer?.text}</P>

@@ -1,9 +1,6 @@
 @import "tailwindcss";
 
-@theme {
-  /* هذا السطر يخبر تيلويند باستخدام خطوط الجهاز الافتراضية فقط */
-  --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-}
+
 
 @layer base {
   html {

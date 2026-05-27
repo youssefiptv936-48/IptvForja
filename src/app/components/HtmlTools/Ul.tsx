@@ -5,6 +5,6 @@ interface Props {
 
 export default function Ul({children}:Props) {
   return (
-   <ul className="text-slate-200 font-bold space-y-4">{children}</ul>
+   <ul className="text-slate-200  list-disc">{children}</ul>
   )
 }
