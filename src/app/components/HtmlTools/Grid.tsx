@@ -5,6 +5,8 @@ import Link from "next/link";
 import H2 from "./H2";
 import PGray from "./PGray";
 import SpanBold from "./SpanBold";
+import Crown from "../heroicons/Crown";
+import Gift from "../heroicons/Gift";
 
 export default function Grid() {
   return (
@@ -25,7 +27,7 @@ export default function Grid() {
           className=" object-contain object-right md:object-cover      "
         />
 
-        <article className="absolute left-0  w-1/2 text-amber-50  h-full p-2 flex flex-col  justify-center items-center sm:w-1/2 md:bg-blue-800   ">
+        <article className="absolute left-0  w-1/2 text-amber-50  h-full p-6 flex flex-col  justify-center items-center sm:w-1/2 md:bg-blue-800   ">
         <h2 className="text-3xl font-bold">
           <span className="">استمتع باقوى </span>
           <br/>
@@ -35,11 +37,16 @@ export default function Grid() {
 
         </h2>
 
-          <p className="m-1 mr-4  text-[14px]   text-slate-200 leading-tight font-light">
+          <p className="m-1   text-[14px]   text-slate-200 leading-tight font-light">
             جميع القنوات الرياضيه العالميه بجوده عاليه وثبات قوي بدون تقطيع
           </p>
-          <Link href={""} className="bg-red-600 px-10 py-1">
-            شاهد الآن
+          <Link href={""} className="bg-red-600 py-1.5 w-full mt-1 rounded-md border-2 border-red-600 flex justify-center gap-2">
+          <Crown/>
+           اشترك الان
+          </Link>
+           <Link href={""} className=" py-1.5 w-full mt-1 rounded-md border-2 border-red-600 flex justify-center gap-2">
+           <Gift/>
+           شاهد مجانا
           </Link>
         </article>
       </div>
