@@ -27,7 +27,7 @@ export default function Grid() {
           className=" object-contain object-right md:object-cover      "
         />
 
-        <article className="absolute left-0  w-1/2 text-amber-50  h-full p-6 flex flex-col  justify-center items-center sm:w-1/2 md:bg-blue-800   ">
+        <article className="absolute left-0  w-1/2 text-amber-50  h-full p-3 flex flex-col  justify-center items-center sm:w-1/2 md:bg-blue-800   ">
         <h2 className="text-3xl font-bold">
           <span className="">استمتع باقوى </span>
           <br/>
