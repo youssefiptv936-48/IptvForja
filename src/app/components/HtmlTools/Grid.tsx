@@ -10,7 +10,7 @@ import Gift from "../heroicons/Gift";
 
 export default function Grid() {
   return (
-    <section className="relative w-full h-[61vh]  md:bg-cyan-900 md:min-h-[70vh]">
+    <section className="relative w-full min-h-[63vh]  md:bg-cyan-900 md:min-h-[70vh]">
       <div className="relative h-[50vh] md:min-h-[60vh] flex">
         <Image
           src="/images/sanae.png"
@@ -32,7 +32,7 @@ export default function Grid() {
             <span className="text-red-600">مباريات اليوم</span>
           </h2>
 
-          <p className="m-1 text-[14px] text-slate-200 leading-tight font-light">
+          <p className="m-1 pr-4 text-[14px] text-slate-200 leading-tight font-light">
             جميع القنوات الرياضيه العالميه بجوده عاليه وثبات قوي بدون تقطيع
           </p>
           <Link
@@ -52,7 +52,7 @@ export default function Grid() {
         </div>
       </div>
 
-      <h2 className=" mr-3 pr-2   text-xl font-bold border-r-2 text-slate-200 border-red-600">قنوات رياضيه عالميه</h2>
+      <h2 className=" mr-3 pr-2    text-xl font-bold border-r-2 text-slate-200 border-red-600">قنوات رياضيه عالميه</h2>
       <ul className=" w-full   text-slate-200 absolute bottom-0 flex justify-around">
         <li className="w-[20%] flex justify-center items-center flex-col">
           <BeinSportLogo />
