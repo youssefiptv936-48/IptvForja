@@ -4,6 +4,6 @@ interface Props {
 }
 export default function SpanBold({children} :Props) {
   return (
-   <span className='text-red-600'>{children}</span>
+   <span className='text-red-600 bg-amber-400 '>{children}</span>
   )
 }

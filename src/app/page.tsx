@@ -6,7 +6,8 @@ import { Metadata } from "next";
 import { HomeMeta } from "./Data_Home/Home_seo";
 import { HomeSchema } from "./Data_Home/Home_seo";
 import IptvForja_P from "./components/HtmlTools/IptvForja_P";
-import SpanBold from "./components/HtmlTools/SpanBold";
+
+
 
 import Accordion from "./components/Accordion";
 
@@ -72,13 +73,13 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(HomeSchema) }}
       />
       <DivScreen title={HomeMeta.title} description={HomeMeta.description} />
-
+   
       <My_List />
       {/**<My_List /> */}
       {/* --- القسم الأول: Menu_right --- */}
       <Grid>
-        <H2>استمتع باقوى البث المباشر للمباريات </H2>
-        <PGray>جميع القنوات الرياضيه العالميه بجوده عاليه وثبات قوي بدون تقطيع</PGray>
+      
+        
       </Grid>
       <Menu_right title={faqData[0]?.name}>
         <P>{faqData[0]?.acceptedAnswer?.text}</P>
