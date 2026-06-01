@@ -9,6 +9,7 @@ import IptvForja_P from "./components/HtmlTools/IptvForja_P";
 
 
 
+
 import Accordion from "./components/Accordion";
 
 import Menu_left from "./components/MenuLeft/MenuLeft";
@@ -77,10 +78,12 @@ export default function Home() {
       <My_List />
       {/**<My_List /> */}
       {/* --- القسم الأول: Menu_right --- */}
+     
       <Grid>
       
         
       </Grid>
+       
       <Menu_right title={faqData[0]?.name}>
         <P>{faqData[0]?.acceptedAnswer?.text}</P>
         <H2>

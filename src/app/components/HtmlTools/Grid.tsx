@@ -1,17 +1,32 @@
 import { ReactNode } from "react";
 import Image from "next/image";
-import BeinSportLogo from "../wikimedia/beinsport";
 import Link from "next/link";
-import H2 from "./H2";
-import PGray from "./PGray";
-import SpanBold from "./SpanBold";
+
 import Crown from "../heroicons/Crown";
 import Gift from "../heroicons/Gift";
+import MarqueeChannel from "./MarqueeChannel";
 
+// 1. استيراد المكون الخاص بشعار BeinSport (تأكد من صحة مساره في مجلدك)
+import BeinSportLogo from "../wikimedia/beinsport";
 export default function Grid() {
+  
+  // 2. قمنا بتعريف المصفوفة هنا داخل المكون وقبل الـ return ليتعرف عليها الكود ✅
+ const sportsData = [
+    { imgSrc: <BeinSportLogo/>, title: 'beIN Sports HD' },
+    { imgSrc: <BeinSportLogo/>, title: 'SSC Sports HD' },
+    { imgSrc:<BeinSportLogo/>, title: 'Sky Sports HD' },
+    { imgSrc: <BeinSportLogo/>, title: 'Canal+ HD' },
+    { imgSrc: <BeinSportLogo/>, title: 'ESPN HD' },
+    { imgSrc:<BeinSportLogo/>, title: 'beIN Sports 2 HD' },
+    { imgSrc: <BeinSportLogo/>, title: 'SSC Extra HD' },
+    { imgSrc: <BeinSportLogo/>, title: 'Sky Action HD' },
+    { imgSrc: <BeinSportLogo/>, title: 'Canal+ Sport' },
+    { imgSrc: <BeinSportLogo/>, title: 'ESPN 2 HD' },
+  ];
+
   return (
-    <section className="relative w-full min-h-[63vh]  md:bg-cyan-900 md:min-h-[70vh]">
-      <div className="relative h-[50vh] md:min-h-[60vh] flex">
+    <section className="relative w-full min-h-[90vh] ">
+      <div className="relative  h-[40vh] md:min-h-[60vh] flex">
         <Image
           src="/images/sanae.png"
           alt="واجهة تشغيل أفضل اشتراك IPTV في المغرب 2026 بجودة عالية وسيرفرات ثابتة"
@@ -20,10 +35,10 @@ export default function Grid() {
           priority
           quality={80}
           blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg=="
-          className="object-contain object-right md:object-cover"
+          className="object-contain object-right "
         />
 
-        <div className="absolute left-0 w-1/2 text-amber-50 h-full p-3 flex flex-col justify-center items-center sm:w-1/2 md:bg-blue-800">
+        <div className="absolute left-0 w-[60%] text-amber-50 h-full p-3 flex flex-col justify-center items-center sm:w-1/2 md:bg-blue-800">
           <h2 className="text-3xl font-bold">
             <span>استمتع باقوى </span>
             <br />
@@ -52,25 +67,13 @@ export default function Grid() {
         </div>
       </div>
 
-      <h2 className=" mr-3 pr-2    text-xl font-bold border-r-2 text-slate-200 border-red-600">قنوات رياضيه عالميه</h2>
-      <ul className=" w-full   text-slate-200 absolute bottom-0 flex justify-around">
-        <li className="w-[20%] flex justify-center items-center flex-col">
-          <BeinSportLogo />
-          <span>BeinSprt</span>
-        </li>
-        <li className="w-[20%] flex justify-center items-center flex-col">
-          <BeinSportLogo />
-          <span>BeinSprt</span>
-        </li>
-        <li className="w-[20%] flex justify-center items-center flex-col">
-          <BeinSportLogo />
-          <span>BeinSprt</span>
-        </li>
-        <li className="w-[20%] flex justify-center items-center flex-col">
-          <BeinSportLogo />
-          <span>BeinSprt</span>
-        </li>
-      </ul>
+      <h2 className="mr-3 pr-2 text-xl font-bold border-r-2 text-slate-200 border-red-600 my-4">
+        قنوات رياضيه عالميه
+      </h2>
+      
+     
+     <MarqueeChannel   channels={sportsData} />
+      
     </section>
   );
 }
