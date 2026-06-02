@@ -73,7 +73,7 @@ export default function Grid() {
       </div>
 
       <h2 className="mr-3 pr-2 text-xl font-bold border-r-2 text-slate-200 border-red-600 my-4">
-         قنوات رياضيه عالميه
+        a قنوات رياضيه عالميه
       </h2>
 
 
