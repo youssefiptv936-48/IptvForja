@@ -14,7 +14,7 @@ export default function MarqueeChannel({ channels }: MarqueeProps) {
 
   return (
     /* الإطار الخارجي الثابت للماركي */
-    <div className="relative flex w-full overflow-hidden border-b border-t py-6 [direction:ltr]">
+    <div className="relative flex w-full overflow-hidden border-y-2 border-red-600 py-6 ">
 
       {/* المجموعة الأولى - عناوين القنوات الأصلية المفتوحة لعناكب الـ SEO وقوقل */}
       <div className="animate-marquee whitespace-nowrap flex gap-5 ">
@@ -22,7 +22,7 @@ export default function MarqueeChannel({ channels }: MarqueeProps) {
           <div key={`origin-${index}`} className="shrink-0">
 
             {/* تصميم الكرت المبني ليعرض العنوان بوضوح في المنتصف */}
-            <div className="relative flex items-center justify-center h-24 ">
+            <div className="relative flex items-center justify-center h-auto ">
               <h3 className="text-3xl font-black uppercase text-white text-center  tracking-tight ">
                 {channel.title}
               </h3>
@@ -37,7 +37,7 @@ export default function MarqueeChannel({ channels }: MarqueeProps) {
         {channels.map((channel, index) => (
           <div key={`clone-${index}`} className="shrink-0">
 
-            <div className="relative flex items-center justify-center h-24 ">
+            <div className="relative flex items-center justify-center h-auto ">
               <h3 className="text-3xl font-black uppercase text-white text-center  tracking-tight ">
                 {channel.title}
               </h3>

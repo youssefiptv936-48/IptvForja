@@ -5,28 +5,32 @@ import Link from "next/link";
 import Crown from "../heroicons/Crown";
 import Gift from "../heroicons/Gift";
 import MarqueeChannel from "./MarqueeChannel";
+import P from "./P";
+
 
 // 1. استيراد المكون الخاص بشعار BeinSport (تأكد من صحة مساره في مجلدك)
 
 
 export default function Grid() {
-  
+
   // 2. قمنا بتعريف المصفوفة هنا داخل المكون وقبل الـ return ليتعرف عليها الكود ✅
- const sportsData = [
-    {  title: 'beIN Sports ' },
-  
+  const sportsData = [
+    { title: 'beIN Sports ' },
+
     { title: 'Sky Sports ' },
-    {  title: 'Canal+ ' },
-    {  title: 'ESPN ' },
+    { title: 'Canal+ ' },
+    { title: 'ESPN ' },
     { title: 'beIN Sports  ' },
-    {  title: 'SSC Extra ' },
-    {  title: 'Sky Action ' },
-    {  title: 'Canal+ Sport' },
-    {  title: 'ESPN  ' },
+    { title: 'SSC Extra ' },
+    { title: 'Sky Action ' },
+    { title: 'Canal+ Sport' },
+    { title: 'ESPN  ' },
   ];
 
+
+
   return (
-    <section className="relative w-full h-screen  flex flex-col justify-around ">
+    <section className="relative w-full h-screen  pt-5 ">
       <div className="relative  h-[50vh] md:min-h-[60vh] flex ">
         <Image
           src="/images/sanae.png"
@@ -69,13 +73,18 @@ export default function Grid() {
       </div>
 
       <h2 className="mr-3 pr-2 text-xl font-bold border-r-2 text-slate-200 border-red-600 my-4">
-       48 قنوات رياضيه عالميه
+         قنوات رياضيه عالميه
       </h2>
-      
-      
-     
-     <MarqueeChannel   channels={sportsData} />
-      
+
+
+
+
+      <MarqueeChannel channels={sportsData} />
+
+
+      <p className="text-slate-200 text-center p-2">يوجد المزيد من القنوات  المتنوعة IPTVFORJA يوفر لك تجربة مجانية  خذ تجربة الآن واكتشف محتوى ضخم وجودة بث عالية تلبي جميع اهتماماتك.
+
+      </p>
     </section>
   );
 }
