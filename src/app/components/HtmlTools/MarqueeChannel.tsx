@@ -22,11 +22,11 @@ export default function MarqueeChannel({ channels }: MarqueeProps) {
           <div key={`origin-${index}`} className="shrink-0">
 
             {/* تصميم الكرت المبني ليعرض العنوان بوضوح في المنتصف */}
-            <div className="relative flex items-center justify-center h-auto ">
-              <h3 className="text-3xl font-black uppercase text-white text-center  tracking-tight ">
+            
+              <h3 className="text-2xl font-black uppercase text-white text-center  tracking-tight ">
                 {channel.title}
               </h3>
-            </div>
+            
 
           </div>
         ))}
@@ -37,11 +37,11 @@ export default function MarqueeChannel({ channels }: MarqueeProps) {
         {channels.map((channel, index) => (
           <div key={`clone-${index}`} className="shrink-0">
 
-            <div className="relative flex items-center justify-center h-auto ">
-              <h3 className="text-3xl font-black uppercase text-white text-center  tracking-tight ">
+            
+              <h3 className="text-2xl font-black uppercase text-white text-center  tracking-tight ">
                 {channel.title}
               </h3>
-            </div>
+            
 
           </div>
         ))}
