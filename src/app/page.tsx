@@ -16,7 +16,7 @@ import Menu_left from "./components/MenuLeft/MenuLeft";
 import Section from "./components/MenuLeft/Section";
 import Menu_right from "./components/Menu_right";
 
-import StatsSection from "./components/StatsSection";
+
 import ArticleCard from "./components/ArticleCard";
 
 import H2 from "./components/HtmlTools/H2";
@@ -217,7 +217,7 @@ export default function Home() {
           <Bolt />
         </ArticleCard>
       </Menu_left>
-      <StatsSection />
+
       {/* --- الأسئلة الشائعة --- */}
       <div className="py-10 text-center   px-4">
         <H2>الأسئلة الشائعة حول اشتراك IPTV</H2>

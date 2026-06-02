@@ -7,21 +7,22 @@ import Gift from "../heroicons/Gift";
 import MarqueeChannel from "./MarqueeChannel";
 
 // 1. استيراد المكون الخاص بشعار BeinSport (تأكد من صحة مساره في مجلدك)
-import BeinSportLogo from "../wikimedia/beinsport";
+
+
 export default function Grid() {
   
   // 2. قمنا بتعريف المصفوفة هنا داخل المكون وقبل الـ return ليتعرف عليها الكود ✅
  const sportsData = [
-    { imgSrc: <BeinSportLogo/>, title: 'beIN Sports HD' },
-    { imgSrc: <BeinSportLogo/>, title: 'SSC Sports HD' },
-    { imgSrc:<BeinSportLogo/>, title: 'Sky Sports HD' },
-    { imgSrc: <BeinSportLogo/>, title: 'Canal+ HD' },
-    { imgSrc: <BeinSportLogo/>, title: 'ESPN HD' },
-    { imgSrc:<BeinSportLogo/>, title: 'beIN Sports 2 HD' },
-    { imgSrc: <BeinSportLogo/>, title: 'SSC Extra HD' },
-    { imgSrc: <BeinSportLogo/>, title: 'Sky Action HD' },
-    { imgSrc: <BeinSportLogo/>, title: 'Canal+ Sport' },
-    { imgSrc: <BeinSportLogo/>, title: 'ESPN 2 HD' },
+    {  title: 'beIN Sports HD' },
+  
+    { title: 'Sky Sports HD' },
+    {  title: 'Canal+ HD' },
+    {  title: 'ESPN HD' },
+    { title: 'beIN Sports 2 HD' },
+    {  title: 'SSC Extra HD' },
+    {  title: 'Sky Action HD' },
+    {  title: 'Canal+ Sport' },
+    {  title: 'ESPN 2 HD' },
   ];
 
   return (
@@ -70,6 +71,7 @@ export default function Grid() {
       <h2 className="mr-3 pr-2 text-xl font-bold border-r-2 text-slate-200 border-red-600 my-4">
         قنوات رياضيه عالميه
       </h2>
+      
       
      
      <MarqueeChannel   channels={sportsData} />

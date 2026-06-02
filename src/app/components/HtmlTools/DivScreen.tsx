@@ -4,7 +4,6 @@ import HistoryNext from "../heroicons/HistoryNext";
 import Tv4k from "../heroicons/Tv4k";
 
 import RocketNext from "../heroicons/RocketNext";
-import Hd from "../heroicons/Hd";
 
 import Link from "next/link";
 
@@ -58,7 +57,7 @@ export default function DivScreen({ title, description }: Props) {
           <div className="w-0.5 h-24 bg-linear-to-b from-transparent via-red-600 to-transparent opacity-80"></div>
           <div>
             {" "}
-            <Hd />
+            
             <h3>جوده ممتازه</h3>
           </div>
         </div>

@@ -1,8 +1,7 @@
 import React from 'react';
 
-// 1. قمنا بتسمية الخاصية imgSrc وجعلنا نوعها ReactNode لتقبل أيقوناتك الجاهزة مثل <BeinSportLogo/>
+// تم إبقاء الـ title فقط وحذف الـ imgSrc تماماً
 interface MarqueeItem {
-  imgSrc: React.ReactNode; 
   title: string;           
 }
 
@@ -15,26 +14,18 @@ export default function MarqueeChannel({ channels }: MarqueeProps) {
 
   return (
     /* الإطار الخارجي الثابت للماركي */
-    <div className="relative flex w-full overflow-hidden border-b border-t  py-6 [direction:ltr]">
+    <div className="relative flex w-full overflow-hidden border-b border-t py-6 [direction:ltr]">
       
-      {/* المجموعة الأولى - الـ 10 قنوات الأصلية المفتوحة لعناكب الـ SEO وقوقل */}
+      {/* المجموعة الأولى - عناوين القنوات الأصلية المفتوحة لعناكب الـ SEO وقوقل */}
       <div className="animate-marquee whitespace-nowrap flex gap-12 pr-12">
         {channels.map((channel, index) => (
           <div key={`origin-${index}`} className="shrink-0">
             
-            {/* تصميم الكرت المبني على صورتك الأنيقة */}
-            <div className="relative flex flex-col items-center justify-between bg-[#0d0f12] border border-zinc-800 rounded-xl  w-24 h-24 shadow-lg text-center select-none">
+            {/* تصميم الكرت المبني ليعرض العنوان بوضوح في المنتصف */}
+            <div className="relative flex flex-col items-center justify-center bg-[#0d0f12] border border-zinc-800 rounded-xl w-24 h-24 shadow-lg text-center select-none px-2">
               
-              {/* شارة LIVE الحمراء بالأعلى */}
-              
-
-              {/* رندرة الأيقونة الجاهزة الممررة من الـ Grid */}
-              <div className="flex-1 flex items-center justify-center mt-4 w-full h-20 text-white [&>svg]:w-full [&>svg]:h-full [&>svg]:object-contain">
-                {channel.imgSrc} 
-              </div>
-
               {/* العنوان داخل وسم H3 الذي طلبته خصيصاً لتحسين محركات البحث SEO */}
-              <h3 className="text-xs font-medium text-zinc-400 mt-2 truncate w-full">
+              <h3 className="text-sm font-medium text-zinc-200 truncate w-full">
                 {channel.title}
               </h3>
 
@@ -44,21 +35,17 @@ export default function MarqueeChannel({ channels }: MarqueeProps) {
         ))}
       </div>
 
-      {/* المجموعة الثانية - التوأم المكرر (محجوب عن السيو عبر aria-hidden لمنع عقوبة المحتوى المكرر) */}
+      {/* المجموعة الثانية - التوأم المكرر للأنيميشن (محجوب عن السيو عبر aria-hidden لمنع عقوبة المحتوى المكرر) */}
       <div aria-hidden="true" className="absolute top-6 animate-marquee2 whitespace-nowrap flex gap-12 pr-12">
         {channels.map((channel, index) => (
           <div key={`clone-${index}`} className="shrink-0">
             
-            <div className="relative flex flex-col items-center justify-between bg-[#0d0f12] border border-zinc-800 rounded-xl  w-24 h-24 shadow-lg text-center select-none">
-            
-
-              <div className="flex-1 flex items-center justify-center mt-4 w-full h-20 text-white [&>svg]:w-full [&>svg]:h-full [&>svg]:object-contain">
-                {channel.imgSrc}
-              </div>
-
-              <h3 className="text-xs font-medium text-zinc-400 mt-2 truncate w-full">
+            <div className="relative flex flex-col items-center justify-center bg-[#0d0f12] border border-zinc-800 rounded-xl w-24 h-24  text-center select-none px-2 shadow-2xl shadow-amber-500">
+              
+              <h3 className="text-sm font-medium text-zinc-200 truncate w-full ">
                 {channel.title}
               </h3>
+              
             </div>
 
           </div>
