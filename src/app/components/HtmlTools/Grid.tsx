@@ -13,21 +13,21 @@ export default function Grid() {
   
   // 2. قمنا بتعريف المصفوفة هنا داخل المكون وقبل الـ return ليتعرف عليها الكود ✅
  const sportsData = [
-    {  title: 'beIN Sports HD' },
+    {  title: 'beIN Sports ' },
   
-    { title: 'Sky Sports HD' },
-    {  title: 'Canal+ HD' },
-    {  title: 'ESPN HD' },
-    { title: 'beIN Sports 2 HD' },
-    {  title: 'SSC Extra HD' },
-    {  title: 'Sky Action HD' },
+    { title: 'Sky Sports ' },
+    {  title: 'Canal+ ' },
+    {  title: 'ESPN ' },
+    { title: 'beIN Sports  ' },
+    {  title: 'SSC Extra ' },
+    {  title: 'Sky Action ' },
     {  title: 'Canal+ Sport' },
-    {  title: 'ESPN 2 HD' },
+    {  title: 'ESPN  ' },
   ];
 
   return (
-    <section className="relative w-full min-h-[90vh] ">
-      <div className="relative  h-[40vh] md:min-h-[60vh] flex">
+    <section className="relative w-full h-screen  flex flex-col justify-around ">
+      <div className="relative  h-[50vh] md:min-h-[60vh] flex ">
         <Image
           src="/images/sanae.png"
           alt="واجهة تشغيل أفضل اشتراك IPTV في المغرب 2026 بجودة عالية وسيرفرات ثابتة"
@@ -69,7 +69,7 @@ export default function Grid() {
       </div>
 
       <h2 className="mr-3 pr-2 text-xl font-bold border-r-2 text-slate-200 border-red-600 my-4">
-        قنوات رياضيه عالميه
+       48 قنوات رياضيه عالميه
       </h2>
       
       
