@@ -28,7 +28,7 @@ export default function DivscreenContent({ src, alt, title, paragraph,   }: Prop
 
 
   return (
-    <section className="relative w-full min-h-[80vh] md:h-screen  pt-5   ">
+    <section className="relative w-full   md:h-screen  pt-5  ">
       <div className="relative  h-[50vh] md:min-h-[60vh] flex ">
         <div className=" md:w-1/2 md:relative">
         <Image

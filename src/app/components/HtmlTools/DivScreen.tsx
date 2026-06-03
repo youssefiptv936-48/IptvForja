@@ -40,13 +40,13 @@ export default function FullScreenSlider() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
-    }, 4000);
+    }, 5000);
 
     return () => clearInterval(timer);
   }, [slides.length]);
 
   return (
-    <div className="relative h-screen overflow-hidden">
+    <div className="relative h-[60vh] md:h-screen ">
       <AnimatePresence initial={false} mode="wait">
         <motion.div
           key={current}
@@ -57,7 +57,7 @@ export default function FullScreenSlider() {
             duration: 0.7,
             ease: "easeInOut",
           }}
-          className="absolute inset-0"
+          className="absolute inset-0 flex flex-col justify-center items-center "
         >
           <DivscreenContent
             alt={slides[current].alt}
