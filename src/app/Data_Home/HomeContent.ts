@@ -11,7 +11,7 @@ export const homeContent = {
       "بدون تأخير (No Delay) شاهد الأهداف واللقطات الحاسمة في نفس اللحظة.",
       "جميع القنوات الرياضية beIN Sports و SSC والقنوات العالمية والعربية في مكان واحد.",
       "تقنية Anti-Freeze استقرار عالي يضمن مشاهدة سلسة طوال المباراة.",
-      "دعم كامل للأجهزة يعمل على Smart TV و Android و iPhone و Fire Stick وجميع التطبيقات."
+      "دعم كامل للأجهزة يعمل على Smart TV و Android و iPhone و Fire Stick وجميع التطبيقات.",
     ],
 
     footer_description:
@@ -26,145 +26,156 @@ export const homeContent = {
       "Anti Freeze",
       "IPTV رياضي",
       "قنوات رياضية",
-      "بث بدون تقطيع"
-    ]
+      "بث بدون تقطيع",
+    ],
   },
-sports:{
-   alt:"واجهة تشغيل أفضل اشتراك IPTV في المغرب 2026 بجودة عالية وسيرفرات ثابتة",
-   title:["استمتع باقوى","البث المباشر","مباريات اليوم"],
-   paragraph:"جميع القنوات الرياضيه العالميه بجوده عاليه وثبات قوي بدون تقطيع",
-   titlechannel:"قنوات رياضيه عالميه",
- channel: [
-  { title: "beIN SPORTS" },
-  { title: "SSC Sports" },
-  { title: "Sky Sports" },
-  { title: "TNT Sports" },
-  { title: "DAZN" },
-  { title: "Eurosport" },
-  { title: "Canal+ Sport" },
-  { title: "Super Sport" },
-  { title: "ESPN" },
-  { title: "Arena Sport" },
-  { title: "Sport TV" },
-  { title: "Movistar Plus+" },
-  { title: "RMC Sport" },
-  { title: "Ziggo Sport" },
-  { title: "Eleven Sports" },
-   { title: "" }
-],
-   parachannel:"يوجد المزيد من القنوات المتنوعة IPTVFORJA يوفر لك تجربة مجانية خذ تجربة الآن واكتشف محتوى ضخم وجودة بث عالية تلبي جميع اهتماماتك."
-
-},
-/********************************************** */
-news:{
-  alt: "تابع آخر الأخبار العالمية والمحلية لحظة بلحظة من أشهر القنوات الإخبارية.",
-title:["تابع أهم","الأخبار اليوم","لحظة بلحظة"],
-paragraph: "تابع آخر الأخبار العالمية والمحلية لحظة بلحظة من أشهر القنوات الإخبارية.",
-titlechannel:"قنوات إخبارية عالمية",
-channela: [
-  // القنوات العربية
-  { title: "Al Jazeera" },
-  { title: "Al Arabiya" },
-  { title: "Sky News Arabia" },
-  { title: "Asharq News" },
-  { title: "Al Hadath" },
-  { title: "TRT عربي" },
-  { title: "France 24 Arabic" },
-  { title: "BBC News عربي" },
-  { title: "Russia Today Arabic" },
-  { title: "Al Mayadeen" },
-
-  // القنوات العالمية
-  { title: "CNN" },
-  { title: "BBC News" },
-  { title: "Sky News" },
-  { title: "Fox News" },
-  { title: "MSNBC" },
-  { title: "Euronews" },
-  { title: "France 24" },
-  { title: "Bloomberg" },
-  { title: "CNBC" },
-  { title: "DW News" },
-  { title: "TRT World" },
-  { title: "NHK World-Japan" },
-  { title: "CGTN" },
-  { title: "ABC News" },
-  { title: "CBS News" }
-]
-
-},
-  movies: {
-    title: "أحدث الأفلام العالمية والعربية",
-
-    description:
-      "مكتبة ضخمة من الأفلام الجديدة والكلاسيكية بجودة عالية وترجمة احترافية.",
-
-    features: [
-      "أفلام أكشن",
-      "أفلام رعب",
-      "أفلام Netflix",
-      "أفلام عربية",
-      "جودة Full HD"
-    ]
+  sports: {
+    alt: "واجهة تشغيل أفضل اشتراك IPTV في المغرب 2026 بجودة عالية وسيرفرات ثابتة",
+    title: ["استمتع باقوى", "البث المباشر", "مباريات اليوم"],
+    paragraph:
+      "جميع القنوات الرياضيه العالميه بجوده عاليه وثبات قوي بدون تقطيع",
+    titlechannel: "قنوات رياضيه عالميه",
+    channel: [
+      { title: "beIN SPORTS" },
+      { title: "SSC Sports" },
+      { title: "Sky Sports" },
+      { title: "TNT Sports" },
+      { title: "DAZN" },
+      { title: "Eurosport" },
+      { title: "Canal+ Sport" },
+      { title: "Super Sport" },
+      { title: "ESPN" },
+      { title: "Arena Sport" },
+      { title: "Sport TV" },
+      { title: "Movistar Plus+" },
+      { title: "RMC Sport" },
+      { title: "Ziggo Sport" },
+      { title: "Eleven Sports" },
+      { title: "" },
+    ],
+    parachannel:
+      "يوجد المزيد من القنوات المتنوعة IPTVFORJA يوفر لك تجربة مجانية خذ تجربة الآن واكتشف محتوى ضخم وجودة بث عالية تلبي جميع اهتماماتك.",
   },
-
-  series: {
-    title: "أفضل المسلسلات العالمية والتركية",
-
-    description:
-      "استمتع بمشاهدة أحدث الحلقات والمسلسلات الحصرية بدون إعلانات مزعجة.",
-
-    features: [
-      "مسلسلات تركية",
-      "مسلسلات Netflix",
-      "مسلسلات عربية",
-      "تحديث يومي",
-      "جودة عالية"
-    ]
-  },
-
-  newsa: {
-    title: "قنوات إخبارية مباشرة",
-
-    description:
+  /********************************************** */
+  news: {
+    alt: "تابع آخر الأخبار العالمية والمحلية لحظة بلحظة من أشهر القنوات الإخبارية.",
+    title: ["تابع أهم", "الأخبار اليوم", "لحظة بلحظة"],
+    paragraph:
       "تابع آخر الأخبار العالمية والمحلية لحظة بلحظة من أشهر القنوات الإخبارية.",
+    titlechannel: "قنوات إخبارية عالمية",
+    channela: [
+      // القنوات العربية
+      { title: "Al Jazeera" },
+      { title: "Al Arabiya" },
+      { title: "Sky News Arabia" },
+      { title: "Asharq News" },
+      { title: "Al Hadath" },
+      { title: "TRT عربي" },
+      { title: "France 24 Arabic" },
+      { title: "BBC News عربي" },
+      { title: "Russia Today Arabic" },
+      { title: "Al Mayadeen" },
 
-    features: [
-      "Al Jazeera",
-      "Sky News",
-      "France 24",
-      "العربية",
-      "بث مباشر"
-    ]
+      // القنوات العالمية
+      { title: "CNN" },
+      { title: "BBC News" },
+      { title: "Sky News" },
+      { title: "Fox News" },
+      { title: "MSNBC" },
+      { title: "Euronews" },
+      { title: "France 24" },
+      { title: "Bloomberg" },
+      { title: "CNBC" },
+      { title: "DW News" },
+      { title: "TRT World" },
+      { title: "NHK World-Japan" },
+      { title: "CGTN" },
+      { title: "ABC News" },
+      { title: "CBS News" },
+       { title: "" },
+    ],
+  },
+  movies: {
+    alt: "مكتبة ضخمة من الأفلا المسلسلات الجديدة والكلاسيكية بجودة عالية وترجمة احترافية.",
+    title: ["استمتع بأحدث", "أفلام ومسلسلات", "السينما بين يديك"],
+
+    paragraph:
+      "مكتبة ضخمة من أفلام ومسلسلات الجديدة والكلاسيكية بجودة عالية وترجمة احترافية.",
+      titlechannel:"أفلام ومسلسلات",
+     channel: [
+  { title: "Netflix" },
+  { title: "Shahid" },
+  { title: "TOD" },
+  { title: "OSN+" },
+  { title: "Disney+" },
+  { title: "Amazon Prime Video" },
+  { title: "Apple TV+" },
+  { title: "HBO Max" },
+  { title: "Paramount+" },
+  { title: "StarzPlay" },
+  { title: "WATCH IT" },
+  { title: "Yango Play" },
+  { title: "Viu" },
+  { title: "Noor Play" },
+  { title: "Weyyak" },
+  { title: "MUBI" },
+  { title: "Rakuten TV" },
+  { title: "Crunchyroll" },
+  { title: "Canal+" },
+  { title: "Lionsgate+" },
+  { title: "" }
+],
+ parachannel:
+      "يوجد المزيد من أفلام ومسلسلات المتنوعة IPTVFORJA يوفر لك تجربة مجانية خذ تجربة الآن واكتشف محتوى ضخم وجودة بث عالية تلبي جميع اهتماماتك.",
   },
 
+  
+
+  
   kids: {
-    title: "قنوات الأطفال والترفيه",
+    alt: "محتوى آمن وممتع للأطفال يشمل الكرتون والبرامج التعليمية بجودة ممتازة.",
+    title: ["اكتشف","عالم الأطفال","الآمن وممتع"],
 
-    description:
+    paragraph:
       "محتوى آمن وممتع للأطفال يشمل الكرتون والبرامج التعليمية بجودة ممتازة.",
-
-    features: [
-      "Cartoon Network",
-      "MBC3",
-      "Spacetoon",
-      "Disney Channel",
-      "محتوى آمن"
-    ]
+      titlechannel:"محتوى آمن وممتع للأطفال",
+      channel: [
+  { title: "Cartoon Network" },
+  { title: "Cartoonito" },
+  { title: "Nickelodeon" },
+  { title: "Nick Jr." },
+  { title: "Disney Channel" },
+  { title: "Disney Junior" },
+  { title: "Disney XD" },
+  { title: "BabyTV" },
+  { title: "Boomerang" },
+  { title: "Spacetoon" },
+  { title: "Majid Kids" },
+  { title: "MBC3" },
+  { title: "Baraem" },
+  { title: "Jeem TV" },
+  { title: "Toyor Al Janah" },
+  { title: "Toyor Baby" },
+  { title: "Karamish" },
+  { title: "Sana Kids" },
+  { title: "Nicktoons" },
+  { title: "TeenNick" },
+  { title: "Disney+" },
+  { title: "Netflix Kids" },
+  { title: "YouTube Kids" },
+  { title: "Noggin" },
+  { title: "Kidoodle.TV" },
+  { title: "HappyKids" },
+  { title: "PBS Kids" },
+  { title: "Moonbug Kids" },
+  { title: "Toon Goggles" },
+  { title: "Da Vinci Kids" },
+  { title: "" }
+],
+parachannel:"يوجد المزيد من محتوى آمن وممتع للأطفال IPTVFORJA يوفر لك تجربة مجانية خذ تجربة الآن واكتشف محتوى ضخم وجودة بث عالية تلبي جميع اهتماماتك"
+  
+   
   },
 
-  animal: {
-    title: "قنوات الحيوانات والطبيعة",
 
-    description:
-      "استكشف عالم الحيوانات والطبيعة مع أشهر القنوات الوثائقية العالمية.",
-
-    features: [
-      "National Geographic",
-      "Animal Planet",
-      "Discovery",
-      "وثائقيات الطبيعة",
-      "جودة HD"
-    ]
-  }
 };
