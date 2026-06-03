@@ -11,13 +11,17 @@
   100% { transform: translateX(0%); }
 }
 
-/* ربط الأنيميشن بكلاسات مخصصة */
 .animate-marquee {
-  animation: marquee 25s linear infinite;
+  animation: marquee 70s linear infinite;
 }
 
 .animate-marquee2 {
-  animation: marquee2 25s linear infinite;
+  animation: marquee2 70s linear infinite;
+}
+
+.animate-marquee,
+.animate-marquee2 {
+  will-change: transform;
 }
 
 

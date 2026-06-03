@@ -1,5 +1,5 @@
 export const homeContent = {
-  sports: {
+  sportsa: {
     title: "استمتع بالبث المباشر الأكثر ثباتاً في المغرب بدون تقطيع!",
 
     Header_description:
@@ -29,7 +29,66 @@ export const homeContent = {
       "بث بدون تقطيع"
     ]
   },
+sports:{
+   alt:"واجهة تشغيل أفضل اشتراك IPTV في المغرب 2026 بجودة عالية وسيرفرات ثابتة",
+   title:["استمتع باقوى","البث المباشر","مباريات اليوم"],
+   paragraph:"جميع القنوات الرياضيه العالميه بجوده عاليه وثبات قوي بدون تقطيع",
+   titlechannel:"قنوات رياضيه عالميه",
+ channel: [
+  { title: "beIN Sports" },
+  { title: "Canal+" },
+  { title: "Canal+ Sport" },
+  { title: "RMC Sport" },
+  { title: "Eurosport" },
+  { title: "DAZN" },
+  { title: "Sky Sports" },
+  { title: "TNT Sports" },
+  { title: "ESPN" },
+  { title: "Fox Sports" },
+  { title: "NBC Sports" },
+  { title: "CBS Sports" },
+  { title: "Premier Sports" },
+  { title: "SuperSport" },
+  { title: "Sport TV" },
+  { title: "Arena Sport" },
+  { title: "Eleven Sports" },
+  { title: "Viaplay Sports" },
+  { title: "Movistar Plus+" },
+  { title: "Ziggo Sport" },
+  { title: "Setanta Sports" },
+  { title: "Astro Arena" },
+  { title: "Sony Sports Network" },
+  { title: "Star Sports" },
+  { title: "TSN" },
+  { title: "Sportsnet" },
+  { title: "Optus Sport" },
+  { title: "Paramount+" },
+  { title: "Peacock" },
+  { title: "Fubo" },
+  { title: "Discovery+" },
+  { title: "Max" },
+  { title: "L'Équipe Live" },
+  { title: "MUTV" },
+  { title: "Real Madrid TV" },
+  { title: "Barça TV+" },
+  { title: "LFCTV" },
+  { title: "Chelsea TV" },
+  { title: "Inter TV" },
+  { title: "Milan TV" },
+  { title: "Juventus TV" },
+  { title: "NBA League Pass" },
+  { title: "NFL Game Pass" },
+  { title: "MLB.TV" },
+  { title: "NHL.TV" },
+  { title: "UFC Fight Pass" },
+  { title: "WWE Network" },
+  { title: "Tennis TV" },
+  { title: "Rally.TV" },
+  { title: "FloSports" }
+],
+   parachannel:"يوجد المزيد من القنوات المتنوعة IPTVFORJA يوفر لك تجربة مجانية خذ تجربة الآن واكتشف محتوى ضخم وجودة بث عالية تلبي جميع اهتماماتك."
 
+},
   movies: {
     title: "أحدث الأفلام العالمية والعربية",
 

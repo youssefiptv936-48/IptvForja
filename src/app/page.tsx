@@ -20,8 +20,8 @@ import Menu_right from "./components/Menu_right";
 import ArticleCard from "./components/ArticleCard";
 
 import H2 from "./components/HtmlTools/H2";
-import H2red from "./components/HtmlTools/H2red";
-import Ul from "./components/HtmlTools/Ul";
+
+
 import P from "./components/HtmlTools/P";
 import DivScreen from "./components/HtmlTools/DivScreen";
 
@@ -38,7 +38,7 @@ import H2Gray from "./components/HtmlTools/H2Gray";
 import PGray from "./components/HtmlTools/PGray";
 import Rocket from "./components/heroicons/RocketNext";
 import { homeContent } from "./Data_Home/HomeContent";
-import { title } from "process";
+
 {
   /** */
 }
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  const Sports = homeContent.sports;
+ const {sports}=homeContent;
   const faqData = (HomeSchema["@graph"][1] as { mainEntity: FAQEntity[] })
     .mainEntity;
   return (
@@ -79,10 +79,11 @@ export default function Home() {
       {/**<My_List /> */}
       {/* --- القسم الأول: Menu_right --- */}
      
-      <Grid>
+     <Grid alt={sports.alt} src="/images/sanae.png" title={sports.title} paragraph={sports.paragraph} titlechannel={sports.titlechannel}  channelsports={sports.channel} parachannel={sports.parachannel} />
+          <Grid alt={sports.alt} src="/images/sanae.png" title={sports.title} paragraph={sports.paragraph} titlechannel={sports.titlechannel}  channelsports={sports.channel} parachannel={sports.parachannel} />
+
       
-        
-      </Grid>
+       
        
       <Menu_right title={faqData[0]?.name}>
         <P>{faqData[0]?.acceptedAnswer?.text}</P>
