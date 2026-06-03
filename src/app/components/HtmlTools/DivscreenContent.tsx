@@ -4,8 +4,7 @@ import Link from "next/link";
 
 import Crown from "../heroicons/Crown";
 import Gift from "../heroicons/Gift";
-import MarqueeChannel from "./MarqueeChannel";
-import { homeContent } from "@/app/Data_Home/HomeContent";
+
 interface MarqueeItem {
   title: string;
 }
@@ -14,18 +13,17 @@ interface Props {
   alt: string;
   src: string;
   title: string[];
-  titlechannel: string;
+ 
   paragraph: string;
-  parachannel: string;
-  channelsports: MarqueeItem[]; // ✅ هذا هو التصحيح
+
 }
 
 // 1. استيراد المكون الخاص بشعار BeinSport (تأكد من صحة مساره في مجلدك)
 
 
-export default function Grid({ src, alt, title, paragraph, titlechannel, channelsports, parachannel }: Props) {
+export default function DivscreenContent({ src, alt, title, paragraph,   }: Props) {
 
-  const { sports } = homeContent;
+
 
 
 
@@ -75,29 +73,10 @@ export default function Grid({ src, alt, title, paragraph, titlechannel, channel
         </div>
       </div>
 
-      <h2 className="mr-3 pr-2 text-xl font-bold border-r-2 text-slate-200 border-red-600 my-4">
-        {titlechannel}
-      </h2>
 
 
 
-
-      <MarqueeChannel channels={channelsports} />
-
-
-      <p className="text-slate-200 text-center p-2">
-        {parachannel}
-
-      </p>
-    <div className="w-full px-5 h-a  ">
-        <Link
-        href="/freetrial"
-        className="py-1.5  w-full mt-1 rounded-md border-2 text-xl text-slate-200 font-bold bg-red-600 border-red-600 flex justify-center gap-2"
-      >
-        <Gift />
-        شاهد مجانا
-      </Link>
-    </div>
+  
     </section>
   );
 }

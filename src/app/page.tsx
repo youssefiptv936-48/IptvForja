@@ -65,9 +65,9 @@ export const metadata: Metadata = {
 
 export default function Home() {
   const { sports } = homeContent;
-  const {news} = homeContent;
-   const {movies} = homeContent;
-    const {kids} = homeContent;
+  const { news } = homeContent;
+  const { movies } = homeContent;
+  const { kids } = homeContent;
   const faqData = (HomeSchema["@graph"][1] as { mainEntity: FAQEntity[] })
     .mainEntity;
   return (
@@ -76,7 +76,7 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(HomeSchema) }}
       />
-      <DivScreen title={HomeMeta.title} description={HomeMeta.description} />
+      <DivScreen></DivScreen>
 
       <My_List />
       {/**<My_List /> */}
@@ -84,14 +84,14 @@ export default function Home() {
 
       <Grid alt={sports.alt} src="/images/sanae.png" title={sports.title} paragraph={sports.paragraph} titlechannel={sports.titlechannel} channelsports={sports.channel} parachannel={sports.parachannel} />
       <Grid alt={news.alt} src="/images/ghazza.webp" title={news.title} paragraph={news.paragraph} titlechannel={news.titlechannel} channelsports={news.channela} parachannel={sports.parachannel} />
-       <Grid alt={movies.alt} src="/images/ghazza.webp" title={movies.title} paragraph={movies.paragraph} titlechannel={movies.titlechannel} channelsports={movies.channel} parachannel={sports.parachannel} />
-       <Grid alt={kids.alt} src="/images/ghazza.webp" title={kids.title} paragraph={kids.paragraph} titlechannel={kids.titlechannel} channelsports={kids.channel} parachannel={kids.parachannel} />
+      <Grid alt={movies.alt} src="/images/ghazza.webp" title={movies.title} paragraph={movies.paragraph} titlechannel={movies.titlechannel} channelsports={movies.channel} parachannel={sports.parachannel} />
+      <Grid alt={kids.alt} src="/images/ghazza.webp" title={kids.title} paragraph={kids.paragraph} titlechannel={kids.titlechannel} channelsports={kids.channel} parachannel={kids.parachannel} />
 
 
 
 
 
-      
+
 
       {/* --- الأسئلة الشائعة --- */}
       <div className="py-10 text-center   px-4">
