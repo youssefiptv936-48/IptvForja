@@ -6,7 +6,7 @@ import Crown from "../heroicons/Crown";
 import Gift from "../heroicons/Gift";
 import MarqueeChannel from "./MarqueeChannel";
 import { homeContent } from "@/app/Data_Home/HomeContent";
- interface MarqueeItem {
+interface MarqueeItem {
   title: string;
 }
 
@@ -23,9 +23,9 @@ interface Props {
 // 1. استيراد المكون الخاص بشعار BeinSport (تأكد من صحة مساره في مجلدك)
 
 
-export default function Grid({src,alt,title,paragraph,titlechannel,channelsports,parachannel}:Props) {
+export default function Grid({ src, alt, title, paragraph, titlechannel, channelsports, parachannel }: Props) {
 
- const {sports}=homeContent;
+  const { sports } = homeContent;
 
 
 
@@ -53,7 +53,7 @@ export default function Grid({src,alt,title,paragraph,titlechannel,channelsports
           </h2>
 
           <p className="m-1 pr-4 text-[14px] text-slate-200 leading-tight font-light">
-           {paragraph}
+            {paragraph}
           </p>
           <Link
             href="/Subscriptions"
@@ -79,13 +79,22 @@ export default function Grid({src,alt,title,paragraph,titlechannel,channelsports
 
 
 
-      <MarqueeChannel channels={sports.channel} />
+      <MarqueeChannel channels={channelsports} />
 
 
       <p className="text-slate-200 text-center p-2">
         {parachannel}
 
       </p>
+    <div className="w-full px-5  ">
+        <Link
+        href="/freetrial"
+        className="py-1.5  w-full mt-1 rounded-md border-2 text-xl text-slate-200 font-bold bg-red-600 border-red-600 flex justify-center gap-2"
+      >
+        <Gift />
+        شاهد مجانا
+      </Link>
+    </div>
     </section>
   );
 }

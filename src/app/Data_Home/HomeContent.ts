@@ -35,58 +35,62 @@ sports:{
    paragraph:"جميع القنوات الرياضيه العالميه بجوده عاليه وثبات قوي بدون تقطيع",
    titlechannel:"قنوات رياضيه عالميه",
  channel: [
-  { title: "beIN Sports" },
-  { title: "Canal+" },
-  { title: "Canal+ Sport" },
-  { title: "RMC Sport" },
-  { title: "Eurosport" },
-  { title: "DAZN" },
+  { title: "beIN SPORTS" },
+  { title: "SSC Sports" },
   { title: "Sky Sports" },
   { title: "TNT Sports" },
+  { title: "DAZN" },
+  { title: "Eurosport" },
+  { title: "Canal+ Sport" },
+  { title: "Super Sport" },
   { title: "ESPN" },
-  { title: "Fox Sports" },
-  { title: "NBC Sports" },
-  { title: "CBS Sports" },
-  { title: "Premier Sports" },
-  { title: "SuperSport" },
-  { title: "Sport TV" },
   { title: "Arena Sport" },
-  { title: "Eleven Sports" },
-  { title: "Viaplay Sports" },
+  { title: "Sport TV" },
   { title: "Movistar Plus+" },
+  { title: "RMC Sport" },
   { title: "Ziggo Sport" },
-  { title: "Setanta Sports" },
-  { title: "Astro Arena" },
-  { title: "Sony Sports Network" },
-  { title: "Star Sports" },
-  { title: "TSN" },
-  { title: "Sportsnet" },
-  { title: "Optus Sport" },
-  { title: "Paramount+" },
-  { title: "Peacock" },
-  { title: "Fubo" },
-  { title: "Discovery+" },
-  { title: "Max" },
-  { title: "L'Équipe Live" },
-  { title: "MUTV" },
-  { title: "Real Madrid TV" },
-  { title: "Barça TV+" },
-  { title: "LFCTV" },
-  { title: "Chelsea TV" },
-  { title: "Inter TV" },
-  { title: "Milan TV" },
-  { title: "Juventus TV" },
-  { title: "NBA League Pass" },
-  { title: "NFL Game Pass" },
-  { title: "MLB.TV" },
-  { title: "NHL.TV" },
-  { title: "UFC Fight Pass" },
-  { title: "WWE Network" },
-  { title: "Tennis TV" },
-  { title: "Rally.TV" },
-  { title: "FloSports" }
+  { title: "Eleven Sports" },
+   { title: "" }
 ],
    parachannel:"يوجد المزيد من القنوات المتنوعة IPTVFORJA يوفر لك تجربة مجانية خذ تجربة الآن واكتشف محتوى ضخم وجودة بث عالية تلبي جميع اهتماماتك."
+
+},
+/********************************************** */
+news:{
+  alt: "تابع آخر الأخبار العالمية والمحلية لحظة بلحظة من أشهر القنوات الإخبارية.",
+title:["تابع أهم","الأخبار اليوم","لحظة بلحظة"],
+paragraph: "تابع آخر الأخبار العالمية والمحلية لحظة بلحظة من أشهر القنوات الإخبارية.",
+titlechannel:"قنوات إخبارية عالمية",
+channela: [
+  // القنوات العربية
+  { title: "Al Jazeera" },
+  { title: "Al Arabiya" },
+  { title: "Sky News Arabia" },
+  { title: "Asharq News" },
+  { title: "Al Hadath" },
+  { title: "TRT عربي" },
+  { title: "France 24 Arabic" },
+  { title: "BBC News عربي" },
+  { title: "Russia Today Arabic" },
+  { title: "Al Mayadeen" },
+
+  // القنوات العالمية
+  { title: "CNN" },
+  { title: "BBC News" },
+  { title: "Sky News" },
+  { title: "Fox News" },
+  { title: "MSNBC" },
+  { title: "Euronews" },
+  { title: "France 24" },
+  { title: "Bloomberg" },
+  { title: "CNBC" },
+  { title: "DW News" },
+  { title: "TRT World" },
+  { title: "NHK World-Japan" },
+  { title: "CGTN" },
+  { title: "ABC News" },
+  { title: "CBS News" }
+]
 
 },
   movies: {
@@ -119,7 +123,7 @@ sports:{
     ]
   },
 
-  news: {
+  newsa: {
     title: "قنوات إخبارية مباشرة",
 
     description:

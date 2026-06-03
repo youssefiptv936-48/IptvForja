@@ -14,7 +14,7 @@ export default function MarqueeChannel({ channels }: MarqueeProps) {
 
   return (
     /* الإطار الخارجي الثابت للماركي */
-    <div className="relative flex w-full overflow-hidden border-y-2 border-red-600 py-6 ">
+    <div className="relative flex w-full overflow-hidden border-y-2 border-red-600 py-6  ">
 
       {/* المجموعة الأولى - عناوين القنوات الأصلية المفتوحة لعناكب الـ SEO وقوقل */}
       <div className="animate-marquee whitespace-nowrap flex gap-5 ">
@@ -23,7 +23,7 @@ export default function MarqueeChannel({ channels }: MarqueeProps) {
 
             {/* تصميم الكرت المبني ليعرض العنوان بوضوح في المنتصف */}
             
-              <h3 className="text-2xl font-black uppercase text-white text-center  tracking-tight ">
+              <h3 className="text-2xl font-black uppercase text-white text-center  tracking-tight  ">
                 {channel.title}
               </h3>
             
@@ -33,12 +33,12 @@ export default function MarqueeChannel({ channels }: MarqueeProps) {
       </div>
 
       {/* المجموعة الثانية - التوأم المكرر للأنيميشن (محجوب عن السيو عبر aria-hidden لمنع عقوبة المحتوى المكرر) */}
-      <div aria-hidden="true" className="absolute top-6 animate-marquee2 whitespace-nowrap flex gap-5">
+      <div aria-hidden="true" className="absolute top-6 animate-marquee2 whitespace-nowrap flex gap-5 ">
         {channels.map((channel, index) => (
           <div key={`clone-${index}`} className="shrink-0">
 
             
-              <h3 className="text-2xl font-black uppercase text-white text-center  tracking-tight ">
+              <h3 className="text-2xl font-black uppercase text-white text-center  tracking-tight  ">
                 {channel.title}
               </h3>
             

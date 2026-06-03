@@ -64,7 +64,8 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
- const {sports}=homeContent;
+  const { sports } = homeContent;
+  const {news} = homeContent;
   const faqData = (HomeSchema["@graph"][1] as { mainEntity: FAQEntity[] })
     .mainEntity;
   return (
@@ -74,17 +75,17 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(HomeSchema) }}
       />
       <DivScreen title={HomeMeta.title} description={HomeMeta.description} />
-   
+
       <My_List />
       {/**<My_List /> */}
       {/* --- القسم الأول: Menu_right --- */}
-     
-     <Grid alt={sports.alt} src="/images/sanae.png" title={sports.title} paragraph={sports.paragraph} titlechannel={sports.titlechannel}  channelsports={sports.channel} parachannel={sports.parachannel} />
-          <Grid alt={sports.alt} src="/images/sanae.png" title={sports.title} paragraph={sports.paragraph} titlechannel={sports.titlechannel}  channelsports={sports.channel} parachannel={sports.parachannel} />
 
-      
-       
-       
+      <Grid alt={sports.alt} src="/images/sanae.png" title={sports.title} paragraph={sports.paragraph} titlechannel={sports.titlechannel} channelsports={sports.channel} parachannel={sports.parachannel} />
+      <Grid alt={news.alt} src="/images/ghazza.webp" title={news.title} paragraph={news.paragraph} titlechannel={news.titlechannel} channelsports={news.channela} parachannel={sports.parachannel} />
+
+
+
+
       <Menu_right title={faqData[0]?.name}>
         <P>{faqData[0]?.acceptedAnswer?.text}</P>
         <H2>
