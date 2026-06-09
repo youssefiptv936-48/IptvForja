@@ -6,7 +6,7 @@ export default function IptvForja_P() {
   return (
     <strong>
       {" "}
-      <Link href="/Subscriptions" className="text-red-500  text-[16px]">
+      <Link href="/abonnement-iptv" className="text-red-500  text-[16px]">
         IPTVFORJA
       </Link>
       {" "}

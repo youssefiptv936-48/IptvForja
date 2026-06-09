@@ -12,13 +12,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: 'https://iptvforja.com/Subscriptions' ,
+      url: 'https://iptvforja.com/abonnement-iptv' ,
       lastModified: new Date(),
       changeFrequency: 'monthly' as const,
       priority: 0.8,
     },
     {
-      url:'https://iptvforja.com/freetrial' ,
+      url:'https://iptvforja.com/Test-Iptv' ,
       lastModified: new Date(),
       changeFrequency: 'monthly' as const,
       priority: 0.8,

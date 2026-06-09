@@ -3,7 +3,7 @@ import React from 'react'
 import SectionPrice from '@/app/components/price/SectionPrice'
 import Head from 'next/head' // استيراد Head للتحكم في الميتا تاق
 
-export default function Subscriptions() {
+export default function page() {
   const schemaData = {
     "@context": "https://schema.org/",
     "@type": "Product", // تم التغيير من ItemList إلى Product لجذب "نجوم التقييم" في جوجل

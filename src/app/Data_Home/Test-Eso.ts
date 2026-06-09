@@ -1,98 +1,146 @@
 // data_seo/home_seo.ts
 
 export const HomeSchema = {
-  // يخبر المتصفح ومحركات البحث أن هذا الكود يتبع معايير Schema.org العالمية
   "@context": "https://schema.org",
-  
-  // الـ Graph يسمح لنا بجمع عدة أنواع من البيانات (موقع، مؤسسة، منتج) في كود واحد
-  "@graph": [
-    
-    // 1. تعريف "المؤسسة" (Organization): لربط الموقع باسمك التجاري وشعارك
-    {
-      "@type": "Organization",
-      "@id": "https://iptvforja.com/#organization", // معرف فريد للمؤسسة
-      "name": "IPTVFORJA", // اسم شركتك أو موقعك
-      "url": "https://iptvforja.com", // رابط الموقع الرسمي
-      "logo": "https://iptvforja.com/logo.png", // رابط الشعار (اللوجو) ليظهر في نتائج البحث
-      "sameAs": [
-        "https://facebook.com/iptvforja" // روابط حساباتك الاجتماعية لزيادة الموثوقية
-      ]
-    },
 
-    // 2. تعريف "الصفحة" والمحتوى الشامل (WebPage): هذا هو قلب المحتوى الذي طلبته
+  /* =========================
+     1. ORGANIZATION (الهوية)
+     ========================= */
+  "@type": "Organization",
+  "name": "Brand IPTV",
+  "url": "https://site.com",
+  "logo": "https://site.com/logo.png",
+  "sameAs": [
+    "https://facebook.com/brand",
+    "https://instagram.com/brand"
+  ],
+
+  /* =========================
+     2. WEBSITE (الموقع كامل)
+     ========================= */
+  "mainEntityOfPage": {
+    "@type": "WebSite",
+    "url": "https://site.com",
+    "name": "Brand IPTV",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://site.com/search?q={search_term}",
+      "query-input": "required name=search_term"
+    }
+  },
+
+  /* =========================
+     3. WEB PAGES (الصفحات)
+     ========================= */
+  "hasPart": [
     {
       "@type": "WebPage",
-      "@id": "https://iptvforja.com/#webpage",
-      "url": "https://iptvforja.com",
-      "name": "عنوان الصفحة الرئيسي (Title)", // العنوان الذي يظهر في التبويب وفي نتائج جوجل
-      "description": "وصف مختصر للموقع يظهر تحت الرابط في جوجل", // وصف الـ Meta Description
-      
-      // خاصية hasPart: هنا نضع "عشرات العناوين والفقرات" لتسهيل الأرشفة
-      "hasPart": [
-        {
-          "@type": "CreativeWork",
-          "headline": "عنوان القسم الأول (مثلاً: لماذا نحن الأفضل؟)", // <--- يكتب العنوان هنا (الهدف: SEO)
-          "text": "هنا يكتب المحتوى الكامل للقسم الأول. اكتب كل التفاصيل التي تريد لجوجل أرشفتها." // <--- يكتب المحتوى هنا
-        },
-        {
-          "@type": "CreativeWork",
-          "headline": "عنوان القسم الثاني (مثلاً: جودة البث لدينا)", // <--- يكتب العنوان هنا
-          "text": "هنا يكتب المحتوى الكامل للقسم الثاني. يمكنك إضافة تفاصيل تقنية عن الـ 4K والثبات." // <--- يكتب المحتوى هنا
-        },
-        {
-          "@type": "CreativeWork",
-          "headline": "عنوان القسم الثالث (مثلاً: دعم جميع الأجهزة)", // <--- يكتب العنوان هنا
-          "text": "هنا يكتب المحتوى الكامل للقسم الثالث. اشرح توافق الخدمة مع الأندرويد والشاشات." // <--- يكتب المحتوى هنا
-        }
-        // ملاحظة: يمكنك تكرار كتلة CreativeWork هذه 50 مرة إذا أردت لعشرات العناوين والفقرات
-      ]
+      "name": "Home",
+      "url": "https://site.com"
     },
-
-    // 3. تعريف "المنتج/الخدمة" (Product): لإظهار النجوم والسعر في جوجل
     {
-      "@type": "Product",
-      "name": "اشتراك IPTVFORJA", // اسم الخدمة التي تبيعها
-      "description": "وصف الخدمة التقني المختصر للعميل ومحركات البحث",
-      "brand": { "@type": "Brand", "name": "IPTVFORJA" }, // اسم العلامة التجارية
-      
-      // نظام التقييم: لإظهار النجوم (Stars) في صفحة نتائج البحث
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9", // التقييم من 5
-        "reviewCount": "1500" // عدد الأشخاص الذين قيموا الخدمة
-      },
-      
-      // العروض: لإظهار السعر والعملة في جوجل
-      "offers": {
-        "@type": "AggregateOffer",
-        "priceCurrency": "MAD", // العملة (درهم مغربي مثلاً)
-        "lowPrice": "89", // أقل سعر متاح
-        "highPrice": "350", // أعلى سعر باقة
-        "offerCount": "4" // عدد الباقات المتوفرة لديك
-      }
+      "@type": "WebPage",
+      "name": "Pricing",
+      "url": "https://site.com/pricing"
     },
-
-    // 4. الأسئلة الشائعة (FAQPage): لتوسيع مساحة موقعك في صفحة جوجل
     {
       "@type": "FAQPage",
-      "mainEntity": [
+      "url": "https://site.com/faq"
+    },
+    {
+      "@type": "WebPage",
+      "name": "Contact",
+      "url": "https://site.com/contact"
+    },
+    {
+      "@type": "WebPage",
+      "name": "Blog",
+      "url": "https://site.com/blog"
+    }
+  ],
+
+  /* =========================
+     4. SERVICE (الخدمة الأساسية)
+     ========================= */
+  "makesOffer": {
+    "@type": "Service",
+    "name": "IPTV Subscription",
+    "description": "Digital streaming subscription service",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Plans",
+      "itemListElement": [
         {
-          "@type": "Question",
-          "name": "هنا يكتب السؤال المتكرر (مثل: هل البث مستقر؟)", // <--- يكتب السؤال هنا
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "هنا يكتب الجواب المفصل للسؤال. جوجل قد يظهر هذا الجواب مباشرة في نتائج البحث." // <--- يكتب الجواب هنا
-          }
+          "@type": "Offer",
+          "name": "Basic Plan",
+          "price": "10",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
         },
         {
-          "@type": "Question",
-          "name": "هنا يكتب سؤال آخر (مثل: كيفية التفعيل؟)", // <--- يكتب السؤال هنا
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "هنا يكتب الجواب المفصل الثاني." // <--- يكتب الجواب هنا
-          }
+          "@type": "Offer",
+          "name": "Premium Plan",
+          "price": "20",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
         }
       ]
     }
-  ]
+  },
+
+  /* =========================
+     5. REVIEWS (الثقة)
+     ========================= */
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "120"
+  },
+
+  /* =========================
+     6. PERSON (صاحب المشروع)
+     ========================= */
+  "author": {
+    "@type": "Person",
+    "name": "Youssef",
+    "jobTitle": "Founder"
+  },
+
+  /* =========================
+     7. CONTENT (SEO TRAFFIC)
+     ========================= */
+  "subjectOf": {
+    "@type": "Blog",
+    "hasPart": [
+      {
+        "@type": "BlogPosting",
+        "name": "Best IPTV Guide 2026"
+      },
+      {
+        "@type": "TechArticle",
+        "name": "How IPTV Works"
+      }
+    ]
+  },
+
+  /* =========================
+     8. BREADCRUMB
+     ========================= */
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://site.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Pricing",
+        "item": "https://site.com/pricing"
+      }
+    ]
+  }
 };

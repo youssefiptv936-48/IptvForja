@@ -5,7 +5,7 @@ import P from "../HtmlTools/P";
 import ButtonRed from "../HtmlTools/ButtonRed";
 
 
-export default function Free() {
+export default function Test() {
   return (
     <div className="    flex flex-col p-3   ">
     

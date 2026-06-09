@@ -54,7 +54,7 @@ export default function FullScreenSlider() {
           animate={{ x: "0%" }}
           exit={{ x: "-100%" }}
           transition={{
-            duration: 0.7,
+            duration: 0.5,
             ease: "easeInOut",
           }}
           className="absolute inset-0 flex flex-col justify-center items-center "

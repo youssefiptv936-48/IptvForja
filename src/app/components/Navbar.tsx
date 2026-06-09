@@ -74,17 +74,17 @@ export default function Navbar() {
           </Link>
 
           <Link
-            href="/freetrial"
+            href="/Test-Iptv"
             onClick={() => setOpen(false)}
-            className={getLinkClassName("/freetrial")}
+            className={getLinkClassName("/Test-Iptv")}
           >
             تجربه مجانيه
           </Link>
 
           <Link
-            href="/Subscriptions"
+            href="/abonnement-iptv"
             onClick={() => setOpen(false)}
-            className={getLinkClassName("/Subscriptions")}
+            className={getLinkClassName("/abonnement-iptv")}
           >
             انضم الى عائلتنا
           </Link>
@@ -109,7 +109,7 @@ export default function Navbar() {
         <div className="w-70 h-20 relative flex items-center justify-end">
           {/**  <Button>
             <Link
-              href=/Subscriptions"
+              href=/abonnement-iptv"
               onClick={() => setOpen(false)}
               className="w-full text-start"
             >
@@ -147,14 +147,14 @@ export default function Navbar() {
 
           <Button_black>
             
-            <Link onClick={() => setOpen(false)} className="w-full text-start" href="/freetrial">
+            <Link onClick={() => setOpen(false)} className="w-full text-start" href="/Test-Iptv">
               تجربه مجانيه
             </Link>
           </Button_black>
 
           <Button_black>
           
-            <Link onClick={() => setOpen(false)} className="w-full text-start" href="/Subscriptions">
+            <Link onClick={() => setOpen(false)} className="w-full text-start" href="/abonnement-iptv">
               انضم الى عائلتنا
             </Link>
           </Button_black>

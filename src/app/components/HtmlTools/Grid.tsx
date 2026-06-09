@@ -59,14 +59,14 @@ export default function Grid({ src, alt, title, paragraph, titlechannel, channel
             {paragraph}
           </p>
           <Link
-            href="/Subscriptions"
+            href="/abonnement-iptv"
             className="bg-red-600 py-1.5 w-full mt-1 rounded-md border-2 border-red-600 flex justify-center gap-2"
           >
             <Crown />
             اشترك الان
           </Link>
           <Link
-            href="/freetrial"
+            href="/Test-Iptv"
             className="py-1.5 w-full mt-1 rounded-md border-2 border-red-600 flex justify-center gap-2"
           >
             <Gift />
@@ -91,7 +91,7 @@ export default function Grid({ src, alt, title, paragraph, titlechannel, channel
       </p>
     <div className="w-full px-5 h-a  ">
         <Link
-        href="/freetrial"
+        href="/Test-Iptv"
         className="py-1.5  w-full mt-1 rounded-md border-2 text-xl text-slate-200 font-bold bg-red-600 border-red-600 flex justify-center gap-2"
       >
         <Gift />

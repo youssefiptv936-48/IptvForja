@@ -1,6 +1,6 @@
 
 
-import Free from '@/app/components/freetrial/Free';
+import Free from '@/app/components/freetrial/Test';
 import Subscrib from '@/app/components/freetrial/Subscriab';
 
 export default function Freetrial() {

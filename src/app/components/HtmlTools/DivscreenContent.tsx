@@ -28,7 +28,7 @@ export default function DivscreenContent({ src, alt, title, paragraph,   }: Prop
 
 
   return (
-    <section className="relative w-full   md:h-screen  pt-5  ">
+    <section className="relative w-full  md:h-screen  pt-5  ">
       <div className="relative  h-[50vh] md:min-h-[60vh] flex ">
         <div className=" md:w-1/2 md:relative">
         <Image
@@ -57,14 +57,14 @@ export default function DivscreenContent({ src, alt, title, paragraph,   }: Prop
             {paragraph}
           </p>
           <Link
-            href="/Subscriptions"
+            href="/abonnement-iptv"
             className="bg-red-600 py-1.5 w-full mt-1 rounded-md border-2 border-red-600 flex justify-center gap-2"
           >
             <Crown />
             اشترك الان
           </Link>
           <Link
-            href="/freetrial"
+            href="/Test-Iptv"
             className="py-1.5 w-full mt-1 rounded-md border-2 border-red-600 flex justify-center gap-2"
           >
             <Gift />
