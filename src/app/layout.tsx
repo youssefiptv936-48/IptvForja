@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "أفضل اشتراك IPTV في المغرب 2026 – سيرفرات بدون تقطيع ودعم فني",
   description: "استمتع بأقوى سيرفرات IPTV في المغرب مع دعم فني مستمر وجودة 4K فائقة السرعة.",
   icons: {
-    icon: "/IptvForja.png", // 👈 هنا الفافايكون
+    icon: "/IptvForja.svg", // 👈 هنا الفافايكون
   },
   
 };
