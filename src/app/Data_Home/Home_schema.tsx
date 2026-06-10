@@ -17,7 +17,7 @@ export const Home_schema = {
   "name": "IPTV FORJA",
   // اسم الشركة أو المشروع (اسم العلامة التجارية)
 
-  "url": "https://example.com",
+  "url": "https://iptvforja.com",
   // الرابط الرسمي للموقع (الصفحة الرئيسية للشركة)
 
   "logo": "https://example.com/logo.png",
@@ -26,22 +26,30 @@ export const Home_schema = {
   "description": "IPTV subscription service providing live TV channels and VOD content",
   // وصف بسيط: ماذا تقدم الشركة (خدمة IPTV + قنوات + فيديو حسب الطلب)
 
-  "foundingDate": "2024",
+  "foundingDate": "2020",
   // سنة تأسيس المشروع (مهم لإعطاء ثقة أنه مشروع حقيقي)
 
   "areaServed": "Worldwide",
   // المناطق التي تخدمها الشركة (هنا: العالم كامل)
 
-  "contactPoint": {
-    "@type": "ContactPoint",
-    // هذا يعني: طريقة أو نقطة الاتصال مع الشركة
+ "contactPoint": {
+  "@type": "ContactPoint",
+  // تعريف هذا الجزء: نقطة اتصال رسمية بين المستخدم والشركة
 
-    "contactType": "customer support",
-    // نوع الاتصال: هنا دعم العملاء (customer support)
+  "contactType": "customer support",
+  // نوع الاتصال: هنا دعم العملاء (ليس مبيعات ولا شيء آخر)
 
-    "availableLanguage": ["en", "fr", "ar"]
-    // اللغات التي يمكن التواصل بها مع الدعم
-  }
+  "availableLanguage": ["fr", "ar"],
+  // اللغات التي يستطيع فريق الدعم التواصل بها مع المستخدم
+
+  "email": "supportiptvforja@gmail.com",
+  // البريد الإلكتروني الرسمي للدعم (يستقبل الرسائل والشكاوى والاستفسارات)
+
+  "telephone": "+212609851199"
+  // رقم الهاتف الرسمي للدعم بصيغة دولية (+212 = المغرب)
+}
+/**========================================================================================== */
+
 }
   ]
   

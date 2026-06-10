@@ -65,6 +65,8 @@ export default function FullScreenSlider() {
             title={slides[current].title}
             paragraph={slides[current].paragraph}
           />
+
+          
         </motion.div>
       </AnimatePresence>
     </div>

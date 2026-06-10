@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { usePathname } from "next/navigation"; // بديل لمعرفة الصفحة النشطة
 import Link from "next/link"; // نظام الروابط في Next.js
+import Image from "next/image";
 
 
 import Button_black from "./Button_black"; 
@@ -34,7 +35,7 @@ export default function Navbar() {
      open ? "bg-black" : ""
    }`}
  >
-   <div className=" font-black text-2xl text-red-500">IPTVFORJA</div>
+   <Image alt="" src="/IptvForja.svg" width={200} height={200}/>
 
    {/* زر فتح القائمة */}
    {!open && (
@@ -62,8 +63,7 @@ export default function Navbar() {
 
       {/***** قسم شاشات الحاسوب (Desktop - Large screens) *****/}
       <nav className="hidden lg:flex justify-around items-center bg-transparent h-20">
-        <div className="w-40 text-2xl text-red-500 font-bold"> IPTVFORJA</div>
-
+ <Image alt="" src="/IptvForja.svg" width={200} height={200}/>
         <div className="w-2xl text-amber-50 flex justify-between gap-3">
           <Link
             href="/"
