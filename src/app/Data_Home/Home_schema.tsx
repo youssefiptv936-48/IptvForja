@@ -20,7 +20,7 @@ export const Home_schema = {
   "url": "https://iptvforja.com",
   // الرابط الرسمي للموقع (الصفحة الرئيسية للشركة)
 
-  "logo": "https://example.com/logo.png",
+  "logo": "https://iptvforja.com/IptvForja.svg",
   // رابط صورة الشعار (Logo) الذي يمثل الشركة
 
   "description": "IPTV subscription service providing live TV channels and VOD content",

@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { EuroIcon } from "../heroicons/EuroIcon";
-import { CheckIcon } from "../heroicons/CheckIcon";
+import  CheckIcon from "../heroicons/CheckIcon";
 
 interface PriceProps {
   month: string;   
@@ -40,7 +40,7 @@ export default function Price({ month, link, eur, featured, planId }: PriceProps
           "دعم فني متاح 24/7"
         ].map((text, index) => (
           <li key={index} className="flex items-center gap-2">
-            <CheckIcon className={featured ? "text-yellow-500" : "text-slate-200"} />
+            <CheckIcon  />
             <span className="font-bold text-md text-zinc-100">{text}</span>
           </li>
         ))}

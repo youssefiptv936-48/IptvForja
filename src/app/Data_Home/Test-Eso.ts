@@ -1,146 +1,127 @@
-// data_seo/home_seo.ts
-
-export const HomeSchema = {
+export const Home_schema = {
   "@context": "https://schema.org",
+  "@graph": [
+    /* =========================
+       🟢 المؤسسة (المصدر الرئيسي)
+    ========================= */
+    {
+      "@type": "Organization",
+      "@id": "https://iptvforja.com/#org",
+      "name": "IPTV FORJA",
+      "url": "https://iptvforja.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://iptvforja.com/logo.png"
+      },
+      "sameAs": [
+        "https://facebook.com/brand",
+        "https://instagram.com/brand",
+        "https://youtube.com/brand"
+      ]
+    },
 
-  /* =========================
-     1. ORGANIZATION (الهوية)
-     ========================= */
-  "@type": "Organization",
-  "name": "Brand IPTV",
-  "url": "https://site.com",
-  "logo": "https://site.com/logo.png",
-  "sameAs": [
-    "https://facebook.com/brand",
-    "https://instagram.com/brand"
-  ],
+    /* =========================
+       🌐 الموقع الإلكتروني (البحث والتنقل)
+    ========================= */
+    {
+      "@type": "WebSite",
+      "@id": "https://iptvforja.com/#site",
+      "name": "IPTV FORJA",
+      "url": "https://iptvforja.com",
+      "publisher": { "@id": "https://iptvforja.com/#org" },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://iptvforja.com/search?q={search_term}",
+        "query-input": "required name=search_term"
+      }
+    },
 
-  /* =========================
-     2. WEBSITE (الموقع كامل)
-     ========================= */
-  "mainEntityOfPage": {
-    "@type": "WebSite",
-    "url": "https://site.com",
-    "name": "Brand IPTV",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://site.com/search?q={search_term}",
-      "query-input": "required name=search_term"
-    }
-  },
-
-  /* =========================
-     3. WEB PAGES (الصفحات)
-     ========================= */
-  "hasPart": [
+    /* =========================
+       📄 الصفحة الرئيسية (محور الربط)
+    ========================= */
     {
       "@type": "WebPage",
-      "name": "Home",
-      "url": "https://site.com"
+      "@id": "https://iptvforja.com/#home",
+      "name": "IPTV FORJA - أفضل خدمة اشتراك IPTV للمشاهدة بدون تقطيع",
+      "url": "https://iptvforja.com",
+      "isPartOf": { "@id": "https://iptvforja.com/#site" },
+      "about": { "@id": "https://iptvforja.com/#org" },
+      "description": "اشترك الآن في IPTV FORJA واستمتع بمشاهدة القنوات المباشرة، الأفلام، والمسلسلات بجودة عالية وبدون تقطيع.",
+      "breadcrumb": { "@id": "https://iptvforja.com/#breadcrumb" },
+      "mainEntity": { "@id": "https://iptvforja.com/#faq" }
     },
+
+    /* =========================
+       ⚙️ الخدمة الأساسية
+    ========================= */
     {
-      "@type": "WebPage",
-      "name": "Pricing",
-      "url": "https://site.com/pricing"
+      "@type": "Service",
+      "@id": "https://iptvforja.com/#service",
+      "name": "خدمة بث وتلفزيون عبر الإنترنت (IPTV)",
+      "provider": { "@id": "https://iptvforja.com/#org" },
+      "description": "خدمة اشتراك IPTV توفر قنوات تلفزيونية بث مباشر ومكتبة ضخمة من الأفلام والمسلسلات (VOD)."
     },
+
+    /* =========================
+       ❓ الأسئلة الشائعة (تعزيز SEO)
+    ========================= */
     {
       "@type": "FAQPage",
-      "url": "https://site.com/faq"
-    },
-    {
-      "@type": "WebPage",
-      "name": "Contact",
-      "url": "https://site.com/contact"
-    },
-    {
-      "@type": "WebPage",
-      "name": "Blog",
-      "url": "https://site.com/blog"
-    }
-  ],
-
-  /* =========================
-     4. SERVICE (الخدمة الأساسية)
-     ========================= */
-  "makesOffer": {
-    "@type": "Service",
-    "name": "IPTV Subscription",
-    "description": "Digital streaming subscription service",
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Plans",
-      "itemListElement": [
+      "@id": "https://iptvforja.com/#faq",
+      "isPartOf": { "@id": "https://iptvforja.com/#home" },
+      "mainEntity": [
         {
-          "@type": "Offer",
-          "name": "Basic Plan",
-          "price": "10",
-          "priceCurrency": "USD",
-          "availability": "https://schema.org/InStock"
+          "@type": "Question",
+          "name": "ما هو IPTV؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "IPTV هو تلفزيون عبر الإنترنت يوفر القنوات المباشرة والأفلام والمسلسلات."
+          }
         },
         {
-          "@type": "Offer",
-          "name": "Premium Plan",
-          "price": "20",
-          "priceCurrency": "USD",
-          "availability": "https://schema.org/InStock"
+          "@type": "Question",
+          "name": "هل الخدمة تعمل 24/7؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نعم، الخدمة تعمل بشكل مستمر طوال اليوم بدون توقف."
+          }
         }
       ]
+    },
+
+    /* =========================
+       🧭 مسار التنقل (Breadcrumb)
+    ========================= */
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://iptvforja.com/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "الرئيسية",
+          "item": "https://iptvforja.com"
+        }
+      ]
+    },
+
+    /* =========================
+       📦 المنتج التجاري (العرض والسعر)
+    ========================= */
+    {
+      "@type": "Product",
+      "@id": "https://iptvforja.com/#product",
+      "name": "اشتراك IPTV المتميز",
+      "description": "احصل على أفضل اشتراك IPTV لمشاهدة جميع القنوات العالمية والعربية بدقة عالية وثبات تام.",
+      "brand": { "@id": "https://iptvforja.com/#org" },
+      "offers": {
+        "@type": "Offer",
+        "price": "10.00",
+        "priceCurrency": "EUR",
+        "priceValidUntil": "2027-12-31",
+        "availability": "https://schema.org/InStock",
+        "url": "https://iptvforja.com"
+      }
     }
-  },
-
-  /* =========================
-     5. REVIEWS (الثقة)
-     ========================= */
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.8",
-    "reviewCount": "120"
-  },
-
-  /* =========================
-     6. PERSON (صاحب المشروع)
-     ========================= */
-  "author": {
-    "@type": "Person",
-    "name": "Youssef",
-    "jobTitle": "Founder"
-  },
-
-  /* =========================
-     7. CONTENT (SEO TRAFFIC)
-     ========================= */
-  "subjectOf": {
-    "@type": "Blog",
-    "hasPart": [
-      {
-        "@type": "BlogPosting",
-        "name": "Best IPTV Guide 2026"
-      },
-      {
-        "@type": "TechArticle",
-        "name": "How IPTV Works"
-      }
-    ]
-  },
-
-  /* =========================
-     8. BREADCRUMB
-     ========================= */
-  "breadcrumb": {
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://site.com"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Pricing",
-        "item": "https://site.com/pricing"
-      }
-    ]
-  }
+  ]
 };

@@ -35,7 +35,7 @@ export default function Navbar() {
      open ? "bg-black" : ""
    }`}
  >
-   <Image alt="" src="/IptvForja.svg" width={200} height={200}/>
+  
 
    {/* زر فتح القائمة */}
    {!open && (
@@ -63,7 +63,7 @@ export default function Navbar() {
 
       {/***** قسم شاشات الحاسوب (Desktop - Large screens) *****/}
       <nav className="hidden lg:flex justify-around items-center bg-transparent h-20">
- <Image alt="" src="/IptvForja.svg" width={200} height={200}/>
+
         <div className="w-2xl text-amber-50 flex justify-between gap-3">
           <Link
             href="/"

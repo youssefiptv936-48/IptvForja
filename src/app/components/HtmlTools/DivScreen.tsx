@@ -11,6 +11,8 @@ export default function FullScreenSlider() {
   const { sports, news, movies, kids } = homeContent;
 
   const slides = [
+
+    
     {
       alt: sports.alt,
       src: "/images/sanae.png",
