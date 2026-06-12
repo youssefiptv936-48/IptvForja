@@ -4,7 +4,7 @@ export default function Organization() {
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "@id": "https://example.com/#organization",
+    "@id": "https://iptvforja.com//#organization",
 
     name: homeContent.Name,
     url: homeContent.siteUrl,
@@ -24,12 +24,5 @@ export default function Organization() {
     ],
   } satisfies Record<string, unknown>;
 
-  return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{
-        __html: JSON.stringify(organizationSchema).replace(/</g, "\\u003c"),
-      }}
-    />
-  );
+
 }

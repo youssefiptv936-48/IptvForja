@@ -14,7 +14,6 @@ import P from "./components/HtmlTools/P";
 import DivScreen from "./components/HtmlTools/DivScreen";
 import My_List from "./components/ChannelList/My_List";
 import { homeContent } from "./Data_Home/HomeContent";
-import Organization from "./schemas/organization/organization";
 
 
  
@@ -41,7 +40,7 @@ export default function Home() {
   return (
     <main className="  relative overflow-x-auto">
       
-     <Organization/>
+    
   
       <DivScreen></DivScreen>
 
