@@ -30,14 +30,14 @@ export default function DivscreenContent({ src, alt, title, paragraph,   }: Prop
   return (
     <section className="relative w-full  md:h-screen  pt-5  ">
       <div className="relative  h-[50vh] md:min-h-[60vh] flex ">
-        <div className=" md:w-1/2 md:relative">
+        <div className="relative h-full w-full md:w-1/2">
         <Image
           src={src}
           alt={alt}
           title="اشتراك IPTV المغرب - جودة 4K"
           fill
           priority
-          quality={80}
+          quality={75}
           blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg=="
           className="object-contain object-right md:object-cover "
         />

@@ -1,11 +1,10 @@
-import { ReactNode } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 import Crown from "../heroicons/Crown";
 import Gift from "../heroicons/Gift";
 import MarqueeChannel from "./MarqueeChannel";
-import { homeContent } from "@/app/Data_Home/HomeContent";
+
 interface MarqueeItem {
   title: string;
 }
@@ -17,36 +16,37 @@ interface Props {
   titlechannel: string;
   paragraph: string;
   parachannel: string;
-  channelsports: MarqueeItem[]; // ✅ هذا هو التصحيح
+  channelsports: MarqueeItem[];
 }
 
-// 1. استيراد المكون الخاص بشعار BeinSport (تأكد من صحة مساره في مجلدك)
-
-
-export default function Grid({ src, alt, title, paragraph, titlechannel, channelsports, parachannel }: Props) {
-
-  const { sports } = homeContent;
-
-
-
+export default function Grid({
+  src,
+  alt,
+  title,
+  paragraph,
+  titlechannel,
+  channelsports,
+  parachannel,
+}: Props) {
   return (
-    <section className="relative w-full min-h-[80vh] md:h-screen  pt-5   ">
-      <div className="relative  h-[50vh] md:min-h-[60vh] flex ">
-        <div className=" md:w-1/2 md:relative">
-        <Image
-          src={src}
-          alt={alt}
-          title="اشتراك IPTV المغرب - جودة 4K"
-          fill
-          priority
-          quality={80}
-          blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg=="
-          className="object-contain object-right md:object-cover "
-        />
+    <section className="relative w-full min-h-[80vh] md:h-screen pt-5">
+      <div className="relative h-[50vh] md:min-h-[60vh] flex">
+        <div className="relative h-full w-full md:w-1/2">
+          <Image
+            src={src}
+            alt={alt}
+            title="اشتراك IPTV المغرب - جودة 4K"
+            fill
+            priority
+            quality={75}
+            sizes="(max-width: 768px) 100vw, 50vw"
+            placeholder="blur"
+            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg=="
+            className="object-contain object-right md:object-cover"
+          />
         </div>
-        
 
-        <div className="absolute left-0 w-[60%] text-amber-50 h-full p-3 flex flex-col justify-center items-center sm:w-1/2 ">
+        <div className="absolute left-0 w-[60%] text-amber-50 h-full p-3 flex flex-col justify-center items-center sm:w-1/2">
           <h2 className="text-3xl font-bold">
             <span>{title[0]}</span>
             <br />
@@ -58,6 +58,7 @@ export default function Grid({ src, alt, title, paragraph, titlechannel, channel
           <p className="m-1 pr-4 text-[14px] text-slate-200 leading-tight font-light">
             {paragraph}
           </p>
+
           <Link
             href="/abonnement-iptv"
             className="bg-red-600 py-1.5 w-full mt-1 rounded-md border-2 border-red-600 flex justify-center gap-2"
@@ -65,6 +66,7 @@ export default function Grid({ src, alt, title, paragraph, titlechannel, channel
             <Crown />
             اشترك الان
           </Link>
+
           <Link
             href="/Test-Iptv"
             className="py-1.5 w-full mt-1 rounded-md border-2 border-red-600 flex justify-center gap-2"
@@ -79,25 +81,19 @@ export default function Grid({ src, alt, title, paragraph, titlechannel, channel
         {titlechannel}
       </h2>
 
-
-
-
       <MarqueeChannel channels={channelsports} />
 
+      <p className="text-slate-200 text-center p-2">{parachannel}</p>
 
-      <p className="text-slate-200 text-center p-2">
-        {parachannel}
-
-      </p>
-    <div className="w-full px-5 h-a  ">
+      <div className="w-full px-5 h-auto">
         <Link
-        href="/Test-Iptv"
-        className="py-1.5  w-full mt-1 rounded-md border-2 text-xl text-slate-200 font-bold bg-red-600 border-red-600 flex justify-center gap-2"
-      >
-        <Gift />
-        شاهد مجانا
-      </Link>
-    </div>
+          href="/Test-Iptv"
+          className="py-1.5 w-full mt-1 rounded-md border-2 text-xl text-slate-200 font-bold bg-red-600 border-red-600 flex justify-center gap-2"
+        >
+          <Gift />
+          شاهد مجانا
+        </Link>
+      </div>
     </section>
   );
 }

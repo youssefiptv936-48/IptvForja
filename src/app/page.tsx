@@ -1,43 +1,23 @@
+
+
+
 // ضروري لاستخدام useAccordion
 // Stop-Process -Id (Get-NetTCPConnection -LocalPort 3000).OwningProcess -Force
 import Grid from "./components/HtmlTools/Grid";
 // حل مشكلة المسار: تأكد أن الملف موجود في مجلد app باسم globals.css أو قم بتسميته Style.css في نفس المجلد
-import { Metadata } from "next";
 import { HomeMeta } from "./Data_Home/Home_seo";
 import { HomeSchema } from "./Data_Home/Home_seo";
-import IptvForja_P from "./components/HtmlTools/IptvForja_P";
-
-
-
 
 import Accordion from "./components/Accordion";
-
-import Menu_left from "./components/MenuLeft/MenuLeft";
-import Section from "./components/MenuLeft/Section";
-import Menu_right from "./components/Menu_right";
-
-
-import ArticleCard from "./components/ArticleCard";
-
 import H2 from "./components/HtmlTools/H2";
-
-
 import P from "./components/HtmlTools/P";
 import DivScreen from "./components/HtmlTools/DivScreen";
-
-import IptvForja from "./components/HtmlTools/IptvForja";
-import ButtonRed from "./components/HtmlTools/ButtonRed";
-
-import { TvIcon } from "./components/heroicons/TvIcon";
-import Bolt from "./components/heroicons/Bolt";
-import Signal from "./components/heroicons/Signal";
-import SupportIcon from "./components/heroicons/SupportIcon";
-
 import My_List from "./components/ChannelList/My_List";
-import H2Gray from "./components/HtmlTools/H2Gray";
-import PGray from "./components/HtmlTools/PGray";
-import Rocket from "./components/heroicons/RocketNext";
 import { homeContent } from "./Data_Home/HomeContent";
+import Organization from "./schemas/organization/organization";
+
+
+ 
 
 {
   /** */
@@ -49,19 +29,7 @@ interface FAQEntity {
   };
 }
 
-// 1. إعداد الميتا داتا
-export const metadata: Metadata = {
-  title: HomeMeta.title,
-  description: HomeMeta.description,
-  keywords: HomeMeta.keywords,
-  openGraph: {
-    title: HomeMeta.title,
-    description: HomeMeta.description,
-    url: HomeMeta.url,
-    images: [{ url: HomeMeta.image }],
-    type: "website",
-  },
-};
+
 
 export default function Home() {
   const { sports } = homeContent;
@@ -72,10 +40,9 @@ export default function Home() {
     .mainEntity;
   return (
     <main className="  relative overflow-x-auto">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(HomeSchema) }}
-      />
+      
+     <Organization/>
+  
       <DivScreen></DivScreen>
 
       <My_List />

@@ -1,4 +1,8 @@
 export const homeContent = {
+  Name:"IPTVFORJA",
+  siteUrl:"https://iptvforja.com/",
+   logoUrl: "https://iptvforja.com/IptvForja.svg",
+  email: "supportiptvforja@gmail.com",
   sportsa: {
     title: "استمتع بالبث المباشر الأكثر ثباتاً في المغرب بدون تقطيع!",
 

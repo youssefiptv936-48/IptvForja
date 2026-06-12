@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Gift() {
   return (
     <svg
@@ -9,9 +7,9 @@ export default function Gift() {
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       className="lucide lucide-gift-icon lucide-gift"
     >
       <path d="M12 7v14" />
