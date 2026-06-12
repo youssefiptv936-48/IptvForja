@@ -10,7 +10,7 @@ export const HomeMeta = {
   image: "https://your-site.com/share-image.jpg", // <--- هنا ضع رابط صورة لمشاركتها في واتساب
 };
 
-export const HomeSchema = {  
+export const HomeSchematest = {  
   "@context": "https://schema.org",
   "@graph": [
     {

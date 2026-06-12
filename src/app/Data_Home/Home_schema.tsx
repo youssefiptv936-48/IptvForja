@@ -9,7 +9,7 @@ export const homeSchema = {
   ],
 };
 
-export default function HomeSchemaScript() {
+export default function HomeSchema() {
   return (
     <script
       type="application/ld+json"

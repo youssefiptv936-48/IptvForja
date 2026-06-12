@@ -6,8 +6,7 @@
 import Grid from "./components/HtmlTools/Grid";
 // حل مشكلة المسار: تأكد أن الملف موجود في مجلد app باسم globals.css أو قم بتسميته Style.css في نفس المجلد
 import { HomeMeta } from "./Data_Home/Home_seo";
-import { HomeSchema } from "./Data_Home/Home_seo";
-
+import HomeSchema from "./Data_Home/Home_schema";
 import Accordion from "./components/Accordion";
 import H2 from "./components/HtmlTools/H2";
 import P from "./components/HtmlTools/P";
@@ -35,12 +34,11 @@ export default function Home() {
   const { news } = homeContent;
   const { movies } = homeContent;
   const { kids } = homeContent;
-  const faqData = (HomeSchema["@graph"][1] as { mainEntity: FAQEntity[] })
-    .mainEntity;
+ 
   return (
     <main className="  relative overflow-x-auto">
       
-    
+    <HomeSchema/>
   
       <DivScreen></DivScreen>
 
