@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-, "src/app/schemas/organization/organization.ts"  ],
+, "src/app/schemas/organization/Organization.ts"  ],
   "exclude": ["node_modules"]
 }

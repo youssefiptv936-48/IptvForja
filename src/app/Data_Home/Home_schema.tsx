@@ -1,4 +1,4 @@
-import { Organization } from "../schemas/organization/organization";
+import { Organization } from "../schemas/organization/Organization";
 
 export const homeSchema = {
   "@context": "https://schema.org",

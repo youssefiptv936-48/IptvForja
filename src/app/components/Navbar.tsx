@@ -107,16 +107,7 @@ export default function Navbar() {
         </div>
 
         <div className="w-70 h-20 relative flex items-center justify-end">
-          {/**  <Button>
-            <Link
-              href=/abonnement-iptv"
-              onClick={() => setOpen(false)}
-              className="w-full text-start"
-            >
-              ابدا الان
-            </Link>
-          </Button>**/}
-
+          
           <a
             className="text-start"
             href="https://chatgpt.com/c/68d6c11f-6964-8330-80c8-f58954f52989"

@@ -1,6 +1,13 @@
 export const homeContent = {
   Name:"IPTVFORJA",
-  siteUrl:"https://iptvforja.com/",
+  alternateName: [
+  "IPTVFORJA",
+  "IPTV Forja",
+  "IPTV Forja Maroc",
+  "IPTVFORJA Maroc",
+  "IPTV Forja TV",
+],
+  siteUrl:"https://iptvforja.com",
    logoUrl: "https://iptvforja.com/IptvForja.svg",
   email: "supportiptvforja@gmail.com",
   sportsa: {
