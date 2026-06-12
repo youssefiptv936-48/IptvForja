@@ -1,7 +1,6 @@
 import { homeContent } from "@/app/Data_Home/HomeContent";
 
-export default function Organization() {
-  const organizationSchema = {
+export const Organization = {
     "@context": "https://schema.org",
     "@type": "Organization",
     "@id": "https://iptvforja.com//#organization",
@@ -25,4 +24,3 @@ export default function Organization() {
   } satisfies Record<string, unknown>;
 
 
-}

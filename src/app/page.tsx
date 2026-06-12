@@ -5,7 +5,7 @@
 // Stop-Process -Id (Get-NetTCPConnection -LocalPort 3000).OwningProcess -Force
 import Grid from "./components/HtmlTools/Grid";
 // حل مشكلة المسار: تأكد أن الملف موجود في مجلد app باسم globals.css أو قم بتسميته Style.css في نفس المجلد
-import { HomeMeta } from "./Data_Home/Home_seo";
+
 import HomeSchema from "./Data_Home/Home_schema";
 import Accordion from "./components/Accordion";
 import H2 from "./components/HtmlTools/H2";
@@ -17,15 +17,7 @@ import { homeContent } from "./Data_Home/HomeContent";
 
  
 
-{
-  /** */
-}
-interface FAQEntity {
-  name: string;
-  acceptedAnswer: {
-    text: string;
-  };
-}
+
 
 
 
