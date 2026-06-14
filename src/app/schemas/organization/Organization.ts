@@ -1,4 +1,4 @@
-export const OrganizationSchema ={
+export const Organization ={
   "@context":"https://schema.org",
   "@type":"organization",
   "@id":"https://iptvforja.com/#organization",
