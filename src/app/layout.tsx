@@ -9,14 +9,14 @@ export const metadata: Metadata = {
   description: "استمتع بأقوى سيرفرات IPTV في المغرب مع دعم فني مستمر وجودة 4K فائقة السرعة.",
  icons: {
   icon: [
-    { url: "/favicon/iptvforja.png", sizes: "any" },
-    { url: "/favicon/iptvforja-48x48.png", sizes: "48x48", type: "image/png" },
-    { url: "/favicon/iptvforja-96x96.png", sizes: "96x96", type: "image/png" },
-    { url: "/favicon/iptvforja-192x192.png", sizes: "192x192", type: "image/png" },
-    { url: "/favicon/iptvforja-512x512.png", sizes: "512x512", type: "image/png" },
+    { url: "/iptvforja/iptvforja.png", sizes: "any" },
+    { url: "/iptvforja/iptvforja-48x48.png", sizes: "48x48", type: "image/png" },
+    { url: "/iptvforja/iptvforja-96x96.png", sizes: "96x96", type: "image/png" },
+    { url: "/iptvforja/iptvforja-192x192.png", sizes: "192x192", type: "image/png" },
+    { url: "/iptvforja/iptvforja-512x512.png", sizes: "512x512", type: "image/png" },
   ],
   apple: [
-    { url: "/favicon/iptvforja-180x180.png", sizes: "180x180", type: "image/png" },
+    { url: "/iptvforja/iptvforja-180x180.png", sizes: "180x180", type: "image/png" },
   ],
 },
   
