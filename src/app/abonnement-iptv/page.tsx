@@ -1,52 +1,35 @@
-import React from 'react'
-//import My_List from '../components/ChannelList/My_List'
-import SectionPrice from '@/app/components/price/SectionPrice'
-import Head from 'next/head' // استيراد Head للتحكم في الميتا تاق
+import type { Metadata } from 'next';
 
-export default function page() {
-  const schemaData = {
-    "@context": "https://schema.org/",
-    "@type": "Product", // تم التغيير من ItemList إلى Product لجذب "نجوم التقييم" في جوجل
-    "name": "باقات اشتراك IPTV المتميزة",
-    "description": "أفضل اشتراكات IPTV بدون تقطيع، تضم جميع القنوات العربية والعالمية بجودة عالية.",
-    "brand": {
-      "@type": "Brand",
-      "name": "IPTV Service"
-    },
-    "offers": {
-      "@type": "AggregateOffer",
-      "priceCurrency": "USD",
-      "lowPrice": "10",
-      "highPrice": "100",
-      "offerCount": "3"
-    }
-  };
+import SectionPrice from '@/app/components/price/SectionPrice';
 
+export const metadata: Metadata = {
+  title: 'باقات اشتراك IPTV في المغرب | أسعار IPTV Forja',
+
+  description:
+    'اكتشف باقات اشتراك IPTV Forja في المغرب بأسعار مناسبة، اشتراكات شهرية وسنوية، قنوات رياضية، أفلام ومسلسلات، جودة عالية وبث مستقر بدون تقطيع.',
+
+  keywords: [
+    'باقات IPTV',
+    'اشتراك IPTV المغرب',
+    'أسعار IPTV المغرب',
+    'اشتراك IPTV Forja',
+    'Forja IPTV',
+    'IPTV Forja',
+    'اشتراك IPTV شهري',
+    'اشتراك IPTV سنوي',
+    'IPTV بدون تقطيع',
+    'أفضل اشتراك IPTV في المغرب',
+    'abonnement IPTV Maroc',
+    'prix IPTV Maroc',
+  ],
+};
+
+export default function Page() {
   return (
-    <>
-      <Head>
-        {/* حل مشكلة الـ SEO 91 -> 100 */}
-        <title>باقات اشتراك IPTV | أسعار تنافسية واشتراكات متنوعة</title>
-        <meta name="description" content="استكشف باقات اشتراك IPTV المتنوعة، اشتراكات شهرية وسنوية بأفضل الأسعار وبدون تقطيع." />
-        <link rel="canonical" href="https://yourdomain.com/Subscriptions" />
-      </Head>
-
-      <main>
-        {/* كود السكيما */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
-        />
-        
-        {/* تحسين رندرة المكونات الثقيلة */}
-        <section style={{ contentVisibility: 'auto' }}>
-           <SectionPrice/>
-        </section>
-
-        <section style={{ contentVisibility: 'auto' }}>
-           
-        </section>
-      </main>
-    </>
-  )
+    <main>
+      <section style={{ contentVisibility: 'auto' }}>
+        <SectionPrice />
+      </section>
+    </main>
+  );
 }
