@@ -20,8 +20,8 @@ export const Organization ={
   "logo": {
   "@type": "ImageObject",
   "@id": "https://iptvforja.com/#logo",
-  "url": "https://iptvforja.com/iptvforja.svg",
-  "contentUrl": "https://iptvforja.com/iptvforja.svg",
+  "url": "https://iptvforja.com/iptvforja.png",
+  "contentUrl": "https://iptvforja.com/iptvforja.png",
   "caption": "IPTVFORJA Logo"
 },
 "image": {
