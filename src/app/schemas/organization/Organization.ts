@@ -1,6 +1,6 @@
 import { homeContent } from "@/app/Data_Home/HomeContent";
 
-export const OrganizationSchema = {
+export const Organization = {
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -22,7 +22,7 @@ export const OrganizationSchema = {
         "url": "https://iptvforja.com/abonnement-iptv.webp"
       },
       "slogan": homeContent.slogan,
-      "description": `${homeContent.Name} هو متجر رقمي متخصص في بيع اشتراكات IPTV وخدمات رقمية عبر الإنترنت، مع دعم فني لمساعدة العملاء في التفعيل، الإعداد، وتجربة الخدمة على مختلف الأجهزة المتوافقة.`,
+      "description": homeContent.description,
       "email": homeContent.email,
       "telephone": homeContent.telephone,
       "foundingDate": "2020",
@@ -67,7 +67,7 @@ export const OrganizationSchema = {
       "@id": "https://iptvforja.com/#website",
       "url": "https://iptvforja.com/",
       "name": homeContent.Name,
-      "description": "متجر رقمي لبيع اشتراكات IPTV وخدمات رقمية عبر الإنترنت.",
+      "description": homeContent.description,
       "inLanguage": "ar",
       "publisher": {
         "@id": "https://iptvforja.com/#organization"
