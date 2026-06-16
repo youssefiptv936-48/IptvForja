@@ -1,20 +1,23 @@
 export const homeContent = {
-  Name:"IPTVFORJA",
+  Name: "IPTVFORJA",
   alternateName: [
-  "IPTVFORJA",
-  "IPTV Forja",
-  "IPTV Forja Maroc",
-  "IPTVFORJA Maroc",
-  "IPTV Forja TV",
-],
-  siteUrl:"https://iptvforja.com",
-   logoUrl: "https://iptvforja.com/IptvForja.svg",
+    "IPTVFORJA",
+    "IPTV Forja",
+    "IPTV Forja Maroc",
+    "IPTVFORJA Maroc",
+    "IPTV Forja TV",
+  ],
+  siteUrl: "https://iptvforja.com",
+  logoUrl: "https://iptvforja.com/IptvForja.svg",
   email: "supportiptvforja@gmail.com",
+   telephone: "+212609851199",
+  description: "استمتع بأقوى تجربة مشاهدة رياضية مع بث مباشر ثابت وبدون تقطيع، وادخل أجواء المباريات وكأنك داخل الملعب. تابع جميع البطولات العالمية والقنوات الرياضية المشفرة بجودة عالية وسرعة فائقة.",
+     slogan: "IPTV FORJA — اشتراك IPTV بجودة عالية وبدون تقطيع",
+  disambiguatingDescription: "IPTVFORJA خدمة IPTV رقمية موجهة للمستخدمين في المغرب باللغتين العربية والفرنسية.",
+
   sportsa: {
     title: "استمتع بالبث المباشر الأكثر ثباتاً في المغرب بدون تقطيع!",
 
-    Header_description:
-      "استمتع بأقوى تجربة مشاهدة رياضية مع بث مباشر ثابت وبدون تقطيع، وادخل أجواء المباريات وكأنك داخل الملعب. تابع جميع البطولات العالمية والقنوات الرياضية المشفرة بجودة عالية وسرعة فائقة.",
 
     ul: [
       "بث مباشر بدون تقطيع سيرفرات قوية تعمل بثبات حتى أثناء المباريات الكبرى.",
