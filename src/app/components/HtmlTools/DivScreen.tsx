@@ -8,10 +8,16 @@ import { homeContent } from "@/app/Data_Home/HomeContent";
 export default function FullScreenSlider() {
   const [current, setCurrent] = useState(0);
 
-  const { sports, news, movies, kids } = homeContent;
+  const {content, sports, news, movies, kids } = homeContent;
 
   const slides = [
-
+      
+     {
+      alt: content.alt,
+      src: "/abonnement-iptv.webp",
+      title: content.title,
+      paragraph: content.paragraph,
+    },
     
     {
       alt: sports.alt,

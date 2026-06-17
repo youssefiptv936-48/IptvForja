@@ -39,7 +39,7 @@ export default function DivscreenContent({ src, alt, title, paragraph,   }: Prop
           priority
           quality={75}
           blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg=="
-          className="object-contain object-right md:object-cover "
+          className="object-contain object-right  "
         />
         </div>
         
