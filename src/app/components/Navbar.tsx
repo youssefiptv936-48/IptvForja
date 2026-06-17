@@ -56,7 +56,7 @@ export default function Navbar() {
           </button>
         )}
 
-        <div className="relative h-16  w-36 shrink-0">
+        <div className="relative h-18 w-36 shrink-0">
           <Link href="/"
             aria-label="العودة إلى الصفحة الرئيسية">
 
@@ -121,7 +121,7 @@ export default function Navbar() {
         </div>
 
 
-       <div className="relative h-16  w-36 shrink-0">
+       <div className="relative h-18  w-36 shrink-0">
           <Link href="/"
             aria-label="العودة إلى الصفحة الرئيسية">
 
