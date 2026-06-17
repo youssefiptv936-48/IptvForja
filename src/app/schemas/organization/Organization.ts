@@ -21,8 +21,8 @@ export const Organization = {
         "@id": "https://iptvforja.com/#primaryimage",
         "url": "https://iptvforja.com/abonnement-iptv.webp"
       },
-      "slogan": homeContent.slogan,
-      "description": homeContent.description,
+      "slogan": homeContent.contentSpecial.slogan,
+      "description": homeContent.contentSpecial.description,
       "email": homeContent.email,
       "telephone": homeContent.telephone,
       "foundingDate": "2020",
@@ -67,7 +67,7 @@ export const Organization = {
       "@id": "https://iptvforja.com/#website",
       "url": "https://iptvforja.com/",
       "name": homeContent.Name,
-      "description": homeContent.description,
+      "description": homeContent.contentSpecial.description,
       "inLanguage": "ar",
       "publisher": {
         "@id": "https://iptvforja.com/#organization"
