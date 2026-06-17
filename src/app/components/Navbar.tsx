@@ -51,7 +51,7 @@ export default function Navbar() {
           <button
             onClick={toggleMenu}
             className="block"
-            aria-label="أغلق القائمة" // هذا ما يطلبه Lighthouse
+            aria-label="أغلق القائمة" 
           >
             <CloseIcon />
           </button>
