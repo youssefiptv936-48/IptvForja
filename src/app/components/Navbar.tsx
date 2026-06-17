@@ -27,8 +27,7 @@ export default function Navbar() {
   };
 
   return (
-    <header>
-      {/***** قسم الهاتف (Responsive) Start *****/}
+    <header className="fixed inset-x-0 top-0 z-50 bg-black">      {/***** قسم الهاتف (Responsive) Start *****/}
       <nav
         className={`h-20 pr-10 pl-10 flex items-center justify-between px-2 text-slate-200  lg:hidden ${open ? "bg-black" : ""
           }`}
@@ -51,14 +50,25 @@ export default function Navbar() {
           <button
             onClick={toggleMenu}
             className="block"
-            aria-label="أغلق القائمة" 
+            aria-label="أغلق القائمة"
           >
             <CloseIcon />
           </button>
         )}
 
-         <div >
-          <Image alt="" src="/iptvforja.webp" width={150} height={100}/>
+        <div className="relative h-16  w-36 shrink-0">
+          <Link href="/"
+            aria-label="العودة إلى الصفحة الرئيسية">
+
+            <Image
+              src="/iptvforja.webp"
+              alt="شعار IPTV Forja"
+              fill
+              priority
+              className="object-cover"
+            /></Link>
+
+
         </div>
       </nav>
       {/***** قسم الهاتف (Responsive) End *****/}
@@ -110,8 +120,20 @@ export default function Navbar() {
 
         </div>
 
-        <div >
-          <Image alt="" src="/iptvforja.webp" width={150} height={100}/>
+
+       <div className="relative h-16  w-36 shrink-0">
+          <Link href="/"
+            aria-label="العودة إلى الصفحة الرئيسية">
+
+            <Image
+              src="/iptvforja.webp"
+              alt="شعار IPTV Forja"
+              fill
+              priority
+              className="object-cover"
+            /></Link>
+
+
         </div>
       </nav>
 

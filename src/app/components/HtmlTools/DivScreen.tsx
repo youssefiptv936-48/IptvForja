@@ -48,7 +48,7 @@ export default function FullScreenSlider() {
   }, [slides.length]);
 
   return (
-    <div className="relative h-[60vh] md:h-screen ">
+    <div className="relative h-[60vh] md:h-screen  ">
       <AnimatePresence initial={false} mode="wait">
         <motion.div
           key={current}
