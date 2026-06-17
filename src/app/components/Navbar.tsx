@@ -6,59 +6,61 @@ import Link from "next/link"; // نظام الروابط في Next.js
 import Image from "next/image";
 
 
-import Button_black from "./Button_black"; 
- 
+import Button_black from "./Button_black";
+
 
 import { MenuIcon } from "./heroicons/MenuIcon";
 import { CloseIcon } from "./heroicons/CloseIcon";
 
 export default function Navbar() {
   const pathname = usePathname(); // الحصول على المسار الحالي
-  const [open, setOpen] = useState(false); 
-  const toggleMenu = () => setOpen(!open); 
+  const [open, setOpen] = useState(false);
+  const toggleMenu = () => setOpen(!open);
 
- 
+
 
   // دالة مساعدة لتحديد التنسيق إذا كان الرابط نشطاً (بديل NavLink)
   const getLinkClassName = (href: string) => {
     const isActive = pathname === href;
-    return `text-start inline-block ${
-      isActive ? "text-[#ff0031] font-black" : "text-amber-50"
-    }`;
+    return `text-start inline-block ${isActive ? "text-[#ff0031] font-black" : "text-amber-50"
+      }`;
   };
 
   return (
-    <div>
-     {/***** قسم الهاتف (Responsive) Start *****/}
- <nav
-   className={`h-20 pr-10 pl-10 flex items-center justify-between px-2 text-slate-200  lg:hidden ${
-     open ? "bg-black" : ""
-   }`}
- >
-  
+    <header>
+      {/***** قسم الهاتف (Responsive) Start *****/}
+      <nav
+        className={`h-20 pr-10 pl-10 flex items-center justify-between px-2 text-slate-200  lg:hidden ${open ? "bg-black" : ""
+          }`}
+      >
 
-   {/* زر فتح القائمة */}
-   {!open && (
-     <button 
-       onClick={toggleMenu} 
-       className="block"
-       aria-label="افتح القائمة الرئيسية" // هذا ما يطلبه Lighthouse
-     >
-       <MenuIcon />
-     </button>
-   )}
 
-   {/* زر إغلاق القائمة */}
-   {open && (
-     <button 
-       onClick={toggleMenu} 
-       className="block"
-       aria-label="أغلق القائمة" // هذا ما يطلبه Lighthouse
-     >
-       <CloseIcon/>
-     </button>
-   )}
- </nav>
+        {/* زر فتح القائمة */}
+        {!open && (
+          <button
+            onClick={toggleMenu}
+            className="block"
+            aria-label="افتح القائمة الرئيسية" // هذا ما يطلبه Lighthouse
+          >
+            <MenuIcon />
+          </button>
+        )}
+
+        {/* زر إغلاق القائمة */}
+        {open && (
+          <button
+            onClick={toggleMenu}
+            className="block"
+            aria-label="أغلق القائمة" // هذا ما يطلبه Lighthouse
+          >
+            <CloseIcon />
+          </button>
+        )}
+
+         <div >
+          <Image alt="" src="/iptvforja.webp" width={150} height={100}/>
+        </div>
+      </nav>
       {/***** قسم الهاتف (Responsive) End *****/}
 
       {/***** قسم شاشات الحاسوب (Desktop - Large screens) *****/}
@@ -94,7 +96,7 @@ export default function Navbar() {
             onClick={() => setOpen(false)}
             className={getLinkClassName("/Channel")}
           >
-          قنوات
+            قنوات
           </Link>
 
           <Link
@@ -104,71 +106,61 @@ export default function Navbar() {
           >
             مركز المساعده
           </Link>
+
+
         </div>
 
-        <div className="w-70 h-20 relative flex items-center justify-end">
-          
-          <a
-            className="text-start"
-            href="https://chatgpt.com/c/68d6c11f-6964-8330-80c8-f58954f52989"
-          >
-            
-          </a>
-          <a
-            className="text-start"
-            href="https://chatgpt.com/c/68d6c11f-6964-8330-80c8-f58954f52989"
-          >
-          </a>
+        <div >
+          <Image alt="" src="/iptvforja.webp" width={150} height={100}/>
         </div>
       </nav>
 
       {/***** قائمة الهاتف (تظهر عند الضغط على زر toggle) *****/}
       <div
-        className={`bg-black text-amber-50 h-screen overflow-hidden border-t border-rose-600/50 p-2 ${
-          open ? "block" : "hidden"
-        }`}
+        className={`bg-black text-amber-50 h-screen overflow-hidden border-t border-rose-600/50 p-2 ${open ? "block" : "hidden"
+          }`}
       >
         <div >
           <Button_black>
-            
+
             <Link onClick={() => setOpen(false)} className="w-full text-start" href="/">
               الرئيسية
             </Link>
           </Button_black>
 
           <Button_black>
-            
+
             <Link onClick={() => setOpen(false)} className="w-full text-start" href="/Test-Iptv">
               تجربه مجانيه
             </Link>
           </Button_black>
 
           <Button_black>
-          
+
             <Link onClick={() => setOpen(false)} className="w-full text-start" href="/abonnement-iptv">
               انضم الى عائلتنا
             </Link>
           </Button_black>
 
           <Button_black>
-          
+
             <Link onClick={() => setOpen(false)} className="w-full text-start" href="/HelpCenter">
               مركز المساعده
             </Link>
           </Button_black>
 
           <Button_black>
-         
+
             <a
               className="w-full text-start"
-             href="https://wa.me/212609851199?text=اريد+ طلب+ مساعده+ تقنيه." 
+              href="https://wa.me/212609851199?text=اريد+ طلب+ مساعده+ تقنيه."
             >
               WhatsApp
             </a>
           </Button_black>
 
           <Button_black>
-           
+
             <a
               className="w-full text-start"
               href="https://chatgpt.com/c/68d6c11f-6964-8330-80c8-f58954f52989"
@@ -178,9 +170,9 @@ export default function Navbar() {
           </Button_black>
         </div>
       </div>
-    </div>
+    </header>
   );
 
 
-  
+
 }
