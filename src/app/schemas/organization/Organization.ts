@@ -52,7 +52,6 @@ export const Organization = {
           "email": homeContent.email,
           "contactType": "sales",
           "areaServed": "MA",
-          "availableLanguage": ["ar", "fr"]
         }
       ],
       "sameAs":homeContent.sameAs
