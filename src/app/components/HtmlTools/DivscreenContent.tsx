@@ -53,7 +53,7 @@ export default function DivscreenContent({ src, alt, title, paragraph,   }: Prop
             <span className="text-red-600">{title[2]}</span>
           </h2>
 
-          <p className="m-1 pr-4 text-[14px] text-slate-200 leading-tight font-light">
+          <p className="m-1 pr-4 text-[16px] text-slate-200 leading-tight font-bold">
             {paragraph}
           </p>
           <Link
