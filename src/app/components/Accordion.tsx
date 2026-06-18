@@ -22,7 +22,7 @@ export default function Accordion({
   return (
     <div
       itemScope
-      itemType="https://schema.org/Question"
+    
       className={`mx-5 mt-1 rounded-xl overflow-hidden transition-all duration-300 ${
         isOpen ? "bg-[#1F2022]" : ""
       }`}

@@ -13,8 +13,8 @@ export default function ArticleCard({ title, description, children, ButtonUrl }:
   return (
     <article
       className="  md:max-w-70 h-[28em] md:mt-15 border-2 p-0.5 border-solid border-[#ff0000] rounded-xl flex flex-col items-center overflow-hidden"
-      itemScope
-      itemType="https://schema.org/Article"
+      
+    
     >
       {/* القسم العلوي (الأيقونة) - أخذ 40% من الارتفاع */}
       <div className="h-[40%] relative flex justify-center items-center py-4">
