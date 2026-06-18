@@ -11,36 +11,13 @@ export const homeContent = {
   logoUrl: "https://iptvforja.com/IptvForja.svg",
   email: "supportiptvforja@gmail.com",
    telephone: "+212609851199",
-  disambiguatingDescription: "IPTVFORJA خدمة IPTV رقمية موجهة للمستخدمين في المغرب باللغتين العربية والفرنسية.",
+   "sameAs": [
+        "https://www.facebook.com/yourpage",
+        "https://www.instagram.com/yourpage",
+        "https://www.tiktok.com/@yourpage",
+        "https://www.youtube.com/@yourchannel"
+      ],
 
-  sportsa: {
-    title: "استمتع بالبث المباشر الأكثر ثباتاً في المغرب بدون تقطيع!",
-
-
-    ul: [
-      "بث مباشر بدون تقطيع سيرفرات قوية تعمل بثبات حتى أثناء المباريات الكبرى.",
-      "جودة Ultra HD و 4K صورة واضحة وتفاصيل دقيقة تمنحك متعة مشاهدة حقيقية.",
-      "بدون تأخير (No Delay) شاهد الأهداف واللقطات الحاسمة في نفس اللحظة.",
-      "جميع القنوات الرياضية beIN Sports و SSC والقنوات العالمية والعربية في مكان واحد.",
-      "تقنية Anti-Freeze استقرار عالي يضمن مشاهدة سلسة طوال المباراة.",
-      "دعم كامل للأجهزة يعمل على Smart TV و Android و iPhone و Fire Stick وجميع التطبيقات.",
-    ],
-
-    footer_description:
-      "لا تفوت أقوى المباريات والبطولات العالمية بعد اليوم. استمتع بتجربة IPTV احترافية تجمع بين السرعة والثبات وجودة الصورة، مع تحديثات مستمرة ودعم متواصل لتبقى دائماً في قلب الحدث.",
-
-    sports_keywords: [
-      "بث مباشر",
-      "beIN Sports",
-      "SSC Sports",
-      "جودة 4K",
-      "No Delay",
-      "Anti Freeze",
-      "IPTV رياضي",
-      "قنوات رياضية",
-      "بث بدون تقطيع",
-    ],
-  },
   contentSpecial:{
       
     title: ["افضل اشتراك IPTV", "IPTV  جودة عالية", "بدون تقطيع"],

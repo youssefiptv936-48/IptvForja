@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
+
 // هذا الجزء هو الذي سيصلح الـ SEO فوراً
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.iptvforja.com"),
@@ -36,6 +37,7 @@ export default function RootLayout({
     <html lang="ar" dir="rtl">
       {/* ستقوم Next.js بحقن الـ Title والـ Description تلقائياً هنا من كائن metadata */}
       <body className="bg-black antialiased overflow-x-hidden font-sans">
+        
         <Navbar />
         <main className="min-h-screen">
           {children}

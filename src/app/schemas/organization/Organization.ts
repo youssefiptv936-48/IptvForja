@@ -55,12 +55,7 @@ export const Organization = {
           "availableLanguage": ["ar", "fr"]
         }
       ],
-      "sameAs": [
-        "https://www.facebook.com/yourpage",
-        "https://www.instagram.com/yourpage",
-        "https://www.tiktok.com/@yourpage",
-        "https://www.youtube.com/@yourchannel"
-      ]
+      "sameAs":homeContent.sameAs
     },
     {
       "@type": "WebSite",
