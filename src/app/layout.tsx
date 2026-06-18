@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-
+import { Organization } from "./schemas/organization/Organization";
 
 // هذا الجزء هو الذي سيصلح الـ SEO فوراً
 export const metadata: Metadata = {
@@ -37,7 +37,12 @@ export default function RootLayout({
     <html lang="ar" dir="rtl">
       {/* ستقوم Next.js بحقن الـ Title والـ Description تلقائياً هنا من كائن metadata */}
       <body className="bg-black antialiased overflow-x-hidden font-sans">
-        
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(Organization).replace(/</g, "\\u003c"),
+          }}
+        />
         <Navbar />
         <main className="min-h-screen">
           {children}
