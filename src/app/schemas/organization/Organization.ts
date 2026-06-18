@@ -36,7 +36,7 @@ export const Organization = {
           "name": "Worldwide"
         }
       ],
-      "availableLanguage": ["ar", "fr"],
+    
       "contactPoint": [
         {
           "@type": "ContactPoint",
