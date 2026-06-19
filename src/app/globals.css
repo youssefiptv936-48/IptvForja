@@ -1,28 +1,6 @@
 @import "tailwindcss";
 
-/* تعريف الـ Keyframes العادية التي يفهمها كل مصممي الويب والمحررات */
-@keyframes marquee {
-  0% { transform: translateX(0%); }
-  100% { transform: translateX(-100%); }
-}
 
-@keyframes marquee2 {
-  0% { transform: translateX(100%); }
-  100% { transform: translateX(0%); }
-}
-
-.animate-marquee {
-  animation: marquee 10s linear infinite;
-}
-
-.animate-marquee2 {
-  animation: marquee2 10s linear infinite;
-}
-
-.animate-marquee,
-.animate-marquee2 {
-  will-change: transform;
-}
 
 
 @layer base {
@@ -37,7 +15,7 @@
 }
 ::-webkit-scrollbar-thumb {
   background-color: #d40101;
-  border-radius: 10px;
+  border-radius: 1px;
 }
 ::-webkit-scrollbar-button {
   display: none;

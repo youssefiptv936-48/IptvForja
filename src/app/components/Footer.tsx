@@ -1,18 +1,37 @@
 import P from "./HtmlTools/P";
+import H2 from "./HtmlTools/H2";
+import LinkRed from "./HtmlTools/LinkRed";
+
+import Image from "next/image";
+import ButtonRed from "./HtmlTools/ButtonRed";
+import { imageOptimizer } from "next/dist/server/image-optimizer";
 
 export default function Footer() {
   // الحصول على السنة الحالية تلقائياً لجعل المحتوى يبدو "محدثاً" دائماً أمام جوجل
   const currentYear = new Date().getFullYear();
 
   return (
-    // استخدام وسم <footer> بدلاً من <div> يعزز الـ Semantic HTML
-    <footer className='bg-black h-auto' role="contentinfo">
-        
-        <P >
-          جميع الحقوق محفوظة © {currentYear} 
-          {/* إضافة اسم الموقع هنا ضروري جداً لتعزيز العلامة التجارية في محركات البحث */}
-          <span className="font-bold text-[#ff0031] mr-1">اسم موقعك</span>
-        </P>
+    <footer className="h-auto bg-black" role="contentinfo">
+      <div className="bg-amber-400 w-full h-36 flex">
+       
+      {/* المحتوى فوق الصورة */}
+      <div className=" w-1/2 bg-black/10 ">
+        <H2>
+          ابدأ تجربتك <LinkRed href="/abonnement-iptv"> الآن</LinkRed>
+        </H2>
+        <P>جرب أقوى خدمة IPTV بجودة عالية واستمتع بمحتوى لا محدود</P>
+        <ButtonRed LinkText="HHHHHHH" href="#" />
+      </div>
+       <div className="relative h-36 w-1/2 overflow-hidden">
+        {/* الصورة في الخلفية */}
+        <Image
+          src="/images/chat.png"
+          alt="خلفية الفوتر"
+          fill
+          className="object-cover w-1/2"
+        />
+      </div>
+      </div>
     </footer>
-  )
+  );
 }

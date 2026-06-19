@@ -8,7 +8,7 @@ interface Props {
 
 export default function H2({ children }: Props) {
   return (
-    <h2 className=" font-bold w-full leading-tight my-2 text-slate-200 overflow-hidden">
+    <h2 className=" font-bold text-2xl   my-2 text-slate-200 ">
       
         {children}
       

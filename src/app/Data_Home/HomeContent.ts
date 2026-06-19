@@ -11,11 +11,14 @@ export const homeContent = {
   logoUrl: "https://iptvforja.com/IptvForja.svg",
   email: "supportiptvforja@gmail.com",
    telephone: "+212609851199",
+     whatsapp: "https://wa.me/212609851199",
+
    "sameAs": [
-        "https://www.facebook.com/yourpage",
-        "https://www.instagram.com/yourpage",
-        "https://www.tiktok.com/@yourpage",
-        "https://www.youtube.com/@yourchannel"
+        "https://www.facebook.com/profile.php?id=61588986598921",
+        "https://www.instagram.com/iptvforja?igsh=MW5qaWhjbjN2MmFvNQ%3D%3D",
+        "https://x.com/IptvForja"
+        
+        
       ],
 
   contentSpecial:{
