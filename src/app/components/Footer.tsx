@@ -13,7 +13,7 @@ export default function Footer() {
 
   return (
     <footer className="h-auto bg-black" role="contentinfo">
-      <div className=" m-1 border border-solid border-red-600 rounded-2xl overflow-hidden h-48  flex justify-center">
+      <div className=" m-1 bg-amber-700 border border-solid border-red-600 rounded-2xl overflow-hidden min-h-40 p-1  flex justify-center">
        
       {/* المحتوى فوق الصورة */}
       <div className=" w-[40%] bg-black/10 ">
@@ -23,13 +23,13 @@ export default function Footer() {
         <P>جرب أقوى خدمة IPTV بجودة عالية واستمتع بمحتوى لا محدود</P>
         <ButtonRed LinkText="ابدأ تجربة مجانية" href="/Test-Iptv" icon={<Gift/>}/>
       </div>
-       <div className="relative h-36 w-1/2 overflow-hidden b">
+       <div className="relative h-36 w-[60%] overflow-hidden b">
         {/* الصورة في الخلفية */}
         <Image
           src="/images/GPT.png"
           alt="خلفية الفوتر"
           fill
-          className="object-cover object-center"
+          className="object-center"
         />
       </div>
       </div>
