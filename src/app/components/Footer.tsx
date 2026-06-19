@@ -1,6 +1,7 @@
 import P from "./HtmlTools/P";
 import H2 from "./HtmlTools/H2";
 import LinkRed from "./HtmlTools/LinkRed";
+import { Gift } from "lucide-react";
 
 import Image from "next/image";
 import ButtonRed from "./HtmlTools/ButtonRed";
@@ -12,7 +13,7 @@ export default function Footer() {
 
   return (
     <footer className="h-auto bg-black" role="contentinfo">
-      <div className="bg-amber-400 w-full h-36 flex">
+      <div className=" m-2 border border-solid border-red-600 rounded-2xl overflow-hidden h-48 pr-3 flex justify-center">
        
       {/* المحتوى فوق الصورة */}
       <div className=" w-1/2 bg-black/10 ">
@@ -20,7 +21,7 @@ export default function Footer() {
           ابدأ تجربتك <LinkRed href="/abonnement-iptv"> الآن</LinkRed>
         </H2>
         <P>جرب أقوى خدمة IPTV بجودة عالية واستمتع بمحتوى لا محدود</P>
-        <ButtonRed LinkText="HHHHHHH" href="#" />
+        <ButtonRed LinkText="ابدأ تجربة مجانية" href="/Test-Iptv" icon={<Gift/>}/>
       </div>
        <div className="relative h-36 w-1/2 overflow-hidden">
         {/* الصورة في الخلفية */}

@@ -1,16 +1,19 @@
 import Link from "next/link";
+import { ReactNode } from "react";
 
 interface Props {
   href: string;
   LinkText: string;
+  icon:ReactNode;
 }
 
-export default function ButtonRed({ href, LinkText }: Props) {
+export default function ButtonRed({ href, LinkText ,icon }: Props) {
   return (
     <Link
       href={href}
-      className={` px-7 py-2 m-1 text-center text-slate-200 min-w-44 inline-block rounded-r-3xl rounded-ee-3xl font-bold text-md bg-linear-to-l from-red-600 to-red-700 hover:scale-105 transition-transform duration-300`}
+      className="bg-red-600 text-slate-200 font-bold py-1.5 w-full mt-1 rounded-md border-2 border-red-600 flex justify-center gap-2"
     >
+      {icon}
       {LinkText}
     </Link>
   );
