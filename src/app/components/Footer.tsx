@@ -13,10 +13,10 @@ export default function Footer() {
 
   return (
     <footer className="h-auto bg-black" role="contentinfo">
-      <div className=" m-2 border border-solid border-red-600 rounded-2xl overflow-hidden h-48 pr-3 flex justify-center">
+      <div className=" m-1 border border-solid border-red-600 rounded-2xl overflow-hidden h-48  flex justify-center">
        
       {/* المحتوى فوق الصورة */}
-      <div className=" w-1/2 bg-black/10 ">
+      <div className=" w-[40%] bg-black/10 ">
         <H2>
           ابدأ تجربتك <LinkRed href="/abonnement-iptv"> الآن</LinkRed>
         </H2>
@@ -29,7 +29,7 @@ export default function Footer() {
           src="/images/GPT.png"
           alt="خلفية الفوتر"
           fill
-          className="object-contain"
+          className="object-cover object-center"
         />
       </div>
       </div>
