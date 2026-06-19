@@ -4,7 +4,7 @@ import { ReactNode } from "react";
 interface Props {
   href: string;
   LinkText: string;
-  icon:ReactNode;
+  icon?:ReactNode;
 }
 
 export default function ButtonRed({ href, LinkText ,icon }: Props) {
