@@ -13,8 +13,8 @@ export default function ButtonRed({ href, LinkText ,icon }: Props) {
       href={href}
       className="bg-red-600 text-slate-200 font-bold py-1.5 w-full mt-1 rounded-md border-2 border-red-600 flex justify-center gap-2"
     >
-      {icon}
-      {LinkText}
+       {icon && <span>{icon}</span>}
+      <span>{LinkText}</span>
     </Link>
   );
 }
