@@ -27,10 +27,7 @@ export const Organization = {
       "telephone": homeContent.telephone,
       "foundingDate": "2020",
       "areaServed": [
-        {
-          "@type": "Country",
-          "name": "Morocco"
-        },
+        
         {
           "@type": "Place",
           "name": "Worldwide"
