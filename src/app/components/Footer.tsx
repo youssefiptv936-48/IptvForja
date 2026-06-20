@@ -23,15 +23,15 @@ export default function Footer() {
         <P>جرب أقوى خدمة IPTV بجودة عالية واستمتع بمحتوى لا محدود</P>
         <ButtonRed LinkText="ابدأ تجربة مجانية" href="/Test-Iptv" icon={<Gift/>}/>
       </div>
-       <div className="relative  w-[60%] bg-amber-500 overflow-hidden b">
-        {/* الصورة في الخلفية */}
-        <Image
-          src="/images/GPT.png"
-          alt="خلفية الفوتر"
-          fill
-          className="object-center"
-        />
-      </div>
+      <div className="relative min-h-40  w-[60%] overflow-hidden bg-black">
+  <Image
+    src="/images/sky.png"
+    alt="الأجهزة المدعومة لخدمة IPTV"
+   fill
+  
+    className="object-contain"
+  />
+</div>
       </div>
     </footer>
   );
