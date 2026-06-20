@@ -16,7 +16,7 @@ export default function Footer() {
       <div className=" m-1 border border-solid border-red-600 rounded-2xl overflow-hidden min-h-40 p-1  flex justify-center">
        
       {/* المحتوى فوق الصورة */}
-      <div className=" w-[40%] bg-black/10 ">
+      <div className=" w-[41%] bg-black/10 ">
         <H2>
           ابدأ تجربتك <LinkRed href="/abonnement-iptv"> الآن</LinkRed>
         </H2>
@@ -26,7 +26,7 @@ export default function Footer() {
       <div className="relative min-h-40  w-[60%] overflow-hidden bg-black">
   <Image
     src="/images/sky.png"
-    alt="الأجهزة المدعومة لخدمة IPTV"
+    alt="الأجهزة المدعومة لخدمةIPTV"
    fill
   
     className="object-contain"
