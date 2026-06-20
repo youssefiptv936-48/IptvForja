@@ -2,14 +2,24 @@ import P from "./HtmlTools/P";
 import H2 from "./HtmlTools/H2";
 import LinkRed from "./HtmlTools/LinkRed";
 import LinkNormal from "./HtmlTools/LinkNormal";
-import { Gift, ShieldCheck } from "lucide-react";
 import Border_Row from "./HtmlTools/Border_Row";
-import Border_col from "./HtmlTools/Border_col";
+import FeatureCard from "./HtmlTools/FeatureCard";
+import ButtonRed from "./HtmlTools/ButtonRed";
 
 import Image from "next/image";
-import ButtonRed from "./HtmlTools/ButtonRed";
-import { imageOptimizer } from "next/dist/server/image-optimizer";
 
+import {
+  Gift,
+  ShieldCheck,
+  Zap,
+  Headphones,
+  Hd,
+  RadioTower,
+  Goal,
+  Users,
+  CirclePlay,
+  Tv,
+} from "lucide-react";
 export default function Footer() {
   // الحصول على السنة الحالية تلقائياً لجعل المحتوى يبدو "محدثاً" دائماً أمام جوجل
   const currentYear = new Date().getFullYear();
@@ -49,6 +59,118 @@ export default function Footer() {
           />
         </div>
       </div>
+       <section
+      dir="rtl"
+      className="
+        w-full
+        bg-black
+        text-white
+        flex
+        flex-col
+        items-center
+        justify-center
+        px-4
+        py-10
+        text-center
+      "
+    >
+      {/* Logo */}
+      <div className="relative w-50 h-30  ">
+        <Image
+          src="/iptvforja.webp"
+          alt="IPTV FORJA Logo"
+          fill
+          className="object-contain"
+        />
+      </div>
+
+      {/* Description */}
+       <p
+        className="
+          max-w-[420px]
+          text-slate-300
+          text-[16px]
+          leading-[2]
+          mb-7
+        "
+      >
+        IPTVFORJA هي وجهتك الأولى لمشاهدة القنوات العالمية والمحتوى الترفيهي
+        بجودة عالية وثبات لا مثيل له. استمتع بتجربة مشاهدة احترافية في أي وقت
+        ومن أي مكان.
+      </p>
+      
+      <div className="w-full max-w-[480px] flex items-center justify-center mb-7">
+        
+        <div className="h-px flex-1 bg-red-600/70"></div>
+
+        <div
+          className="
+            mx-4
+            w-8
+            h-8
+            rounded-full
+            flex
+            items-center
+            justify-center
+            text-red-600
+            border
+            border-red-600/70
+            shadow-[0_0_18px_#ff000080]
+          "
+        >
+          <Goal size={18} strokeWidth={2.2} />
+        </div>
+
+        <div className="h-px flex-1 bg-red-600/70"></div>
+      </div>
+
+      {/* Stats */}
+      <div
+        className="
+          w-full
+          max-w-[520px]
+          grid
+          grid-cols-3
+          items-center
+          text-center
+        "
+      >
+        <div className="flex flex-col items-center justify-center px-3">
+          <h3 className="text-red-600 text-2xl font-extrabold mb-1">
+            +50,000
+          </h3>
+          <p className="text-slate-200 text-sm mb-3">مشترك راضٍ</p>
+          <Users className="text-red-600" size={28} strokeWidth={1.8} />
+        </div>
+
+        <div
+          className="
+            flex
+            flex-col
+            items-center
+            justify-center
+            px-3
+            border-x
+            border-dashed
+            border-white/20
+          "
+        >
+          <h3 className="text-red-600 text-2xl font-extrabold mb-1">
+            +150,000
+          </h3>
+          <p className="text-slate-200 text-sm mb-3">محتوى متنوع</p>
+          <CirclePlay className="text-red-600" size={28} strokeWidth={1.8} />
+        </div>
+
+        <div className="flex flex-col items-center justify-center px-3">
+          <h3 className="text-red-600 text-2xl font-extrabold mb-1">
+            +20,000
+          </h3>
+          <p className="text-slate-200 text-sm mb-3">قناة مباشرة</p>
+          <Tv className="text-red-600" size={30} strokeWidth={1.8} />
+        </div>
+      </div>
+    </section>
       <div className=" w-full grid grid-cols-2 grid-rows-2 gap-2 pr-10 md:grid-rows-1 md:grid-cols-4 ">
         <div className="  flex flex-col">
           <H2>روابط سريعة</H2>
@@ -88,6 +210,34 @@ export default function Footer() {
           <LinkNormal href="">استرجاع الاموال</LinkNormal>
         </div>
       </div>
+      <section className="my-6 mx-2 grid grid-cols-2 grid-rows-2 gap-2 lg:grid-cols-4 lg:grid-rows-1">
+  
+
+ 
+
+  
+
+  <FeatureCard
+    icon={<RadioTower size={34} strokeWidth={1.8} />}
+    title="بث مباشر سريع"
+    description="قنوات مستقرة بدون تقطيع وبأسرع السيرفرات."
+  />
+  <FeatureCard
+    icon={< Hd size={34} strokeWidth={1.8} />}
+    title="4K / FHD"
+    description="جودة صورة فائقة الوضوح لمشاهدة لا تُضاهى."
+  />
+   <FeatureCard
+    icon={<Headphones size={34} strokeWidth={1.8} />}
+    title="دعم فني 24/7"
+    description="فريق دعم محترف متاح على مدار الساعة لخدمتك."
+  />
+  <FeatureCard
+    icon={<Zap size={34} strokeWidth={1.8} />}
+    title="تفعيل فوري"
+    description="بعد الدفع يتم تفعيل اشتراكك بشكل فوري."
+  />
+</section>
     </footer>
   );
 }
