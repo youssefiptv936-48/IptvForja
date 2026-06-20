@@ -1,11 +1,13 @@
 import P from "./HtmlTools/P";
 import H2 from "./HtmlTools/H2";
 import LinkRed from "./HtmlTools/LinkRed";
+import LinkNormal from "./HtmlTools/LinkNormal";
 import { Gift,ShieldCheck } from "lucide-react";
 
 import Image from "next/image";
 import ButtonRed from "./HtmlTools/ButtonRed";
 import { imageOptimizer } from "next/dist/server/image-optimizer";
+
 
 export default function Footer() {
   // الحصول على السنة الحالية تلقائياً لجعل المحتوى يبدو "محدثاً" دائماً أمام جوجل
@@ -16,30 +18,31 @@ export default function Footer() {
       className="h-auto bg-black flex flex-col items-center"
       role="contentinfo"
     >
-      <div className=" m-1 border border-solid border-red-600 rounded-2xl overflow-hidden min-h-40 md:h-20 p-1   md:w-[80%] flex  flex-row">
+      <div className=" m-1 border border-solid border-red-600 rounded-2xl overflow-hidden min-h-40  md:h-20 md:w-[95%] p-1    lg:w-[80%] flex  flex-row ">
         {/* المحتوى فوق الصورة */}
-        <div className=" w-1/2 md:w-[70%] h-auto md:flex md:flex-row-reverse md:justify-around    ">
-          <div className=" flex justify-center flex-col">
+        <div className=" w-1/2 lg:w-[70%] md:w-[80%] h-auto md:flex md:flex-row-reverse md:justify-around    ">
+          <div className=" md:w-1/2">
             <H2>
             ابدأ تجربتك <LinkRed href="/abonnement-iptv"> الآن</LinkRed>
           </H2>
           <P>جرب أقوى خدمة IPTV بجودة عالية واستمتع بمحتوى لا محدود</P>
+           <div className="mt-2 flex items-center gap-2 text-sm text-white/80">
+            <ShieldCheck size={16} />
+            <span>لا تحتاج لبطاقة ائتمان</span>
           </div>
-          <div className="flex flex-col justify-center">
+          </div>
+          <div className="flex flex-col justify-center  md:px-10 md:w-1/2">
            <ButtonRed
             LinkText="ابدأ تجربة مجانية"
             href="/Test-Iptv"
             icon={<Gift />}
           />
 
-          <div className="mt-2 flex items-center gap-2 text-sm text-white/80">
-            <ShieldCheck size={16} />
-            <span>لا تحتاج لبطاقة ائتمان</span>
-          </div>
+         
           </div>
           
         </div>
-        <div className="relative min-h-40 md:h-20 w-1/2 md:w-[30%]  overflow-hidden">
+        <div className="relative min-h-40 md:h-20 w-1/2 lg:w-[30%] md:w-[20%] overflow-hidden">
           <Image
             src="/images/tv.webp"
             alt="الأجهزة المدعومة لخدمة IPTV"
@@ -48,6 +51,43 @@ export default function Footer() {
           />
         </div>
       </div>
+     <div className=" w-full grid grid-cols-2 grid-rows-2 gap-2 pr-5 ">
+  <div className="flex flex-col">
+    <H2>روابط سريعة</H2>
+    <LinkNormal href="/">الصفحة الرئيسية</LinkNormal>
+    <LinkNormal href="/abonnement-iptv">الاشتراكات</LinkNormal>
+    <LinkNormal href="/chaines-iptv">القنوات</LinkNormal>
+    <LinkNormal href="/Test-Iptv">التجربة المجانية</LinkNormal>
+    <LinkNormal href="/contact">اتصل بنا</LinkNormal>
+  </div>
+
+  <div className="flex flex-col">
+    <H2>خدمة العملاء</H2>
+    <LinkNormal href="/support">الدعم الفني</LinkNormal>
+    <LinkNormal href="/faq">الأسئلة الشائعة</LinkNormal>
+    <LinkNormal href="/help">مركز المساعدة</LinkNormal>
+    <LinkNormal href="/installation">طريقة التشغيل</LinkNormal>
+    <LinkNormal href="/contact">تواصل مع الدعم</LinkNormal>
+  </div>
+
+  <div className="flex flex-col">
+    <H2>خدمات IPTV</H2>
+    <LinkNormal href="/iptv-maroc">IPTV المغرب</LinkNormal>
+    <LinkNormal href="/iptv-sport">القنوات الرياضية</LinkNormal>
+    <LinkNormal href="/iptv-films">الأفلام والمسلسلات</LinkNormal>
+    <LinkNormal href="/iptv-enfants">قنوات الأطفال</LinkNormal>
+    <LinkNormal href="/devices">الأجهزة المدعومة</LinkNormal>
+  </div>
+
+  <div className="flex flex-col">
+    <H2>معلومات قانونية</H2>
+    <LinkNormal href="/privacy-policy">سياسة الخصوصية</LinkNormal>
+    <LinkNormal href="/terms">الشروط والأحكام</LinkNormal>
+    <LinkNormal href="/refund-policy">سياسة استرجاع الأموال</LinkNormal>
+    <LinkNormal href="/about">من نحن</LinkNormal>
+    <LinkNormal href="/blog">المدونة</LinkNormal>
+  </div>
+</div>
     </footer>
   );
 }
