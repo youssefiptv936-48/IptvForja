@@ -51,43 +51,49 @@ export default function Footer() {
           />
         </div>
       </div>
-     <div className=" w-full grid grid-cols-2 grid-rows-2 gap-2 pr-5 ">
-  <div className="flex flex-col">
-    <H2>روابط سريعة</H2>
-    <LinkNormal href="/">الصفحة الرئيسية</LinkNormal>
-    <LinkNormal href="/abonnement-iptv">الاشتراكات</LinkNormal>
-    <LinkNormal href="/chaines-iptv">القنوات</LinkNormal>
-    <LinkNormal href="/Test-Iptv">التجربة المجانية</LinkNormal>
-    <LinkNormal href="/contact">اتصل بنا</LinkNormal>
-  </div>
-
-  <div className="flex flex-col">
-    <H2>خدمة العملاء</H2>
-    <LinkNormal href="/support">الدعم الفني</LinkNormal>
-    <LinkNormal href="/faq">الأسئلة الشائعة</LinkNormal>
-    <LinkNormal href="/help">مركز المساعدة</LinkNormal>
-    <LinkNormal href="/installation">طريقة التشغيل</LinkNormal>
-    <LinkNormal href="/contact">تواصل مع الدعم</LinkNormal>
-  </div>
-
-  <div className="flex flex-col">
-    <H2>خدمات IPTV</H2>
-    <LinkNormal href="/iptv-maroc">IPTV المغرب</LinkNormal>
-    <LinkNormal href="/iptv-sport">القنوات الرياضية</LinkNormal>
-    <LinkNormal href="/iptv-films">الأفلام والمسلسلات</LinkNormal>
-    <LinkNormal href="/iptv-enfants">قنوات الأطفال</LinkNormal>
-    <LinkNormal href="/devices">الأجهزة المدعومة</LinkNormal>
-  </div>
-
-  <div className="flex flex-col">
-    <H2>معلومات قانونية</H2>
-    <LinkNormal href="/privacy-policy">سياسة الخصوصية</LinkNormal>
-    <LinkNormal href="/terms">الشروط والأحكام</LinkNormal>
-    <LinkNormal href="/refund-policy">سياسة استرجاع الأموال</LinkNormal>
-    <LinkNormal href="/about">من نحن</LinkNormal>
-    <LinkNormal href="/blog">المدونة</LinkNormal>
-  </div>
-</div>
+      <div className=" w-full grid grid-cols-2 grid-rows-2 gap-2 pr-10 ">
+        <div className="  flex flex-col">
+        <H2>روابط سريعة</H2>
+          <div className="bg-red-600 h-0.5 w-30">.</div>
+        <LinkNormal href="">الصفحه الرئيسيه</LinkNormal>
+         <LinkNormal href="">الاشتراكات</LinkNormal>
+          <LinkNormal href="">القنوات</LinkNormal>
+           <LinkNormal href="">التجربه المجانيه</LinkNormal>
+            <LinkNormal href="">اتصل بنا</LinkNormal>
+        
+        </div>
+        <div className=" flex flex-col">
+        <H2>خدمه العملاء</H2>
+          <div className="bg-red-600 h-0.5 w-30">.</div>
+        <LinkNormal href="">مركز المساعده</LinkNormal>
+         <LinkNormal href="">الاسئله الشائعه</LinkNormal>
+          <LinkNormal href="">سياسه الخصوصيه</LinkNormal>
+           <LinkNormal href="">شروط والاحكام</LinkNormal>
+            <LinkNormal href="">استرجاع الاموال</LinkNormal>
+        
+        </div>
+        
+         <div className=" flex flex-col">
+        <H2>خدمه العملاء</H2>
+          <div className="bg-red-600 h-0.5 w-30">.</div>
+        <LinkNormal href="">مركز المساعده</LinkNormal>
+         <LinkNormal href="">الاسئله الشائعه</LinkNormal>
+          <LinkNormal href="">سياسه الخصوصيه</LinkNormal>
+           <LinkNormal href="">شروط والاحكام</LinkNormal>
+            <LinkNormal href="">استرجاع الاموال</LinkNormal>
+        
+        </div>
+         <div className=" flex flex-col">
+        <H2>خدمه العملاء</H2>
+        <div className="bg-red-600 h-0.5 w-30">.</div>
+        <LinkNormal href="">مركز المساعده</LinkNormal>
+         <LinkNormal href="">الاسئله الشائعه</LinkNormal>
+          <LinkNormal href="">سياسه الخصوصيه</LinkNormal>
+           <LinkNormal href="">شروط والاحكام</LinkNormal>
+            <LinkNormal href="">استرجاع الاموال</LinkNormal>
+        
+        </div>
+      </div>
     </footer>
   );
 }
