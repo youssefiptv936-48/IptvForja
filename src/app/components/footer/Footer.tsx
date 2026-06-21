@@ -6,12 +6,15 @@ import Border_Row from "../HtmlTools/Border_Row";
 import FeatureCard from "./FeatureCard";
 import ButtonRed from "../HtmlTools/ButtonRed";
 import SocialMedia from "./Socialmedia";
+import { IoIosLock } from "react-icons/io";
+
 import {
   FaFacebookF,
   FaInstagram,
   FaYoutube,
   FaTiktok,
   FaX,
+ 
 } from "react-icons/fa6";
 import { homeContent } from "@/app/Data_Home/HomeContent";
 
@@ -301,8 +304,11 @@ gap-2
         </SocialMedia>
       </nav>
       <Border_Row width="full"/>
+    
+
       <div className=" w-full flex flex-col shrink-0 items-center min-h-24  ">
         <H2>طرق دفع المتاحة</H2>
+       
       
        
         
@@ -319,6 +325,12 @@ gap-2
         
       </div>
        <Border_Row width="full"/>
+       <div className="h-24 text-amber-50">
+          
+          <FeatureCard    description="جميع معاملاتك محمية بتقنية تشفير متقدمة" title="الدفع آمن %100" icon={<IoIosLock />}>
+             
+          </FeatureCard>
+       </div>
      </div>
     </footer>
   );

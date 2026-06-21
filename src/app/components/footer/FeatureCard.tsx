@@ -52,6 +52,7 @@ export default function FeatureCard({
           text-red-500
           shadow-[0_0_25px_#ff000080,inset_0_0_20px_#ff000040]
           shrink-0
+          text-4xl 
         "
       >
         {icon}
