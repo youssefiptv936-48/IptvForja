@@ -13,13 +13,15 @@ export const homeContent = {
    telephone: "+212609851199",
      whatsapp: "https://wa.me/212609851199",
 
-   "sameAs": [
-        "https://www.facebook.com/profile.php?id=61588986598921",
-        "https://www.instagram.com/iptvforja?igsh=MW5qaWhjbjN2MmFvNQ%3D%3D",
-        "https://x.com/IptvForja"
+  SocialMedia: {
+       facebook: "https://www.facebook.com/profile.php?id=61588986598921",
+        instagram:"https://www.instagram.com/iptvforja?igsh=MW5qaWhjbjN2MmFvNQ%3D%3D",
+        x:"https://x.com/IptvForja",
+        tiktok:"https://www.tiktok.com/@iptvforja",
+        youtube:"https://www.youtube.com/channel/UCDIvL4bm2Hel87bC8gxyaOw"
+  },
         
-        
-      ],
+      
 
   contentSpecial:{
       

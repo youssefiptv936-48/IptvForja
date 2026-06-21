@@ -1,10 +1,19 @@
-import P from "./HtmlTools/P";
-import H2 from "./HtmlTools/H2";
-import LinkRed from "./HtmlTools/LinkRed";
-import LinkNormal from "./HtmlTools/LinkNormal";
-import Border_Row from "./HtmlTools/Border_Row";
-import FeatureCard from "./HtmlTools/FeatureCard";
-import ButtonRed from "./HtmlTools/ButtonRed";
+import P from "../HtmlTools/P";
+import H2 from "../HtmlTools/H2";
+import LinkRed from "../HtmlTools/LinkRed";
+import LinkNormal from "../HtmlTools/LinkNormal";
+import Border_Row from "../HtmlTools/Border_Row";
+import FeatureCard from "./FeatureCard";
+import ButtonRed from "../HtmlTools/ButtonRed";
+import SocialMedia from "./Socialmedia";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaYoutube,
+  FaTiktok,
+  FaX,
+} from "react-icons/fa6";
+import { homeContent } from "@/app/Data_Home/HomeContent";
 
 import Image from "next/image";
 
@@ -87,11 +96,11 @@ export default function Footer() {
         {/* Description */}
         <p
           className="
-          max-w-105
+          max-w-2xl
           text-slate-300
           text-[16px]
-          leading-2
-          mb-7
+          
+      
         "
         >
           IPTVFORJA هي وجهتك الأولى لمشاهدة القنوات العالمية والمحتوى الترفيهي
@@ -170,47 +179,47 @@ export default function Footer() {
           </div>
         </div>
       </section>
-      <div className=" w-full grid grid-cols-2 grid-rows-2 gap-2 pr-10 md:grid-rows-1 md:grid-cols-4 ">
-  <div className="  flex flex-col">
-    <H2>روابط سريعة</H2>
-    <Border_Row width="w-30" />
-    <LinkNormal href="">الصفحه الرئيسيه</LinkNormal>
-    <LinkNormal href="">الاشتراكات</LinkNormal>
-    <LinkNormal href="">القنوات</LinkNormal>
-    <LinkNormal href="">التجربه المجانيه</LinkNormal>
-    <LinkNormal href="">اتصل بنا</LinkNormal>
-  </div>
+      <div className=" w-full grid grid-cols-2 grid-rows-2 gap-2 pr-2 md:grid-rows-1 md:grid-cols-4 ">
+        <div className="  flex flex-col">
+          <H2>روابط سريعة</H2>
+          <Border_Row width="w-30" />
+          <LinkNormal href="">الصفحه الرئيسيه</LinkNormal>
+          <LinkNormal href="">الاشتراكات</LinkNormal>
+          <LinkNormal href="">القنوات</LinkNormal>
+          <LinkNormal href="">التجربه المجانيه</LinkNormal>
+          <LinkNormal href="">اتصل بنا</LinkNormal>
+        </div>
 
-  <div className=" flex flex-col">
-    <H2>خدمه العملاء</H2>
-    <Border_Row width="w-30" />
-    <LinkNormal href="">مركز المساعده</LinkNormal>
-    <LinkNormal href="">الاسئله الشائعه</LinkNormal>
-    <LinkNormal href="">سياسه الخصوصيه</LinkNormal>
-    <LinkNormal href="">شروط والاحكام</LinkNormal>
-    <LinkNormal href="">استرجاع الاموال</LinkNormal>
-  </div>
+        <div className=" flex flex-col">
+          <H2>خدمه العملاء</H2>
+          <Border_Row width="w-30" />
+          <LinkNormal href="">مركز المساعده</LinkNormal>
+          <LinkNormal href="">الاسئله الشائعه</LinkNormal>
+          <LinkNormal href="">سياسه الخصوصيه</LinkNormal>
+          <LinkNormal href="">شروط والاحكام</LinkNormal>
+          <LinkNormal href="">استرجاع الاموال</LinkNormal>
+        </div>
 
-  <div className=" flex flex-col">
-    <H2>خدمات IPTV</H2>
-    <Border_Row width="w-30" />
-    <LinkNormal href="">IPTV المغرب</LinkNormal>
-    <LinkNormal href="">القنوات الرياضيه</LinkNormal>
-    <LinkNormal href="">الأفلام والمسلسلات</LinkNormal>
-    <LinkNormal href="">قنوات الأطفال</LinkNormal>
-    <LinkNormal href="">الأجهزه المدعومه</LinkNormal>
-  </div>
+        <div className=" flex flex-col">
+          <H2>خدمات IPTV</H2>
+          <Border_Row width="w-30" />
+          <LinkNormal href="">IPTV المغرب</LinkNormal>
+          <LinkNormal href="">القنوات الرياضيه</LinkNormal>
+          <LinkNormal href="">الأفلام والمسلسلات</LinkNormal>
+          <LinkNormal href="">قنوات الأطفال</LinkNormal>
+          <LinkNormal href="">الأجهزه المدعومه</LinkNormal>
+        </div>
 
-  <div className=" flex flex-col">
-    <H2>معلومات مهمه</H2>
-    <Border_Row width="w-30" />
-    <LinkNormal href="">طريقه التشغيل</LinkNormal>
-    <LinkNormal href="">طرق الدفع</LinkNormal>
-    <LinkNormal href="">تفعيل الاشتراك</LinkNormal>
-    <LinkNormal href="">جوده البث</LinkNormal>
-    <LinkNormal href="">الدعم الفني</LinkNormal>
-  </div>
-</div>
+        <div className=" flex flex-col">
+          <H2>معلومات مهمه</H2>
+          <Border_Row width="w-30" />
+          <LinkNormal href="">طريقه التشغيل</LinkNormal>
+          <LinkNormal href="">طرق الدفع</LinkNormal>
+          <LinkNormal href="">تفعيل الاشتراك</LinkNormal>
+          <LinkNormal href="">جوده البث</LinkNormal>
+          <LinkNormal href="">الدعم الفني</LinkNormal>
+        </div>
+      </div>
       <section className="my-6 mx-2 grid md:grid-cols-2 md:grid-rows-2 gap-2 lg:grid-cols-4 lg:grid-rows-1">
         <FeatureCard
           icon={<RadioTower size={34} strokeWidth={1.8} />}
@@ -233,12 +242,84 @@ export default function Footer() {
           description="بعد الدفع يتم تفعيل اشتراكك بشكل فوري."
         />
       </section>
-      <section className="border border-t  border-red-600 w-full grid md:grid-cols-2 md:grid-rows-2 lg:grid-cols-4 lg:grid-rows-1">
-        <div className="bg-amber-500">A</div>
-        <div className="bg-amber-950">A</div>
-        <div className="bg-amber-500">A</div>
-        <div className="bg-blue-900">A</div>
-      </section>
+     <div>
+       <nav
+        aria-label="روابط التواصل الاجتماعي"
+        className="
+    grid
+    w-full
+    grid-cols-5
+    grid-rows-2
+place-items-center
+   
+
+gap-2
+    border-t
+    border-red-600
+   h-24
+    
+    
+  "
+      >
+        <div className="col-span-full">
+          <H2>تابعنا على</H2>
+           <Border_Row width="30" />
+        </div>
+        <SocialMedia
+          ariaLabel="تابعنا على فيسبوك"
+          href={homeContent.SocialMedia.facebook}
+        >
+          <FaFacebookF aria-hidden="true" />
+        </SocialMedia>
+
+        <SocialMedia
+          ariaLabel="تابعنا على إنستغرام،"
+          href={homeContent.SocialMedia.instagram}
+        >
+          <FaInstagram aria-hidden="true" />
+        </SocialMedia>
+
+        <SocialMedia
+          ariaLabel="تابعنا على إكس"
+          href={homeContent.SocialMedia.x}
+        >
+          <FaX aria-hidden="true" />
+        </SocialMedia>
+
+        <SocialMedia
+          ariaLabel="تابعنا على يوتيوب"
+          href={homeContent.SocialMedia.youtube}
+        >
+          <FaYoutube aria-hidden="true" />
+        </SocialMedia>
+
+        <SocialMedia
+          ariaLabel=" تابعنا على تيك توك"
+          href={homeContent.SocialMedia.tiktok}
+        >
+          <FaTiktok aria-hidden="true" />
+        </SocialMedia>
+      </nav>
+      <Border_Row width="full"/>
+      <div className=" w-full flex flex-col shrink-0 items-center min-h-24  ">
+        <H2>طرق دفع المتاحة</H2>
+      
+       
+        
+         
+       
+        <div className=" relative w-full h-12">
+          <Image
+            alt=""
+            src={"/images/paymantt.webp"}
+            fill
+            className=" object-contain"
+          />
+        </div>
+        
+      </div>
+       <Border_Row width="full"/>
+     </div>
     </footer>
   );
 }

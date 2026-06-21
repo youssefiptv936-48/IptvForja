@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Footer from "./components/footer/Footer";
 import { Organization } from "./schemas/organization/Organization";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
@@ -71,7 +71,7 @@ export default function RootLayout({
 
         <Navbar />
 
-        <main className="min-h-screen">{children}</main>
+        <main >{children}</main>
 
         <Footer />
 
