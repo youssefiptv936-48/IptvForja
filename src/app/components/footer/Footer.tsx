@@ -179,8 +179,8 @@ export default function Footer() {
           </div>
         </div>
       </section>
-      <div className=" w-full grid grid-cols-2 grid-rows-2 gap-2 pr-2 md:grid-rows-1 md:grid-cols-4 ">
-        <div className="  flex flex-col">
+      <div className=" w-full  grid grid-cols-2 grid-rows-2 gap-2  md:grid-rows-1 md:grid-cols-4 ">
+        <div className=" pr-2  flex flex-col">
           <H2>روابط سريعة</H2>
           <Border_Row width="w-30" />
           <LinkNormal href="">الصفحه الرئيسيه</LinkNormal>
@@ -190,7 +190,7 @@ export default function Footer() {
           <LinkNormal href="">اتصل بنا</LinkNormal>
         </div>
 
-        <div className=" flex flex-col">
+        <div className=" flex flex-col pr-2">
           <H2>خدمه العملاء</H2>
           <Border_Row width="w-30" />
           <LinkNormal href="">مركز المساعده</LinkNormal>
@@ -200,7 +200,7 @@ export default function Footer() {
           <LinkNormal href="">استرجاع الاموال</LinkNormal>
         </div>
 
-        <div className=" flex flex-col">
+        <div className=" flex flex-col pr-2">
           <H2>خدمات IPTV</H2>
           <Border_Row width="w-30" />
           <LinkNormal href="">IPTV المغرب</LinkNormal>
@@ -210,7 +210,7 @@ export default function Footer() {
           <LinkNormal href="">الأجهزه المدعومه</LinkNormal>
         </div>
 
-        <div className=" flex flex-col">
+        <div className=" flex flex-col pr-2">
           <H2>معلومات مهمه</H2>
           <Border_Row width="w-30" />
           <LinkNormal href="">طريقه التشغيل</LinkNormal>
