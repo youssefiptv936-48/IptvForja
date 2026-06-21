@@ -51,7 +51,7 @@ export const Organization = {
           "areaServed": "MA",
         }
       ],
-      "sameAs":homeContent.sameAs
+      "sameAs":homeContent.SocialMedia
     },
     {
       "@type": "WebSite",
