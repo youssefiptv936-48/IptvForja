@@ -7,7 +7,7 @@ import FeatureCard from "./FeatureCard";
 import ButtonRed from "../HtmlTools/ButtonRed";
 import SocialMedia from "./Socialmedia";
 import { IoIosLock } from "react-icons/io";
-import IptvForja from "../HtmlTools/IptvForja";
+import StatsCard from "./StatsCard";
 
 import {
   FaFacebookF,
@@ -71,119 +71,9 @@ export default function Footer() {
           />
         </div>
       </div>
-      <section
-        dir="rtl"
-        className="
-        w-full
-        bg-black
-        text-white
-        flex
-        flex-col
-        items-center
-        justify-center
-        px-4
-        py-10
-        text-center
-      "
-      >
-        {/* Logo */}
-        <div className="relative w-50 h-30  ">
-          <Image
-            src="/iptvforja.webp"
-            alt="IPTV FORJA Logo"
-            fill
-            className="object-contain"
-          />
-        </div>
 
-        {/* Description */}
-        <p
-          className="
-          max-w-2xl
-          text-slate-300
-          text-[16px]
-          
-      
-        "
-        >
-          IPTVFORJA هي وجهتك الأولى لمشاهدة القنوات العالمية والمحتوى الترفيهي
-          بجودة عالية وثبات لا مثيل له. استمتع بتجربة مشاهدة احترافية في أي وقت
-          ومن أي مكان.
-        </p>
-
-        <div className="w-full max-w-120 flex items-center justify-center mb-7">
-          <div className="h-px flex-1 bg-red-600/70"></div>
-
-          <div
-            className="
-            mx-4
-            w-8
-            h-8
-            rounded-full
-            flex
-            items-center
-            justify-center
-            text-red-600
-            border
-            border-red-600/70
-            shadow-[0_0_18px_#ff000080]
-          "
-          >
-            <Goal size={18} strokeWidth={2.2} />
-          </div>
-
-          <div className="h-px flex-1 bg-red-600/70"></div>
-        </div>
-
-        {/* Stats */}
-        <div
-          className="
-          w-full
-          max-w-105
-          grid
-          grid-cols-3
-          items-center
-          text-center
-        "
-        >
-          <div className="flex flex-col items-center justify-center px-3">
-            <h3 className="text-red-600 text-2xl font-extrabold mb-1">
-              +50,000
-            </h3>
-            <p className="text-slate-200 text-sm mb-3">مشترك راضٍ</p>
-            <Users className="text-red-600" size={28} strokeWidth={1.8} />
-          </div>
-
-          <div
-            className="
-            flex
-            flex-col
-            items-center
-            justify-center
-            px-3
-            border-x
-            border-dashed
-            border-white/20
-          "
-          >
-            <h3 className="text-red-600 text-2xl font-extrabold mb-1">
-              +150,000
-            </h3>
-            <p className="text-slate-200 text-sm mb-3">محتوى متنوع</p>
-            <CirclePlay className="text-red-600" size={28} strokeWidth={1.8} />
-          </div>
-
-          <div className="flex flex-col items-center justify-center px-3">
-            <h3 className="text-red-600 text-2xl font-extrabold mb-1">
-              +20,000
-            </h3>
-            <p className="text-slate-200 text-sm mb-3">قناة مباشرة</p>
-            <Tv className="text-red-600" size={30} strokeWidth={1.8} />
-          </div>
-        </div>
-      </section>
-      <div className=" w-full  grid grid-cols-2 grid-rows-2 gap-2  md:grid-rows-1 md:grid-cols-4 ">
-        <div className=" pr-2  flex flex-col">
+      <div className=" w-full  grid grid-cols-2 grid-rows-2 gap-2  md:grid-rows-1 md:grid-cols-4 lg:grid-cols-6 lg:grid-rows-1 ">
+        <div className=" flex  justify-center flex-col pr-5">
           <H2>روابط سريعة</H2>
           <Border_Row width="w-30" />
           <LinkNormal href="">الصفحه الرئيسيه</LinkNormal>
@@ -193,7 +83,7 @@ export default function Footer() {
           <LinkNormal href="">اتصل بنا</LinkNormal>
         </div>
 
-        <div className=" flex flex-col pr-2">
+        <div className=" flex  justify-center flex-col pr-5">
           <H2>خدمه العملاء</H2>
           <Border_Row width="w-30" />
           <LinkNormal href="">مركز المساعده</LinkNormal>
@@ -203,7 +93,16 @@ export default function Footer() {
           <LinkNormal href="">استرجاع الاموال</LinkNormal>
         </div>
 
-        <div className=" flex flex-col pr-2">
+       <div className=" flex  justify-center flex-col pr-5">
+          <H2>خدمات IPTV</H2>
+          <Border_Row width="w-30" />
+          <LinkNormal href="">IPTV المغرب</LinkNormal>
+          <LinkNormal href="">القنوات الرياضيه</LinkNormal>
+          <LinkNormal href="">الأفلام والمسلسلات</LinkNormal>
+          <LinkNormal href="">قنوات الأطفال</LinkNormal>
+          <LinkNormal href="">الأجهزه المدعومه</LinkNormal>
+        </div>
+         <div className=" flex  justify-center flex-col pr-5">
           <H2>خدمات IPTV</H2>
           <Border_Row width="w-30" />
           <LinkNormal href="">IPTV المغرب</LinkNormal>
@@ -213,15 +112,69 @@ export default function Footer() {
           <LinkNormal href="">الأجهزه المدعومه</LinkNormal>
         </div>
 
-        <div className=" flex flex-col pr-2">
-          <H2>معلومات مهمه</H2>
-          <Border_Row width="w-30" />
-          <LinkNormal href="">طريقه التشغيل</LinkNormal>
-          <LinkNormal href="">طرق الدفع</LinkNormal>
-          <LinkNormal href="">تفعيل الاشتراك</LinkNormal>
-          <LinkNormal href="">جوده البث</LinkNormal>
-          <LinkNormal href="">الدعم الفني</LinkNormal>
-        </div>
+        <section
+          className="
+      lg:col-span-2
+      col-span-2
+        md:col-span-4
+        text-white
+        flex
+        flex-col
+        items-center
+        justify-center
+        p-2
+        text-center
+      "
+        >
+          {/* Logo */}
+          <div className="relative w-50 h-18  ">
+            <Image
+              src="/iptvforjaa.webp"
+              alt="IPTV FORJA Logo"
+              fill
+              className="object-contain"
+            />
+          </div>
+
+          {/* Description */}
+          <p
+            className="
+          max-w-2xl
+          text-slate-300
+          text-[16px]
+          
+      
+        "
+          >
+            IPTVFORJA هي وجهتك الأولى لمشاهدة القنوات العالمية والمحتوى الترفيهي
+            بجودة عالية وثبات لا مثيل له. استمتع بتجربة مشاهدة احترافية في أي
+            وقت ومن أي مكان.
+          </p>
+
+         <Border_Row width="w-[90%]"/>
+         
+
+          {/* Stats */}
+          <div
+            className="
+          w-full
+          max-w-105
+          grid
+          grid-cols-3
+          items-center
+          text-center
+          
+        "
+          >
+             <StatsCard description="مشترك راضٍ" number={+5000}><Users/></StatsCard>
+              <StatsCard description="محتوى متنوع" number={+150000}><CirclePlay/></StatsCard>
+               <StatsCard description="قناة مباشرة" number={+46000}><Tv/></StatsCard>
+                
+           
+
+            
+          </div>
+        </section>
       </div>
       <section className="my-6 mx-2 grid md:grid-cols-2 md:grid-rows-2 gap-2 lg:grid-cols-4 lg:grid-rows-1">
         <FeatureCard
@@ -244,11 +197,21 @@ export default function Footer() {
           title="تفعيل فوري"
           description="بعد الدفع يتم تفعيل اشتراكك بشكل فوري."
         />
-      </section>
-      <div className=" grid md:grid-cols-2 md:grid-rows-2  ">
+        <FeatureCard
+          description="جميع معاملاتك محمية بتقنية تشفير متقدمة"
+          title="الدفع آمن %100"
+          icon={<IoIosLock />}
+        />
+        <FeatureCard
+          description=" جميع حقوق الطبع والنشر محفوظة © 2026"
+          title="IPTVFORJA"
+          icon=" ©"
+        />
+
         <nav
           aria-label="روابط التواصل الاجتماعي"
-          className="   grid w-full grid-cols-5 grid-rows-2 place-items-center gap-2 border-t border-red-600 h-24 "
+          className="   grid w-full grid-cols-5 grid-rows-2 place-items-center gap-2 rounded-xl
+        border border-red-600/50 h-auto "
         >
           <div className="col-span-full">
             <H2>تابعنا على</H2>
@@ -289,9 +252,7 @@ export default function Footer() {
             <FaTiktok aria-hidden="true" />
           </SocialMedia>
         </nav>
-        
-
-        <div className="  border-t border-red-600 w-full flex flex-col shrink-0 items-center min-h-24  ">
+        <div className=" rounded-xl border border-red-600/50 w-full flex flex-col shrink-0 items-center min-h-24  ">
           <H2>طرق دفع المتاحة</H2>
 
           <div className=" relative w-full h-12">
@@ -303,22 +264,7 @@ export default function Footer() {
             />
           </div>
         </div>
-
-        <div className="h-auto p-1 text-amber-50">
-          <FeatureCard
-            description="جميع معاملاتك محمية بتقنية تشفير متقدمة"
-            title="الدفع آمن %100"
-            icon={<IoIosLock />}
-          />
-        </div>
-        <div className="h-auto p-1">
-           <FeatureCard
-            description=" جميع حقوق الطبع والنشر محفوظة © 2026"
-            title="IPTVFORJA"
-            icon=" ©"
-          />
-        </div>
-      </div>
+      </section>
     </footer>
   );
 }
