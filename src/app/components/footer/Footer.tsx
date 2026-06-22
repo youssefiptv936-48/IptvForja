@@ -7,6 +7,7 @@ import FeatureCard from "./FeatureCard";
 import ButtonRed from "../HtmlTools/ButtonRed";
 import SocialMedia from "./Socialmedia";
 import { IoIosLock } from "react-icons/io";
+import IptvForja from "../HtmlTools/IptvForja";
 
 import {
   FaFacebookF,
@@ -14,7 +15,6 @@ import {
   FaYoutube,
   FaTiktok,
   FaX,
- 
 } from "react-icons/fa6";
 import { homeContent } from "@/app/Data_Home/HomeContent";
 
@@ -245,93 +245,80 @@ export default function Footer() {
           description="بعد الدفع يتم تفعيل اشتراكك بشكل فوري."
         />
       </section>
-     <div>
-       <nav
-        aria-label="روابط التواصل الاجتماعي"
-        className="
-    grid
-    w-full
-    grid-cols-5
-    grid-rows-2
-place-items-center
-   
-
-gap-2
-    border-t
-    border-red-600
-   h-24
-    
-    
-  "
-      >
-        <div className="col-span-full">
-          <H2>تابعنا على</H2>
-           <Border_Row width="30" />
-        </div>
-        <SocialMedia
-          ariaLabel="تابعنا على فيسبوك"
-          href={homeContent.SocialMedia.facebook}
+      <div className=" grid md:grid-cols-2 md:grid-rows-2  ">
+        <nav
+          aria-label="روابط التواصل الاجتماعي"
+          className="   grid w-full grid-cols-5 grid-rows-2 place-items-center gap-2 border-t border-red-600 h-24 "
         >
-          <FaFacebookF aria-hidden="true" />
-        </SocialMedia>
+          <div className="col-span-full">
+            <H2>تابعنا على</H2>
+            <Border_Row width="30" />
+          </div>
+          <SocialMedia
+            ariaLabel="تابعنا على فيسبوك"
+            href={homeContent.SocialMedia.facebook}
+          >
+            <FaFacebookF aria-hidden="true" />
+          </SocialMedia>
 
-        <SocialMedia
-          ariaLabel="تابعنا على إنستغرام،"
-          href={homeContent.SocialMedia.instagram}
-        >
-          <FaInstagram aria-hidden="true" />
-        </SocialMedia>
+          <SocialMedia
+            ariaLabel="تابعنا على إنستغرام،"
+            href={homeContent.SocialMedia.instagram}
+          >
+            <FaInstagram aria-hidden="true" />
+          </SocialMedia>
 
-        <SocialMedia
-          ariaLabel="تابعنا على إكس"
-          href={homeContent.SocialMedia.x}
-        >
-          <FaX aria-hidden="true" />
-        </SocialMedia>
+          <SocialMedia
+            ariaLabel="تابعنا على إكس"
+            href={homeContent.SocialMedia.x}
+          >
+            <FaX aria-hidden="true" />
+          </SocialMedia>
 
-        <SocialMedia
-          ariaLabel="تابعنا على يوتيوب"
-          href={homeContent.SocialMedia.youtube}
-        >
-          <FaYoutube aria-hidden="true" />
-        </SocialMedia>
+          <SocialMedia
+            ariaLabel="تابعنا على يوتيوب"
+            href={homeContent.SocialMedia.youtube}
+          >
+            <FaYoutube aria-hidden="true" />
+          </SocialMedia>
 
-        <SocialMedia
-          ariaLabel=" تابعنا على تيك توك"
-          href={homeContent.SocialMedia.tiktok}
-        >
-          <FaTiktok aria-hidden="true" />
-        </SocialMedia>
-      </nav>
-      <Border_Row width="full"/>
-    
-
-      <div className=" w-full flex flex-col shrink-0 items-center min-h-24  ">
-        <H2>طرق دفع المتاحة</H2>
-       
-      
-       
+          <SocialMedia
+            ariaLabel=" تابعنا على تيك توك"
+            href={homeContent.SocialMedia.tiktok}
+          >
+            <FaTiktok aria-hidden="true" />
+          </SocialMedia>
+        </nav>
         
-         
-       
-        <div className=" relative w-full h-12">
-          <Image
-            alt=""
-            src={"/images/paymantt.webp"}
-            fill
-            className=" object-contain"
+
+        <div className="  border-t border-red-600 w-full flex flex-col shrink-0 items-center min-h-24  ">
+          <H2>طرق دفع المتاحة</H2>
+
+          <div className=" relative w-full h-12">
+            <Image
+              alt=""
+              src={"/images/paymantt.webp"}
+              fill
+              className=" object-contain"
+            />
+          </div>
+        </div>
+
+        <div className="h-auto p-1 text-amber-50">
+          <FeatureCard
+            description="جميع معاملاتك محمية بتقنية تشفير متقدمة"
+            title="الدفع آمن %100"
+            icon={<IoIosLock />}
           />
         </div>
-        
+        <div className="h-auto p-1">
+           <FeatureCard
+            description=" جميع حقوق الطبع والنشر محفوظة © 2026"
+            title="IPTVFORJA"
+            icon=" ©"
+          />
+        </div>
       </div>
-       <Border_Row width="full"/>
-       <div className="h-24 text-amber-50">
-          
-          <FeatureCard    description="جميع معاملاتك محمية بتقنية تشفير متقدمة" title="الدفع آمن %100" icon={<IoIosLock />}>
-             
-          </FeatureCard>
-       </div>
-     </div>
     </footer>
   );
 }

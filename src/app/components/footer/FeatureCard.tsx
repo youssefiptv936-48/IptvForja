@@ -31,7 +31,7 @@ export default function FeatureCard({
      
 
       {/* Text */}
-      <div className="flex flex-col text-right">
+      <div className="flex flex-col text-right w-[80%]">
         <h3 className="text-white text-lg font-bold ">
           {title}
         </h3>
@@ -53,6 +53,8 @@ export default function FeatureCard({
           shadow-[0_0_25px_#ff000080,inset_0_0_20px_#ff000040]
           shrink-0
           text-4xl 
+        
+          
         "
       >
         {icon}

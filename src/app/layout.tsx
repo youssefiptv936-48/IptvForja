@@ -61,7 +61,7 @@ export default function RootLayout({
 
   return (
     <html lang="ar" dir="rtl">
-      <body className="bg-black antialiased overflow-x-hidden font-sans">
+      <body className="bg-black  font-sans">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -71,7 +71,7 @@ export default function RootLayout({
 
         <Navbar />
 
-        <main >{children}</main>
+        <main className="h-auto" >{children}</main>
 
         <Footer />
 
