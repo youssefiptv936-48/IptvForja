@@ -2,6 +2,7 @@ import P from "../HtmlTools/P";
 import H2 from "../HtmlTools/H2";
 import LinkRed from "../HtmlTools/LinkRed";
 import LinkNormal from "../HtmlTools/LinkNormal";
+import LinkGray from "../HtmlTools/LinkGray";
 import Border_Row from "../HtmlTools/Border_Row";
 import FeatureCard from "./FeatureCard";
 import ButtonRed from "../HtmlTools/ButtonRed";
@@ -93,7 +94,7 @@ export default function Footer() {
           <LinkNormal href="">استرجاع الاموال</LinkNormal>
         </div>
 
-       <div className=" flex  justify-center flex-col pr-5">
+        <div className=" flex  justify-center flex-col pr-5">
           <H2>خدمات IPTV</H2>
           <Border_Row width="w-30" />
           <LinkNormal href="">IPTV المغرب</LinkNormal>
@@ -102,7 +103,7 @@ export default function Footer() {
           <LinkNormal href="">قنوات الأطفال</LinkNormal>
           <LinkNormal href="">الأجهزه المدعومه</LinkNormal>
         </div>
-         <div className=" flex  justify-center flex-col pr-5">
+        <div className=" flex  justify-center flex-col pr-5">
           <H2>خدمات IPTV</H2>
           <Border_Row width="w-30" />
           <LinkNormal href="">IPTV المغرب</LinkNormal>
@@ -151,8 +152,7 @@ export default function Footer() {
             وقت ومن أي مكان.
           </p>
 
-         <Border_Row width="w-[90%]"/>
-         
+          <Border_Row width="w-[90%]" />
 
           {/* Stats */}
           <div
@@ -166,13 +166,15 @@ export default function Footer() {
           
         "
           >
-             <StatsCard description="مشترك راضٍ" number={+5000}><Users/></StatsCard>
-              <StatsCard description="محتوى متنوع" number={+150000}><CirclePlay/></StatsCard>
-               <StatsCard description="قناة مباشرة" number={+46000}><Tv/></StatsCard>
-                
-           
-
-            
+            <StatsCard description="مشترك راضٍ" number={+5000}>
+              <Users />
+            </StatsCard>
+            <StatsCard description="محتوى متنوع" number={+150000}>
+              <CirclePlay />
+            </StatsCard>
+            <StatsCard description="قناة مباشرة" number={+46000}>
+              <Tv />
+            </StatsCard>
           </div>
         </section>
       </div>
@@ -264,7 +266,34 @@ export default function Footer() {
             />
           </div>
         </div>
+        
       </section>
+      <div className=" border-y border-red-600 border-solid flex flex-wrap gap-3 pr-2  w-full">
+          <LinkGray href="/اشتراك-iptv-المغرب">اشتراك IPTV المغرب</LinkGray>
+
+          <LinkGray href="/أفضل-اشتراك-iptv-في-المغرب">
+            أفضل اشتراك IPTV في المغرب
+          </LinkGray>
+
+          <LinkGray href="/شراء-اشتراك-iptv">شراء اشتراك IPTV</LinkGray>
+
+          <LinkGray href="/iptv-4k-المغرب">IPTV 4K المغرب</LinkGray>
+
+          <LinkGray href="/اشتراك-iptv-للتلفاز-الذكي">
+            اشتراك IPTV للتلفاز الذكي
+          </LinkGray>
+        </div>
+        <section className="text-center px-2 md:px-10 lg:px-35">
+          <P>
+            IPTVFORJA لا يملك أو يدير أي قنوات تلفزيونية أو محتوى محمي بحقوق النشر. جميع العلامات التجارية والأسماء والشعارات المذكورة في هذا الموقع تعود إلى أصحابها الشرعيين.
+
+توفر IPTVFORJA خدمة تقنية تساعد المستخدمين على إدارة وتشغيل المحتوى الذي يملكون حق الوصول إليه. يتحمل المستخدم وحده مسؤولية استخدام الخدمة بما يتوافق مع القوانين المحلية وحقوق الملكية الفكرية المعمول بها في بلده.
+
+إذا كنت صاحب حقوق وترغب في الإبلاغ عن أي محتوى أو استفسار متعلق بحقوق النشر، يرجى التواصل معنا عبر صفحة اتصل بنا.
+
+باستخدامك لهذا الموقع فإنك توافق على سياسة الخصوصية وشروط الاستخدام الخاصة بنا.
+          </P>
+        </section>
     </footer>
   );
 }
