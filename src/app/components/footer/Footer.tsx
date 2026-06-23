@@ -1,4 +1,5 @@
 import P from "../HtmlTools/P";
+import PGray from "../HtmlTools/PGray";
 import H2 from "../HtmlTools/H2";
 import LinkRed from "../HtmlTools/LinkRed";
 import LinkNormal from "../HtmlTools/LinkNormal";
@@ -73,8 +74,8 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className=" w-full  grid grid-cols-2 grid-rows-2 gap-2  md:grid-rows-1 md:grid-cols-4 lg:grid-cols-6 lg:grid-rows-1 ">
-        <div className=" flex  justify-center flex-col pr-5">
+      <div className=" w-full  flex justify-between flex-wrap ">
+        <div className=" flex  justify-center flex-col  min-w-25 bg-amber-400">
           <H2>روابط سريعة</H2>
           <Border_Row width="w-30" />
           <LinkNormal href="">الصفحه الرئيسيه</LinkNormal>
@@ -84,7 +85,7 @@ export default function Footer() {
           <LinkNormal href="">اتصل بنا</LinkNormal>
         </div>
 
-        <div className=" flex  justify-center flex-col pr-5">
+        <div className=" flex  justify-center flex-col  min-w-25">
           <H2>خدمه العملاء</H2>
           <Border_Row width="w-30" />
           <LinkNormal href="">مركز المساعده</LinkNormal>
@@ -94,7 +95,7 @@ export default function Footer() {
           <LinkNormal href="">استرجاع الاموال</LinkNormal>
         </div>
 
-        <div className=" flex  justify-center flex-col pr-5">
+        <div className=" flex  justify-center flex-col  min-w-25">
           <H2>خدمات IPTV</H2>
           <Border_Row width="w-30" />
           <LinkNormal href="">IPTV المغرب</LinkNormal>
@@ -103,7 +104,7 @@ export default function Footer() {
           <LinkNormal href="">قنوات الأطفال</LinkNormal>
           <LinkNormal href="">الأجهزه المدعومه</LinkNormal>
         </div>
-        <div className=" flex  justify-center flex-col pr-5">
+        <div className=" flex  justify-center flex-col  min-w-25">
           <H2>خدمات IPTV</H2>
           <Border_Row width="w-30" />
           <LinkNormal href="">IPTV المغرب</LinkNormal>
@@ -115,9 +116,8 @@ export default function Footer() {
 
         <section
           className="
-      lg:col-span-2
-      col-span-2
-        md:col-span-4
+      min-w-25
+      bg-amber-800
         text-white
         flex
         flex-col
@@ -154,146 +154,38 @@ export default function Footer() {
 
           <Border_Row width="w-[90%]" />
 
-          {/* Stats */}
-          <div
-            className="
-          w-full
-          max-w-105
-          grid
-          grid-cols-3
-          items-center
-          text-center
-          
-        "
-          >
-            <StatsCard description="مشترك راضٍ" number={+5000}>
-              <Users />
-            </StatsCard>
-            <StatsCard description="محتوى متنوع" number={+150000}>
-              <CirclePlay />
-            </StatsCard>
-            <StatsCard description="قناة مباشرة" number={+46000}>
-              <Tv />
-            </StatsCard>
-          </div>
+        
         </section>
       </div>
-      <section className="my-6 mx-2 grid md:grid-cols-2 md:grid-rows-2 gap-2 lg:grid-cols-4 lg:grid-rows-1">
-        <FeatureCard
-          icon={<RadioTower size={34} strokeWidth={1.8} />}
-          title="بث مباشر سريع"
-          description="قنوات مستقرة بدون تقطيع وبأسرع السيرفرات."
-        />
-        <FeatureCard
-          icon={<Hd size={34} strokeWidth={1.8} />}
-          title="4K / FHD"
-          description="جودة صورة فائقة الوضوح لمشاهدة لا تُضاهى."
-        />
-        <FeatureCard
-          icon={<Headphones size={34} strokeWidth={1.8} />}
-          title="دعم فني 24/7"
-          description="فريق دعم محترف متاح على مدار الساعة لخدمتك."
-        />
-        <FeatureCard
-          icon={<Zap size={34} strokeWidth={1.8} />}
-          title="تفعيل فوري"
-          description="بعد الدفع يتم تفعيل اشتراكك بشكل فوري."
-        />
-        <FeatureCard
-          description="جميع معاملاتك محمية بتقنية تشفير متقدمة"
-          title="الدفع آمن %100"
-          icon={<IoIosLock />}
-        />
-        <FeatureCard
-          description=" جميع حقوق الطبع والنشر محفوظة © 2026"
-          title="IPTVFORJA"
-          icon=" ©"
-        />
+     
+      <div className=" border-y border-red-600 border-solid flex flex-wrap gap-10 p-5  w-full">
+        <LinkGray href="/اشتراك-iptv-المغرب">اشتراك IPTV المغرب</LinkGray>
 
-        <nav
-          aria-label="روابط التواصل الاجتماعي"
-          className="   grid w-full grid-cols-5 grid-rows-2 place-items-center gap-2 rounded-xl
-        border border-red-600/50 h-auto "
-        >
-          <div className="col-span-full">
-            <H2>تابعنا على</H2>
-            <Border_Row width="30" />
-          </div>
-          <SocialMedia
-            ariaLabel="تابعنا على فيسبوك"
-            href={homeContent.SocialMedia.facebook}
-          >
-            <FaFacebookF aria-hidden="true" />
-          </SocialMedia>
+        <LinkGray href="/أفضل-اشتراك-iptv-في-المغرب">
+          أفضل اشتراك IPTV في المغرب
+        </LinkGray>
 
-          <SocialMedia
-            ariaLabel="تابعنا على إنستغرام،"
-            href={homeContent.SocialMedia.instagram}
-          >
-            <FaInstagram aria-hidden="true" />
-          </SocialMedia>
+        <LinkGray href="/شراء-اشتراك-iptv">شراء اشتراك IPTV</LinkGray>
 
-          <SocialMedia
-            ariaLabel="تابعنا على إكس"
-            href={homeContent.SocialMedia.x}
-          >
-            <FaX aria-hidden="true" />
-          </SocialMedia>
+        <LinkGray href="/iptv-4k-المغرب">IPTV 4K المغرب</LinkGray>
 
-          <SocialMedia
-            ariaLabel="تابعنا على يوتيوب"
-            href={homeContent.SocialMedia.youtube}
-          >
-            <FaYoutube aria-hidden="true" />
-          </SocialMedia>
-
-          <SocialMedia
-            ariaLabel=" تابعنا على تيك توك"
-            href={homeContent.SocialMedia.tiktok}
-          >
-            <FaTiktok aria-hidden="true" />
-          </SocialMedia>
-        </nav>
-        <div className=" rounded-xl border border-red-600/50 w-full flex flex-col shrink-0 items-center min-h-24  ">
-          <H2>طرق دفع المتاحة</H2>
-
-          <div className=" relative w-full h-12">
-            <Image
-              alt=""
-              src={"/images/paymantt.webp"}
-              fill
-              className=" object-contain"
-            />
-          </div>
-        </div>
-        
+        <LinkGray href="/اشتراك-iptv-للتلفاز-الذكي">
+          اشتراك IPTV للتلفاز الذكي
+        </LinkGray>
+      </div>
+      <section className="text-center p-10 md:px-10 lg:px-35">
+        <PGray>
+          IPTVFORJA لا يملك أو يدير أي قنوات تلفزيونية أو محتوى محمي بحقوق
+          النشر. جميع العلامات التجارية والأسماء والشعارات المذكورة في هذا
+          الموقع تعود إلى أصحابها الشرعيين. توفر IPTVFORJA خدمة تقنية تساعد
+          المستخدمين على إدارة وتشغيل المحتوى الذي يملكون حق الوصول إليه. يتحمل
+          المستخدم وحده مسؤولية استخدام الخدمة بما يتوافق مع القوانين المحلية
+          وحقوق الملكية الفكرية المعمول بها في بلده. إذا كنت صاحب حقوق وترغب في
+          الإبلاغ عن أي محتوى أو استفسار متعلق بحقوق النشر، يرجى التواصل معنا
+          عبر صفحة اتصل بنا. باستخدامك لهذا الموقع فإنك توافق على سياسة الخصوصية
+          وشروط الاستخدام الخاصة بنا.
+        </PGray>
       </section>
-      <div className=" border-y border-red-600 border-solid flex flex-wrap gap-3 pr-2  w-full">
-          <LinkGray href="/اشتراك-iptv-المغرب">اشتراك IPTV المغرب</LinkGray>
-
-          <LinkGray href="/أفضل-اشتراك-iptv-في-المغرب">
-            أفضل اشتراك IPTV في المغرب
-          </LinkGray>
-
-          <LinkGray href="/شراء-اشتراك-iptv">شراء اشتراك IPTV</LinkGray>
-
-          <LinkGray href="/iptv-4k-المغرب">IPTV 4K المغرب</LinkGray>
-
-          <LinkGray href="/اشتراك-iptv-للتلفاز-الذكي">
-            اشتراك IPTV للتلفاز الذكي
-          </LinkGray>
-        </div>
-        <section className="text-center px-2 md:px-10 lg:px-35">
-          <P>
-            IPTVFORJA لا يملك أو يدير أي قنوات تلفزيونية أو محتوى محمي بحقوق النشر. جميع العلامات التجارية والأسماء والشعارات المذكورة في هذا الموقع تعود إلى أصحابها الشرعيين.
-
-توفر IPTVFORJA خدمة تقنية تساعد المستخدمين على إدارة وتشغيل المحتوى الذي يملكون حق الوصول إليه. يتحمل المستخدم وحده مسؤولية استخدام الخدمة بما يتوافق مع القوانين المحلية وحقوق الملكية الفكرية المعمول بها في بلده.
-
-إذا كنت صاحب حقوق وترغب في الإبلاغ عن أي محتوى أو استفسار متعلق بحقوق النشر، يرجى التواصل معنا عبر صفحة اتصل بنا.
-
-باستخدامك لهذا الموقع فإنك توافق على سياسة الخصوصية وشروط الاستخدام الخاصة بنا.
-          </P>
-        </section>
     </footer>
   );
 }

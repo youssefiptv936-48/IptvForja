@@ -61,7 +61,7 @@ export default function RootLayout({
 
   return (
     <html lang="ar" dir="rtl">
-      <body className="bg-black  font-sans">
+      <body className=" font-sans">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
