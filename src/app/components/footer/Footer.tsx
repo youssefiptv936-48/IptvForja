@@ -3,13 +3,11 @@ import PGray from "../HtmlTools/PGray";
 import H2 from "../HtmlTools/H2";
 import LinkRed from "../HtmlTools/LinkRed";
 import LinkNormal from "../HtmlTools/LinkNormal";
-import LinkGray from "../HtmlTools/LinkGray";
+import LinkGray from "../HtmlTools/LinkButton";
 import Border_Row from "../HtmlTools/Border_Row";
-import FeatureCard from "./FeatureCard";
 import ButtonRed from "../HtmlTools/ButtonRed";
 import SocialMedia from "./Socialmedia";
-import { IoIosLock } from "react-icons/io";
-import StatsCard from "./StatsCard";
+
 
 import {
   FaFacebookF,
@@ -18,21 +16,13 @@ import {
   FaTiktok,
   FaX,
 } from "react-icons/fa6";
-import { homeContent } from "@/app/Data_Home/HomeContent";
 
 import Image from "next/image";
 
 import {
   Gift,
   ShieldCheck,
-  Zap,
-  Headphones,
-  Hd,
-  RadioTower,
-  Goal,
-  Users,
-  CirclePlay,
-  Tv,
+ 
 } from "lucide-react";
 export default function Footer() {
   // الحصول على السنة الحالية تلقائياً لجعل المحتوى يبدو "محدثاً" دائماً أمام جوجل
@@ -74,58 +64,93 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className=" w-full  flex justify-between flex-wrap ">
-        <div className=" flex  justify-center flex-col  min-w-25 bg-amber-400">
-          <H2>روابط سريعة</H2>
-          <Border_Row width="w-30" />
-          <LinkNormal href="">الصفحه الرئيسيه</LinkNormal>
-          <LinkNormal href="">الاشتراكات</LinkNormal>
-          <LinkNormal href="">القنوات</LinkNormal>
-          <LinkNormal href="">التجربه المجانيه</LinkNormal>
-          <LinkNormal href="">اتصل بنا</LinkNormal>
-        </div>
+      <div className=" w-full  p-2  flex justify-around flex-wrap ">
+        <div className=" flex  justify-center flex-col  min-w-40 ">
+    <H2>روابط مهمة</H2>
+    <Border_Row width="w-30" />
 
-        <div className=" flex  justify-center flex-col  min-w-25">
-          <H2>خدمه العملاء</H2>
-          <Border_Row width="w-30" />
-          <LinkNormal href="">مركز المساعده</LinkNormal>
-          <LinkNormal href="">الاسئله الشائعه</LinkNormal>
-          <LinkNormal href="">سياسه الخصوصيه</LinkNormal>
-          <LinkNormal href="">شروط والاحكام</LinkNormal>
-          <LinkNormal href="">استرجاع الاموال</LinkNormal>
-        </div>
+    <LinkNormal href="/">الصفحة الرئيسية</LinkNormal>
+    <LinkNormal href="/about">من نحن</LinkNormal>
+    <LinkNormal href="/pricing">باقات IPTV والأسعار</LinkNormal>
+    <LinkNormal href="/free-trial">التجربة المجانية</LinkNormal>
+    <LinkNormal href="/contact">اتصل بنا</LinkNormal>
+  </div>
 
-        <div className=" flex  justify-center flex-col  min-w-25">
-          <H2>خدمات IPTV</H2>
-          <Border_Row width="w-30" />
-          <LinkNormal href="">IPTV المغرب</LinkNormal>
-          <LinkNormal href="">القنوات الرياضيه</LinkNormal>
-          <LinkNormal href="">الأفلام والمسلسلات</LinkNormal>
-          <LinkNormal href="">قنوات الأطفال</LinkNormal>
-          <LinkNormal href="">الأجهزه المدعومه</LinkNormal>
-        </div>
-        <div className=" flex  justify-center flex-col  min-w-25">
-          <H2>خدمات IPTV</H2>
-          <Border_Row width="w-30" />
-          <LinkNormal href="">IPTV المغرب</LinkNormal>
-          <LinkNormal href="">القنوات الرياضيه</LinkNormal>
-          <LinkNormal href="">الأفلام والمسلسلات</LinkNormal>
-          <LinkNormal href="">قنوات الأطفال</LinkNormal>
-          <LinkNormal href="">الأجهزه المدعومه</LinkNormal>
-        </div>
+  <div className=" flex  p-2 justify-center flex-col  min-w-40">
+    <H2>خدمات IPTV</H2>
+    <Border_Row width="w-30" />
+
+    <LinkNormal href="/iptv-morocco">
+      اشتراك IPTV المغرب
+    </LinkNormal>
+
+    <LinkNormal href="/sports-channels">
+      القنوات الرياضية
+    </LinkNormal>
+
+    <LinkNormal href="/movies-series">
+      الأفلام والمسلسلات
+    </LinkNormal>
+
+    <LinkNormal href="/kids-channels">
+      قنوات الأطفال
+    </LinkNormal>
+
+    <LinkNormal href="/supported-devices">
+      الأجهزة المدعومة
+    </LinkNormal>
+  </div>
+
+  <div className=" flex  justify-center flex-col p-2  min-w-40">
+    <H2>الدليل والمحتوى</H2>
+    <Border_Row width="w-30" />
+
+    <LinkNormal href="/blog">المدونة</LinkNormal>
+
+    <LinkNormal href="/installation-guide">
+      دليل التثبيت
+    </LinkNormal>
+
+    <LinkNormal href="/channel-list">
+      قائمة القنوات
+    </LinkNormal>
+
+    <LinkNormal href="/faq">
+      الأسئلة الشائعة
+    </LinkNormal>
+
+    <LinkNormal href="/reviews">
+      آراء العملاء
+    </LinkNormal>
+  </div>
+
+  <div className=" flex  justify-center flex-col p-2  min-w-40">
+    <H2>السياسات القانونية</H2>
+    <Border_Row width="w-30" />
+
+    <LinkNormal href="/privacy-policy">
+      سياسة الخصوصية
+    </LinkNormal>
+
+    <LinkNormal href="/terms-and-conditions">
+      الشروط والأحكام
+    </LinkNormal>
+
+    <LinkNormal href="/refund-policy">
+      سياسة استرجاع الأموال
+    </LinkNormal>
+
+    <LinkNormal href="/acceptable-use-policy">
+      سياسة الاستخدام المقبول
+    </LinkNormal>
+
+    <LinkNormal href="/cookie-policy">
+      سياسة ملفات تعريف الارتباط
+    </LinkNormal>
+  </div>
 
         <section
-          className="
-      min-w-25
-      bg-amber-800
-        text-white
-        flex
-        flex-col
-        items-center
-        justify-center
-        p-2
-        text-center
-      "
+          className="w-96  text-white flex flex-col items-center justify-center p-2 text-center"
         >
           {/* Logo */}
           <div className="relative w-50 h-18  ">
@@ -153,25 +178,78 @@ export default function Footer() {
           </p>
 
           <Border_Row width="w-[90%]" />
+         <div className="flex gap-2">
+  <SocialMedia ariaLabel="Facebook" href="https://www.facebook.com/profile.php?id=61588986598921">
+    <FaFacebookF />
+  </SocialMedia>
 
-        
+  <SocialMedia ariaLabel="Instagram" href="https://www.instagram.com/iptvforja?igsh=MW5qaWhjbjN2MmFvNQ==">
+    <FaInstagram />
+  </SocialMedia>
+
+  <SocialMedia ariaLabel="YouTube" href="https://www.youtube.com/channel/UCDIvL4bm2Hel87bC8gxyaOw">
+    <FaYoutube />
+  </SocialMedia>
+
+  <SocialMedia ariaLabel="TikTok" href="https://www.tiktok.com/@iptvforja">
+    <FaTiktok />
+  </SocialMedia>
+
+  <SocialMedia ariaLabel="X" href="https://x.com/IptvForja">
+    <FaX />
+  </SocialMedia>
+</div>
         </section>
       </div>
-     
-      <div className=" border-y border-red-600 border-solid flex flex-wrap gap-10 p-5  w-full">
-        <LinkGray href="/اشتراك-iptv-المغرب">اشتراك IPTV المغرب</LinkGray>
 
-        <LinkGray href="/أفضل-اشتراك-iptv-في-المغرب">
-          أفضل اشتراك IPTV في المغرب
-        </LinkGray>
+      <div className=" border-y  border-red-600 border-solid flex items-center justify-center flex-wrap gap-1  p-5  w-full">
+       <LinkGray href="/abonnement-iptv">
+  شراء اشتراك IPTV
+</LinkGray>
 
-        <LinkGray href="/شراء-اشتراك-iptv">شراء اشتراك IPTV</LinkGray>
+<LinkGray href="/abonnement-iptv">
+  طلب اشتراك IPTV
+</LinkGray>
 
-        <LinkGray href="/iptv-4k-المغرب">IPTV 4K المغرب</LinkGray>
+<LinkGray href="/abonnement-iptv">
+  أفضل اشتراك IPTV
+</LinkGray>
 
-        <LinkGray href="/اشتراك-iptv-للتلفاز-الذكي">
-          اشتراك IPTV للتلفاز الذكي
-        </LinkGray>
+<LinkGray href="/abonnement-iptv">
+  شراء IPTV بسعر مناسب
+</LinkGray>
+
+<LinkGray href="/abonnement-iptv">
+  أفضل سعر اشتراك IPTV
+</LinkGray>
+
+<LinkGray href="/abonnement-iptv">
+  اشتراك IPTV فوري التفعيل
+</LinkGray>
+
+<LinkGray href="/abonnement-iptv">
+  شراء اشتراك IPTV سنوي
+</LinkGray>
+
+<LinkGray href="/abonnement-iptv">
+  اشتراك IPTV لمدة 12 شهراً
+</LinkGray>
+
+<LinkGray href="/abonnement-iptv">
+  شراء IPTV بجودة 4K
+</LinkGray>
+
+<LinkGray href="/abonnement-iptv">
+  شراء IPTV للتلفاز الذكي
+</LinkGray>
+
+<LinkGray href="/abonnement-iptv">
+  شراء IPTV لأجهزة Android TV
+</LinkGray>
+
+<LinkGray href="/abonnement-iptv">
+  اشتراك IPTV لجميع الأجهزة
+</LinkGray>
       </div>
       <section className="text-center p-10 md:px-10 lg:px-35">
         <PGray>

@@ -8,7 +8,7 @@ interface Props {
 export default function P({ children }: Props) {
   return (
     // نضع children هنا ليعرض النص الذي تكتبه بين الوسمين
-    <p className='   text-[16px]  text-slate-200  px-2 bg-amber-950 '>
+    <p className='   text-[16px]  text-slate-200  px-2 '>
       {children}
     </p>
   );
